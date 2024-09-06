@@ -1,0 +1,5 @@
+Oct 09, 2022 1:16:35 PM spec.jbb.JBBmain main -> INFO: Logging started
+Oct 09, 2022 1:16:35 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 1...
+Oct 09, 2022 1:16:35 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 1:16:35 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 1:16:35 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 13:16:35 IST 2022 for 4 minutes

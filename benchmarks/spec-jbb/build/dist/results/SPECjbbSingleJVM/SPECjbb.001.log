@@ -1,0 +1,5 @@
+Feb 07, 2018 2:20:57 PM spec.jbb.JBBmain main -> INFO: Logging started
+Feb 07, 2018 2:20:58 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 1...
+Feb 07, 2018 2:20:58 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Feb 07, 2018 2:20:58 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Feb 07, 2018 2:20:58 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Wed Feb 07 14:20:58 IST 2018 for 0.5 minutes

@@ -1,0 +1,71 @@
+Oct 09, 2022 1:48:59 PM spec.jbb.JBBmain main -> INFO: Logging started
+Oct 09, 2022 1:48:59 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 1...
+Oct 09, 2022 1:48:59 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 1:48:59 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 1:48:59 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 13:48:59 IST 2022 for 4 minutes
+Oct 09, 2022 1:53:00 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 13:52:59 IST 2022
+Oct 09, 2022 1:53:00 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 2...
+Oct 09, 2022 1:53:01 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 1:53:01 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 1:53:01 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 1:53:01 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 13:53:01 IST 2022 for 4 minutes
+Oct 09, 2022 1:57:01 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 13:57:01 IST 2022
+Oct 09, 2022 1:57:02 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 3...
+Oct 09, 2022 1:57:02 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 1:57:02 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 1:57:02 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 1:57:02 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 1:57:02 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 13:57:02 IST 2022 for 4 minutes
+Oct 09, 2022 2:01:02 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:01:02 IST 2022
+Oct 09, 2022 2:01:03 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 4...
+Oct 09, 2022 2:01:03 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 2:01:03 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 2:01:03 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 2:01:03 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 2:01:03 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 4
+Oct 09, 2022 2:01:03 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 14:01:03 IST 2022 for 4 minutes
+Oct 09, 2022 2:05:03 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:05:03 IST 2022
+Oct 09, 2022 2:05:03 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 5...
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 4
+Oct 09, 2022 2:05:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 5
+Oct 09, 2022 2:05:04 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 14:05:04 IST 2022 for 4 minutes
+Oct 09, 2022 2:09:04 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:09:04 IST 2022
+Oct 09, 2022 2:09:04 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 6...
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 4
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 5
+Oct 09, 2022 2:09:04 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 6
+Oct 09, 2022 2:09:04 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 14:09:04 IST 2022 for 4 minutes
+Oct 09, 2022 2:13:04 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:13:04 IST 2022
+Oct 09, 2022 2:13:05 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 7...
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 4
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 5
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 6
+Oct 09, 2022 2:13:05 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 7
+Oct 09, 2022 2:13:05 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 14:13:05 IST 2022 for 4 minutes
+Oct 09, 2022 2:17:05 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:17:05 IST 2022
+Oct 09, 2022 2:17:06 PM spec.jbb.Company primeWithDummyData -> INFO: Loading Warehouse 8...
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO: Start User Threads
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 1
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 2
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 3
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 4
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 5
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 6
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 7
+Oct 09, 2022 2:17:06 PM spec.jbb.JBBmain DoARun -> INFO:   started user thread for Warehouse 8
+Oct 09, 2022 2:17:06 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement began Sun Oct 09 14:17:06 IST 2022 for 4 minutes
+Oct 09, 2022 2:21:06 PM spec.jbb.Company displayResultTotals -> INFO: Timing Measurement ended Sun Oct 09 14:21:06 IST 2022
+Oct 09, 2022 2:21:08 PM spec.jbb.JBBmain callReporter -> INFO: Calling Reporter
+Oct 09, 2022 2:21:08 PM spec.jbb.JBBmain main -> INFO: Logging ended

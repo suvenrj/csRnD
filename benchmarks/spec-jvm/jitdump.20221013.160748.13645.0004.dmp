@@ -1,0 +1,454 @@
+<?xml version="1.0" standalone="no"?>
+<jitDump>
+#INFO: Crashed in compilation thread 0000000000018000.
+<ilOfCrashedThread>
+
+        +------------- Byte Code Index
+        |  +-------------------- OpCode
+        |  |                        +------------- First Field
+        |  |                        |     +------------- Branch Target
+        |  |                        |     |      +------- Const Pool Index
+        |  |                        |     |      |    +------------- Constant
+        |  |                        |     |      |    |
+        V  V                        V     V      V    V
+
+        0, JBinvokestatic         158
+        3, JBldc                
+        5, JBinvokevirtual        159
+        8, JBiconst0            
+        9, JBistore1            
+       10, JBiload1             
+       11, JBifne                   8,   19,            
+       14, JBiconst1            
+       15, JBistore1            
+       16, JBgoto                   5,   21,            
+       19, JBiconstm1           
+       20, JBistore1            
+       21, JBiload1             
+       22, JBbipush                                  47  
+       24, JBificmpeq              13,   37,            
+       27, JBnewdup                            198
+       30, JBdup                
+       31, JBldc                
+       33, JBinvokespecial        199
+       36, JBathrow             
+       37, JBiconstm1           
+       38, JBistore1            
+       39, JBgoto                  16,   55,            
+       42, JBastore2            
+       43, JBiload1             
+       44, JBiconst1            
+       45, JBificmpne               8,   53,            
+       48, JBiconst2            
+       49, JBistore1            
+       50, JBgoto                   5,   55,            
+       53, JBiconstm1           
+       54, JBistore1            
+       55, JBiload1             
+       56, JBiconst2            
+       57, JBificmpeq               6,   63,            
+       60, JBldc                
+       62, JBreturn1            
+       63, JBbipush                                  10  
+       65, JBnewarray                           10
+       67, JBastore2            
+       68, JBaload2             
+       69, JBbipush                                  11  
+       71, JBbipush                                  11  
+       73, JBiastore            
+       74, JBgoto                  45,  119,            
+       77, JBastore3            
+       78, JBaload3             
+       79, JBinvokespecial        180
+       82, JBinvokevirtual        181
+       85, JBldc                
+       87, JBinvokevirtual        201
+       90, JBifne                  29,  119,            
+       93, JBnewdup                            173
+       96, JBdup                
+       97, JBinvokespecial        174
+      100, JBldc                
+      102, JBinvokevirtual        177
+      105, JBaload3             
+      106, JBinvokespecial        180
+      109, JBinvokevirtual        181
+      112, JBinvokevirtual        177
+      115, JBinvokevirtual        179
+      118, JBreturn1            
+      119, JBaconstnull         
+      120, JBreturn1            
+
+<trees
+	title="Trees"
+	method="spec/benchmarks/check/PepTest.testExc1()Ljava/lang/String;"
+	hotness="warm">
+
+Trees: for spec/benchmarks/check/PepTest.testExc1()Ljava/lang/String;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+n27n      BBStart <block_2> (freq 10000)                                                      [0x7f9c53005190] bci=[-1,0,404] rc=0 vc=179 vn=- li=- udi=- nc=0
+n30n      treetop                                                                             [0x7f9c53005280] bci=[-1,0,404] rc=0 vc=179 vn=- li=- udi=- nc=1
+n29n        acall  spec/harness/Context.getOut()Ljava/io/PrintStream;[#355  final static Method] [flags 0x20500 0x0 ] (X>=0 sharedMemory )  [0x7f9c53005230] bci=[-1,0,404] rc=3 vc=179 vn=- li=- udi=- nc=0 flg=0x100
+n32n      ResolveCHK [#294]                                                                   [0x7f9c53005320] bci=[-1,3,404] rc=0 vc=179 vn=- li=- udi=- nc=1
+n31n        aload  <string>[#356  unresolved Static +2481264] [flags 0x80000307 0x0 ]         [0x7f9c530052d0] bci=[-1,3,404] rc=2 vc=179 vn=- li=- udi=- nc=0
+n35n      NULLCHK on n29n [#32]                                                               [0x7f9c53005410] bci=[-1,5,404] rc=0 vc=179 vn=- li=- udi=- nc=1
+n34n        calli  java/io/PrintStream.print(Ljava/lang/String;)V[#359  virtual Method -184] [flags 0x500 0x0 ] ()  [0x7f9c530053c0] bci=[-1,5,404] rc=1 vc=179 vn=- li=- udi=- nc=3 flg=0x20
+n33n          aloadi  <vft-symbol>[#289  Shadow] [flags 0x18607 0x0 ] (X!=0 sharedMemory )    [0x7f9c53005370] bci=[-1,5,404] rc=1 vc=179 vn=- li=- udi=- nc=1 flg=0x4
+n29n            ==>acall
+n29n          ==>acall
+n31n          ==>aload
+n37n      istore  x<auto slot 1>[#360  Auto] [flags 0x3 0x0 ]                                 [0x7f9c530054b0] bci=[-1,9,405] rc=0 vc=179 vn=- li=- udi=1 nc=1
+n36n        iconst 0 (X==0 X>=0 X<=0 )                                                        [0x7f9c53005460] bci=[-1,8,405] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x302
+n28n      BBEnd </block_2> =====                                                              [0x7f9c530051e0] bci=[-1,9,405] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n15n      BBStart <block_3> (freq 10000)                                                      [0x7f9c53004dd0] bci=[-1,14,407] rc=0 vc=179 vn=- li=- udi=- nc=0
+n44n      istore  x<auto slot 1>[#360  Auto] [flags 0x3 0x0 ]                                 [0x7f9c530056e0] bci=[-1,15,407] rc=0 vc=179 vn=- li=- udi=2 nc=1
+n43n        iconst 1 (X!=0 X>=0 )                                                             [0x7f9c53005690] bci=[-1,14,407] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x104
+n41n      BBEnd </block_3> =====                                                              [0x7f9c530055f0] bci=[-1,16,407] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n174n     BBStart <block_24> (freq 10000)                                                     [0x7f9c53082620] bci=[-1,24,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+n155n     goto --> block_7 BBStart at n50n                                                    [0x7f9c53082030] bci=[-1,24,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+n157n     BBEnd </block_24> =====                                                             [0x7f9c530820d0] bci=[-1,24,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n197n     BBStart <block_31> (freq 10000)                                                     [0x7f9c53082d50] bci=[-1,60,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+n73n      ResolveCHK [#294]                                                                   [0x7f9c53080690] bci=[-1,60,413] rc=0 vc=179 vn=- li=- udi=- nc=1
+n72n        aload  <string>[#366  unresolved Static +2481296] [flags 0x80000307 0x0 ]         [0x7f9c53080640] bci=[-1,60,413] rc=2 vc=179 vn=- li=- udi=- nc=0
+n74n      areturn                                                                             [0x7f9c530806e0] bci=[-1,62,413] rc=0 vc=179 vn=- li=- udi=- nc=1
+n72n        ==>aload
+n70n      BBEnd </block_31> =====                                                             [0x7f9c530805a0] bci=[-1,62,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n11n      BBStart <block_12> (freq 10000)                                                     [0x7f9c53004c90] bci=[-1,63,414] rc=0 vc=179 vn=- li=- udi=- nc=0
+n349n     lstore  0x7f9c510bb280[#400  Static] [flags 0x304 0xc0 ]                            [0x7f9c53085cd0] bci=[-1,65,414] rc=0 vc=179 vn=- li=- udi=- nc=1
+n348n       lsub                                                                              [0x7f9c53085c80] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=2
+n347n         lload  0x7f9c510bb280[#400  Static] [flags 0x304 0xc0 ] (cannotOverflow )       [0x7f9c53085c30] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x1000
+n346n         lconst -1 (X!=0 X>=0 )                                                          [0x7f9c53085be0] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x104
+n353n     lstore  0x7f9c510bb400[#401  Static] [flags 0x304 0xc0 ]                            [0x7f9c53085e10] bci=[-1,65,414] rc=0 vc=179 vn=- li=- udi=- nc=1
+n352n       lsub                                                                              [0x7f9c53085dc0] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=2
+n351n         lload  0x7f9c510bb400[#401  Static] [flags 0x304 0xc0 ] (cannotOverflow )       [0x7f9c53085d70] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x1000
+n350n         lconst -1 (X!=0 X>=0 )                                                          [0x7f9c53085d20] bci=[-1,65,414] rc=1 vc=179 vn=- li=- udi=- nc=0 flg=0x104
+n78n      treetop                                                                             [0x7f9c53080820] bci=[-1,65,414] rc=0 vc=179 vn=- li=- udi=- nc=1
+n77n        newarray  jitNewArray[#101  helper Method] [flags 0x400 0x0 ] (highWordZero Unsigned X!=0 allocationCanBeRemoved sharedMemory )  [0x7f9c530807d0] bci=[-1,65,414] rc=0 vc=179 vn=- li=-1 udi=- nc=2 flg=0x4004
+n75n          iconst 10 (X!=0 X>=0 )                                                          [0x7f9c53080730] bci=[-1,63,414] rc=0 vc=179 vn=- li=-1 udi=- nc=0 flg=0x104
+n76n          iconst 10   ; array type is int (X!=0 X>=0 )                                    [0x7f9c53080780] bci=[-1,65,414] rc=0 vc=179 vn=- li=-1 udi=- nc=0 flg=0x104
+n12n      BBEnd </block_12> =====                                                             [0x7f9c53004ce0] bci=[-1,67,414] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n21n      BBStart <block_13> (freq 7501)                                                      [0x7f9c53004fb0] bci=[-1,68,416] rc=0 vc=179 vn=- li=- udi=- nc=0
+n84n      treetop                                                                             [0x7f9c53080a00] bci=[-1,73,416] rc=0 vc=179 vn=- li=- udi=- nc=1
+n83n        iconst 10 (X!=0 X>=0 cannotOverflow )                                             [0x7f9c530809b0] bci=[-1,73,416] rc=2 vc=179 vn=- li=2 udi=- nc=0 flg=0x1104
+n85n      BNDCHK [#1]                                                                         [0x7f9c53080a50] bci=[-1,73,416] rc=0 vc=179 vn=- li=- udi=- nc=2
+n83n        ==>iconst 10
+n81n        iconst 11 (X!=0 X>=0 )                                                            [0x7f9c53080910] bci=[-1,69,416] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x104
+n354n     return                                                                              [0x7f9c53085e60] bci=[-1,73,416] rc=0 vc=179 vn=- li=- udi=- nc=0
+n22n      BBEnd </block_13> =====                                                             [0x7f9c53005000] bci=[-1,73,416] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n23n      BBStart <block_14> (freq 10000)                                                     [0x7f9c53005050] bci=[-1,119,423] rc=0 vc=179 vn=- li=- udi=- nc=0
+n95n      areturn                                                                             [0x7f9c53080d70] bci=[-1,120,423] rc=0 vc=179 vn=- li=- udi=- nc=1
+n94n        aconst NULL (X==0 sharedMemory )                                                  [0x7f9c53080d20] bci=[-1,119,423] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x2
+n14n      BBEnd </block_14> =====                                                             [0x7f9c53004d80] bci=[-1,120,423] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n19n      BBStart <block_16> (freq 3) (catches java/lang/ArithmeticException) (cold)          [0x7f9c53004f10] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=- nc=0
+n220n     BBEnd </block_16> (cold) =====                                                      [0x7f9c53083480] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n219n     BBStart <block_32> (freq 3) (cold)                                                  [0x7f9c53083430] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=- nc=0
+n97n      astore  <temp slot 5>[#368  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )             [0x7f9c53080e10] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=3 nc=1 flg=0x4
+n96n        aload  ExceptionMeta[#292  MethodMeta +64] [flags 0x207 0x0 ] (X!=0 sharedMemory )  [0x7f9c53080dc0] bci=[-1,42,410] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x4
+n99n      astore  ExceptionMeta[#292  MethodMeta +64] [flags 0x207 0x0 ] (X==0 sharedMemory )  [0x7f9c53080eb0] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=- nc=1 flg=0x2
+n98n        aconst NULL (X==0 sharedMemory )                                                  [0x7f9c53080e60] bci=[-1,42,410] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x2
+n101n     astore  exc<auto slot 2>[#367  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )          [0x7f9c53080f50] bci=[-1,42,410] rc=0 vc=179 vn=- li=- udi=4 nc=1 flg=0x4
+n100n       aload  <temp slot 5>[#368  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )            [0x7f9c53080f00] bci=[-1,42,410] rc=1 vc=179 vn=- li=1 udi=9 nc=0 flg=0x4
+n106n     ificmpne --> block_18 BBStart at n9n ()                                             [0x7f9c530810e0] bci=[-1,45,411] rc=0 vc=179 vn=- li=- udi=- nc=2 flg=0x20
+n102n       iload  x<auto slot 1>[#360  Auto] [flags 0x3 0x0 ] (X>=0 cannotOverflow )         [0x7f9c53080fa0] bci=[-1,43,411] rc=1 vc=179 vn=- li=1 udi=10 nc=0 flg=0x1100
+n103n       iconst 1 (X!=0 X>=0 )                                                             [0x7f9c53080ff0] bci=[-1,44,411] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x104
+n20n      BBEnd </block_32> (cold) =====                                                      [0x7f9c53004f60] bci=[-1,45,411] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n104n     BBStart <block_17> (freq 3503)                                                      [0x7f9c53081040] bci=[-1,55,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+n108n     istore  x<auto slot 1>[#360  Auto] [flags 0x3 0x0 ]                                 [0x7f9c53081180] bci=[-1,49,411] rc=0 vc=179 vn=- li=- udi=5 nc=1
+n107n       iconst 2 (X!=0 X>=0 )                                                             [0x7f9c53081130] bci=[-1,48,411] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x104
+n185n     goto --> block_12 BBStart at n11n ()                                                [0x7f9c53082990] bci=[-1,57,413] rc=0 vc=179 vn=- li=- udi=- nc=0 flg=0x20
+n182n     BBEnd </block_17> =====                                                             [0x7f9c530828a0] bci=[-1,55,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n9n       BBStart <block_18> (freq 4502)                                                      [0x7f9c53004bf0] bci=[-1,55,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+n111n     istore  x<auto slot 1>[#360  Auto] [flags 0x3 0x0 ]                                 [0x7f9c53081270] bci=[-1,54,411] rc=0 vc=179 vn=- li=- udi=6 nc=1
+n110n       iconst -1 (X!=0 X<=0 )                                                            [0x7f9c53081220] bci=[-1,53,411] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x204
+n112n     goto --> block_31 BBStart at n197n                                                  [0x7f9c530812c0] bci=[-1,55,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+n191n     BBEnd </block_18> =====                                                             [0x7f9c53082b70] bci=[-1,55,413] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n25n      BBStart <block_19> (freq 3) (catches java/lang/ArrayIndexOutOfBoundsException) (cold)  [0x7f9c530050f0] bci=[-1,77,417] rc=0 vc=179 vn=- li=- udi=- nc=0
+n114n     astore  <temp slot 6>[#369  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )             [0x7f9c53081360] bci=[-1,77,417] rc=0 vc=179 vn=- li=- udi=7 nc=1 flg=0x4
+n113n       aload  ExceptionMeta[#292  MethodMeta +64] [flags 0x207 0x0 ] (X!=0 sharedMemory )  [0x7f9c53081310] bci=[-1,77,417] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x4
+n116n     astore  ExceptionMeta[#292  MethodMeta +64] [flags 0x207 0x0 ] (X==0 sharedMemory )  [0x7f9c53081400] bci=[-1,77,417] rc=0 vc=179 vn=- li=- udi=- nc=1 flg=0x2
+n115n       aconst NULL (X==0 sharedMemory )                                                  [0x7f9c530813b0] bci=[-1,77,417] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x2
+n118n     astore  e<auto slot 3>[#370  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )            [0x7f9c530814a0] bci=[-1,77,417] rc=0 vc=179 vn=- li=- udi=8 nc=1 flg=0x4
+n117n       aload  <temp slot 6>[#369  Auto] [flags 0x7 0x0 ] (X!=0 sharedMemory )            [0x7f9c53081450] bci=[-1,77,417] rc=1 vc=179 vn=- li=1 udi=11 nc=0 flg=0x4
+n121n     treetop                                                                             [0x7f9c53081590] bci=[-1,79,418] rc=0 vc=179 vn=- li=- udi=- nc=1
+n120n       aloadi  <vft-symbol>[#289  Shadow] [flags 0x18607 0x0 ] (X!=0 X>=0 sharedMemory )  [0x7f9c53081540] bci=[-1,79,418] rc=2 vc=179 vn=- li=2 udi=- nc=1 flg=0x104
+n119n         aload  e<auto slot 3>[#370  Auto] [flags 0x7 0x0 ] (X!=0 X>=0 sharedMemory )    [0x7f9c530814f0] bci=[-1,78,418] rc=1 vc=179 vn=- li=1 udi=12 nc=0 flg=0x104
+n125n     treetop                                                                             [0x7f9c530816d0] bci=[-1,82,418] rc=0 vc=179 vn=- li=- udi=- nc=1
+n124n       acall  java/lang/Class.getName()Ljava/lang/String;[#374  final virtual Method -280] [flags 0x20500 0x0 ]  [0x7f9c53081680] bci=[-1,82,418] rc=2 vc=179 vn=- li=2 udi=- nc=1
+n123n         aloadi  <javaLangClassFromClass>[#279  Shadow +48] [flags 0x607 0x0 ] (X!=0 sharedMemory )  [0x7f9c53081630] bci=[-1,79,418] rc=1 vc=179 vn=- li=1 udi=- nc=1 flg=0x4
+n120n           ==>aloadi
+n127n     ResolveCHK [#294]                                                                   [0x7f9c53081770] bci=[-1,85,418] rc=0 vc=179 vn=- li=- udi=- nc=1
+n126n       aload  <string>[#375  unresolved Static +2481312] [flags 0x80000307 0x0 ]         [0x7f9c53081720] bci=[-1,85,418] rc=2 vc=179 vn=- li=2 udi=- nc=0
+n129n     NULLCHK on n124n [#32]                                                              [0x7f9c53081810] bci=[-1,87,418] rc=0 vc=179 vn=- li=- udi=- nc=1
+n128n       icall  java/lang/String.equals(Ljava/lang/Object;)Z[#378  final virtual Method -32] [flags 0x20500 0x0 ]  [0x7f9c530817c0] bci=[-1,87,418] rc=2 vc=179 vn=- li=2 udi=- nc=2
+n124n         ==>acall
+n126n         ==>aload
+n133n     ificmpne --> block_14 BBStart at n23n ()                                            [0x7f9c53081950] bci=[-1,90,418] rc=0 vc=179 vn=- li=- udi=- nc=2 flg=0x20
+n128n       ==>icall
+n130n       iconst 0 (X==0 X>=0 X<=0 )                                                        [0x7f9c53081860] bci=[-1,90,418] rc=1 vc=179 vn=- li=1 udi=- nc=0 flg=0x302
+n26n      BBEnd </block_19> (cold) =====                                                      [0x7f9c53005140] bci=[-1,90,418] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n131n     BBStart <block_20> (freq 3) (cold)                                                  [0x7f9c530818b0] bci=[-1,93,420] rc=0 vc=179 vn=- li=- udi=- nc=0
+n140n     ResolveCHK [#294]                                                                   [0x7f9c53081b80] bci=[-1,100,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n139n       aload  <string>[#382  unresolved Static +2481328] [flags 0x80000307 0x0 ]         [0x7f9c53081b30] bci=[-1,100,420] rc=3 vc=179 vn=- li=3 udi=- nc=0
+n142n     treetop                                                                             [0x7f9c53081c20] bci=[-1,102,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n139n       ==>aload
+n145n     treetop                                                                             [0x7f9c53081d10] bci=[-1,106,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n144n       aloadi  <vft-symbol>[#289  Shadow] [flags 0x18607 0x0 ] (X!=0 X>=0 sharedMemory )  [0x7f9c53081cc0] bci=[-1,106,420] rc=2 vc=179 vn=- li=2 udi=- nc=1 flg=0x104
+n143n         aload  e<auto slot 3>[#370  Auto] [flags 0x7 0x0 ] (X!=0 X>=0 sharedMemory )    [0x7f9c53081c70] bci=[-1,105,420] rc=1 vc=179 vn=- li=1 udi=13 nc=0 flg=0x104
+n149n     treetop                                                                             [0x7f9c53081e50] bci=[-1,109,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n148n       acall  java/lang/Class.getName()Ljava/lang/String;[#374  final virtual Method -280] [flags 0x20500 0x0 ]  [0x7f9c53081e00] bci=[-1,109,420] rc=3 vc=179 vn=- li=3 udi=- nc=1
+n147n         aloadi  <javaLangClassFromClass>[#279  Shadow +48] [flags 0x607 0x0 ] (X!=0 sharedMemory )  [0x7f9c53081db0] bci=[-1,106,420] rc=1 vc=179 vn=- li=1 udi=- nc=1 flg=0x4
+n144n           ==>aloadi
+n151n     treetop                                                                             [0x7f9c53081ef0] bci=[-1,112,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n148n       ==>acall
+n153n     treetop                                                                             [0x7f9c53081f90] bci=[-1,115,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n152n       new  jitNewObject[#91  helper Method] [flags 0x400 0x0 ] (highWordZero Unsigned X!=0 allocationCanBeRemoved sharedMemory )  [0x7f9c53081f40] bci=[-1,115,420] rc=3 vc=179 vn=- li=3 udi=- nc=1 flg=0x4004
+n163n         loadaddr  java/lang/String[#391  Static] [flags 0x18307 0x0 ]                   [0x7f9c530822b0] bci=[-1,115,420] rc=1 vc=179 vn=- li=1 udi=- nc=0
+n165n     treetop                                                                             [0x7f9c53082350] bci=[-1,115,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n164n       call  java/lang/String.<init>(Ljava/lang/String;Ljava/lang/String;)V[#399  final special Method] [flags 0x20500 0x0 ] ()  [0x7f9c53082300] bci=[-1,115,420] rc=1 vc=179 vn=- li=1 udi=- nc=3 flg=0x20
+n152n         ==>new
+n139n         ==>aload
+n148n         ==>acall
+n154n     areturn                                                                             [0x7f9c53081fe0] bci=[-1,118,420] rc=0 vc=179 vn=- li=- udi=- nc=1
+n152n       ==>new
+n132n     BBEnd </block_20> (cold) =====                                                      [0x7f9c53081900] bci=[-1,118,420] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+n50n      BBStart <block_7> (freq 3) (cold)                                                   [0x7f9c530058c0] bci=[-1,27,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+n57n      ResolveCHK [#294]                                                                   [0x7f9c53080190] bci=[-1,31,408] rc=0 vc=179 vn=- li=- udi=- nc=1
+n56n        aload  <string>[#362  unresolved Static +2481280] [flags 0x80000307 0x0 ]         [0x7f9c53080140] bci=[-1,31,408] rc=2 vc=179 vn=- li=2 udi=- nc=0
+n55n      treetop                                                                             [0x7f9c530800f0] bci=[-1,27,408] rc=0 vc=179 vn=- li=- udi=- nc=1
+n54n        new  jitNewObject[#91  helper Method] [flags 0x400 0x0 ] (highWordZero Unsigned X!=0 allocationCanBeRemoved sharedMemory )  [0x7f9c530800a0] bci=[-1,27,408] rc=4 vc=179 vn=- li=4 udi=- nc=1 flg=0x4004
+n53n          loadaddr  java/lang/ArithmeticException[#361  Static] [flags 0x18307 0x0 ]      [0x7f9c53080050] bci=[-1,27,408] rc=1 vc=179 vn=- li=1 udi=- nc=0
+n59n      treetop                                                                             [0x7f9c53080230] bci=[-1,33,408] rc=0 vc=179 vn=- li=- udi=- nc=1
+n58n        call  java/lang/ArithmeticException.<init>(Ljava/lang/String;)V[#365  special Method] [flags 0x500 0x0 ]  [0x7f9c530801e0] bci=[-1,33,408] rc=1 vc=179 vn=- li=1 udi=- nc=2
+n54n          ==>new
+n56n          ==>aload
+n62n      treetop                                                                             [0x7f9c53080320] bci=[-1,36,408] rc=0 vc=179 vn=- li=- udi=- nc=1
+n61n        possibleHeapification  jitHeapifyStackObject[#139  helper Method] [flags 0x400 0x0 ]  [0x7f9c530802d0] bci=[-1,36,408] rc=1 vc=179 vn=- li=1 udi=- nc=1
+n54n          ==>new
+n60n      astore  ExceptionMeta[#292  MethodMeta +64] [flags 0x207 0x0 ] (X!=0 sharedMemory )  [0x7f9c53080280] bci=[-1,36,408] rc=0 vc=179 vn=- li=- udi=- nc=1 flg=0x4
+n54n        ==>new
+n221n     goto --> block_32 BBStart at n219n                                                  [0x7f9c530834d0] bci=[-1,36,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+n51n      BBEnd </block_7> (cold)                                                             [0x7f9c53005910] bci=[-1,36,408] rc=0 vc=179 vn=- li=- udi=- nc=0
+
+index:       node global index
+bci=[x,y,z]: byte-code-info [callee-index, bytecode-index, line-number]
+rc:          reference count
+vc:          visit count
+vn:          value number
+li:          local index
+udi:         use/def index
+nc:          number of children
+addr:        address size in bytes
+flg:         node flags
+
+Symbol References (incremental):
+--------------------------------
+#1:    jitThrowArrayIndexOutOfBounds[ helper Method] [flags 0x400 0x0 ] [0x7f9c53071110] (NoType)
+#22:   jitANewArrayNoZeroInit[ helper Method] [flags 0x400 0x0 ] [0x7f9c53150e20] (NoType)
+#24:   jitThrowException[ helper Method] [flags 0x400 0x0 ] [0x7f9c53070b60] (NoType)
+#29:   jitNewObjectNoZeroInit[ helper Method] [flags 0x400 0x0 ] [0x7f9c53150d00] (NoType)
+#31:   jitNewArrayNoZeroInit[ helper Method] [flags 0x400 0x0 ] [0x7f9c53150d90] (NoType)
+#32:   jitThrowNullPointerException[ helper Method] [flags 0x400 0x0 ] [0x7f9c53051480] (NoType)
+#73:   jitCheckIfFinalizeObject[ helper Method] [flags 0x400 0x0 ] [0x7f9c531501d0] (NoType)
+#91:   jitNewObject[ helper Method] [flags 0x400 0x0 ] [0x7f9c530704a0] (NoType)
+#101:  jitNewArray[ helper Method] [flags 0x400 0x0 ] [0x7f9c53070f20] (NoType)
+#139:  jitHeapifyStackObject[ helper Method] [flags 0x400 0x0 ] [0x7f9c53070bf0] (NoType)
+#226:  <array-shadow>[ Shadow] [flags 0x80000603 0x0 ] [0x7f9c530711c0] (Int32)
+#279:  <javaLangClassFromClass>[ Shadow +48] [flags 0x607 0x0 ] [0x7f9c53071fd0] (Address)
+#289:  <vft-symbol>[ Shadow] [flags 0x18607 0x0 ] [0x7f9c53051b80] (Address)
+#292:  ExceptionMeta[ MethodMeta +64] [flags 0x207 0x0 ] [0x7f9c530714f0] (Address)
+#294:  <resolve check>[ helper Method] [flags 0x400 0x0 ] [0x7f9c53051480] (NoType)
+#354:  this<'this' parm Lspec/benchmarks/check/PepTest;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53005b20] (Address)
+#355:  spec/harness/Context.getOut()Ljava/io/PrintStream;[ final static Method] [flags 0x20500 0x0 ] [0x7f9c53051170] (NoType)
+#356:  <string>[ unresolved Static +2481264] [flags 0x80000307 0x0 ] [0x7f9c53051390] (Address)
+#357:  <'this' parm Ljava/io/PrintStream;>[ Parm] [flags 0x107 0x0 ] [0x7f9c530518a0] (Address)
+#358:  <parm 1 Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53051a70] (Address)
+#359:  java/io/PrintStream.print(Ljava/lang/String;)V[ virtual Method -184] [flags 0x500 0x0 ] [0x7f9c53051710] (NoType)
+#360:  x<auto slot 1>[ Auto] [flags 0x3 0x0 ] [0x7f9c53070020] (Int32)
+#361:  java/lang/ArithmeticException[ Static] [flags 0x18307 0x0 ] [0x7f9c53070410] (Address)
+#362:  <string>[ unresolved Static +2481280] [flags 0x80000307 0x0 ] [0x7f9c53070550] (Address)
+#363:  <'this' parm Ljava/lang/ArithmeticException;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53070860] (Address)
+#364:  <parm 1 Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53070a30] (Address)
+#365:  java/lang/ArithmeticException.<init>(Ljava/lang/String;)V[ special Method] [flags 0x500 0x0 ] [0x7f9c530706d0] (NoType)
+#366:  <string>[ unresolved Static +2481296] [flags 0x80000307 0x0 ] [0x7f9c53070e50] (Address)
+#367:  exc<auto slot 2>[ Auto] [flags 0x7 0x0 ] [0x7f9c53070fd0] (Address)
+#368:  <temp slot 5>[ Auto] [flags 0x7 0x0 ] [0x7f9c530715a0] (Address)
+#369:  <temp slot 6>[ Auto] [flags 0x7 0x0 ] [0x7f9c53071950] (Address)
+#370:  e<auto slot 3>[ Auto] [flags 0x7 0x0 ] [0x7f9c53071a60] (Address)
+#371:  <'this' parm Ljava/lang/Object;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53071db0] (Address)
+#372:  java/lang/Object.getClass()Ljava/lang/Class;[ final native special Method] [flags 0x20500 0x0 ] [0x7f9c53071c20] (NoType)
+#373:  <'this' parm Ljava/lang/Class;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53072370] (Address)
+#374:  java/lang/Class.getName()Ljava/lang/String;[ final virtual Method -280] [flags 0x20500 0x0 ] [0x7f9c530721e0] (NoType)
+#375:  <string>[ unresolved Static +2481312] [flags 0x80000307 0x0 ] [0x7f9c530725a0] (Address)
+#376:  <'this' parm Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53072980] (Address)
+#377:  <parm 1 Ljava/lang/Object;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53072bd0] (Address)
+#378:  java/lang/String.equals(Ljava/lang/Object;)Z[ final virtual Method -32] [flags 0x20500 0x0 ] [0x7f9c530727f0] (NoType)
+#379:  java/lang/StringBuilder[ Static] [flags 0x18307 0x0 ] [0x7f9c53072e50] (Address)
+#380:  <'this' parm Ljava/lang/StringBuilder;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53073160] (Address)
+#381:  java/lang/StringBuilder.<init>()V[ final special Method] [flags 0x20500 0x0 ] [0x7f9c53072fd0] (NoType)
+#382:  <string>[ unresolved Static +2481328] [flags 0x80000307 0x0 ] [0x7f9c53073380] (Address)
+#383:  <'this' parm Ljava/lang/StringBuilder;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53073760] (Address)
+#384:  <parm 1 Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53073970] (Address)
+#385:  java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;[ final virtual Method -136] [flags 0x20500 0x0 ] [0x7f9c530735d0] (NoType)
+#386:  <'this' parm Ljava/lang/StringBuilder;>[ Parm] [flags 0x107 0x0 ] [0x7f9c53074300] (Address)
+#387:  java/lang/StringBuilder.toString()Ljava/lang/String;[ final virtual Method -56] [flags 0x20500 0x0 ] [0x7f9c53074170] (NoType)
+#388:  <parm 0 Ljava/lang/StringBuilder;>[ Parm] [flags 0x107 0x0 ] [0x7f9c530a1740] (Address)
+#389:  <parm 1 I>[ Parm] [flags 0x103 0x0 ] [0x7f9c530a1920] (Int32)
+#390:  java/lang/StringBuilder.<init>(I)V[ final static Method] [flags 0x20500 0x0 ] [0x7f9c530a1510] (NoType)
+#391:  java/lang/String[ Static] [flags 0x18307 0x0 ] [0x7f9c530c0000] (Address)
+#392:  <'this' parm Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c530c04c0] (Address)
+#393:  <parm 1 Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c530c06e0] (Address)
+#394:  <parm 2 Ljava/lang/String;>[ Parm] [flags 0x107 0x0 ] [0x7f9c530c07b0] (Address)
+#395:  java/lang/String.<init>(Ljava/lang/String;Ljava/lang/String;)V[ final special Method] [flags 0x20500 0x0 ] [0x7f9c530c0330] (NoType)
+#396:  <'this' parm Ljava/lang/String;>[ Parm] [flags 0x40000107 0x0 ] [0x7f9c530c0a50] (Address)
+#397:  <parm 1 Ljava/lang/String;>[ Parm] [flags 0x40000107 0x0 ] [0x7f9c530c0c70] (Address)
+#398:  <parm 2 Ljava/lang/String;>[ Parm] [flags 0x40000107 0x0 ] [0x7f9c530c0d40] (Address)
+#399:  java/lang/String.<init>(Ljava/lang/String;Ljava/lang/String;)V[ final special Method] [flags 0x20500 0x0 ] [0x7f9c530c08c0] (NoType)
+#400:  0x7f9c510bb280[ Static] [flags 0x304 0xc0 ] [0x7f9c510bb320] (Int64)
+#401:  0x7f9c510bb400[ Static] [flags 0x304 0xc0 ] [0x7f9c510bb4a0] (Int64)
+#101:  jitNewArray[ helper Method] [flags 0x400 0x0 ] [0x7f9c53070f20] (NoType)
+#91:   jitNewObject[ helper Method] [flags 0x400 0x0 ] [0x7f9c530704a0] (NoType)
+#91:   jitNewObject[ helper Method] [flags 0x400 0x0 ] [0x7f9c530704a0] (NoType)
+
+Number of nodes = 122, symRefCount = 405
+</trees>
+
+<cfg>
+         0 [0x7f9c53022230] entry
+                 in        = []
+                 out       = [2(10000) ]
+                 exception in  = []
+                 exception out = []
+         1 [0x7f9c53022140] exit
+                 in        = [13(7501) 20(3) 14(10000) 31(10000) ]
+                 out       = []
+                 exception in  = []
+                 exception out = []
+         2 [0x7f9c53050fb0] BBStart at 0x7f9c53005190, frequency = 10000
+                 in        = [0(10000) ]
+                 out       = [3(10000) ]
+                 exception in  = []
+                 exception out = []
+         3 [0x7f9c53050890] BBStart at 0x7f9c53004dd0, frequency = 10000
+                 in        = [2(10000) ]
+                 out       = [24(8001) ]
+                 exception in  = []
+                 exception out = [16(3) ]
+         7 [0x7f9c53070300] BBStart at 0x7f9c530058c0, frequency = 3
+                 in        = [24(10000) ]
+                 out       = [32(3) ]
+                 exception in  = []
+                 exception out = [16(3) ]
+        12 [0x7f9c53050630] BBStart at 0x7f9c53004c90, frequency = 10000
+                 in        = [17(1751) ]
+                 out       = [13(10000) ]
+                 exception in  = []
+                 exception out = []
+        13 [0x7f9c53050c20] BBStart at 0x7f9c53004fb0, frequency = 7501
+                 in        = [12(10000) ]
+                 out       = [1(7501) ]
+                 exception in  = []
+                 exception out = [19(3) ]
+        14 [0x7f9c53050d50] BBStart at 0x7f9c53005050, frequency = 10000
+                 in        = [19(3) ]
+                 out       = [1(10000) ]
+                 exception in  = []
+                 exception out = []
+        16 [0x7f9c53050af0] BBStart at 0x7f9c53004f10, frequency = 3
+                 in        = []
+                 out       = [32(3) ]
+                 exception in  = [7(3) 3(3) ]
+                 exception out = []
+        17 [0x7f9c53071710] BBStart at 0x7f9c53081040, frequency = 3503
+                 in        = [32(3) ]
+                 out       = [12(1751) ]
+                 exception in  = []
+                 exception out = []
+        18 [0x7f9c53050500] BBStart at 0x7f9c53004bf0, frequency = 4502
+                 in        = [32(3) ]
+                 out       = [31(4502) ]
+                 exception in  = []
+                 exception out = []
+        19 [0x7f9c53050e80] BBStart at 0x7f9c530050f0, frequency = 3
+                 in        = []
+                 out       = [20(3) 14(3) ]
+                 exception in  = [13(3) ]
+                 exception out = []
+        20 [0x7f9c53072d40] BBStart at 0x7f9c530818b0, frequency = 3
+                 in        = [19(3) ]
+                 out       = [1(3) ]
+                 exception in  = []
+                 exception out = []
+        24 [0x7f9c53100360] BBStart at 0x7f9c53082620, frequency = 10000
+                 in        = [3(8001) ]
+                 out       = [7(10000) ]
+                 exception in  = []
+                 exception out = []
+        31 [0x7f9c53100e10] BBStart at 0x7f9c53082d50, frequency = 10000
+                 in        = [18(4502) ]
+                 out       = [1(10000) ]
+                 exception in  = []
+                 exception out = []
+        32 [0x7f9c531503c0] BBStart at 0x7f9c53083430, frequency = 3
+                 in        = [7(3) 16(3) ]
+                 out       = [18(3) 17(3) ]
+                 exception in  = []
+                 exception out = []
+<structure>
+      0 [0x7f9c53020970] Acyclic region
+         Subgraph: (* = exit edge)
+               (0x7f9c53020a40:0x7f9c53020910)0 --> 2(0x7f9c53020ad0)
+               (0x7f9c53020ad0:0x7f9c53020850)2 --> 3(0x7f9c53020ca0)
+               (0x7f9c53020ca0:0x7f9c53020790)3 --> 24(0x7f9c53120f60)
+               (0x7f9c53020ca0:0x7f9c53020790)3 >>> 16(0x7f9c53020e40)
+               (0x7f9c531202c0:0x7f9c53020610)12 --> 13(0x7f9c53120460)
+               (0x7f9c53120460:0x7f9c530205b0)13 --> 1(0x7f9c53120750)
+               (0x7f9c53120460:0x7f9c530205b0)13 >>> 19(0x7f9c53120680)
+               (0x7f9c531205b0:0x7f9c53020550)14 --> 1(0x7f9c53120750)
+               (0x7f9c53120750:0x7f9c530208b0)1 -->
+               (0x7f9c53120680:0x7f9c530203d0)19 --> 20(0x7f9c53120870) 14(0x7f9c531205b0)
+               (0x7f9c53120870:0x7f9c53020370)20 --> 1(0x7f9c53120750)
+               (0x7f9c53120390:0x7f9c53020070)31 --> 1(0x7f9c53120750)
+               (0x7f9c53020e40:0x7f9c530204f0)16 --> 32(0x7f9c53122cc0)
+               (0x7f9c531209e0:0x7f9c53020490)17 --> 12(0x7f9c531202c0)
+               (0x7f9c53120e40:0x7f9c53020130)18 --> 31(0x7f9c53120390)
+               (0x7f9c53120f60:0x7f9c530202b0)24 --> 7(0x7f9c53121030)
+               (0x7f9c53121030:0x7f9c530206d0)7 --> 32(0x7f9c53122cc0)
+               (0x7f9c53121030:0x7f9c530206d0)7 >>> 16(0x7f9c53020e40)
+               (0x7f9c53122cc0:0x7f9c53122c60)32 --> 17(0x7f9c531209e0) 18(0x7f9c53120e40)
+         0 [0x7f9c53020910] Block
+         2 [0x7f9c53020850] Block
+         3 [0x7f9c53020790] Block
+         12 [0x7f9c53020610] Block
+         13 [0x7f9c530205b0] Block
+         14 [0x7f9c53020550] Block
+         1 [0x7f9c530208b0] Block
+         19 [0x7f9c530203d0] Block
+         20 [0x7f9c53020370] Block
+         31 [0x7f9c53020070] Block
+         16 [0x7f9c530204f0] Block
+         17 [0x7f9c53020490] Block
+         18 [0x7f9c53020130] Block
+         24 [0x7f9c530202b0] Block
+         7 [0x7f9c530206d0] Block
+         32 [0x7f9c53122c60] Block
+</structure>
+</cfg>
+<knownObjectTable size="1"> // 00007F9C5300C0F0
+  id       JNI Ref            Address          Hash       Class
+  obj0                        NULL
+</knownObjectTable>
+<knownObjectGraph>
+</knownObjectGraph>

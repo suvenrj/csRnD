@@ -1,0 +1,73 @@
+Exception during processing
+java.lang.NullPointerException
+	at org.apache.xerces.util.SymbolTable.addSymbol(Unknown Source)
+	at org.apache.xerces.impl.XMLEntityScanner.scanName(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at net.sourceforge.pmd.RuleSetFactory.parseRuleSetNode(RuleSetFactory.java:190)
+	at net.sourceforge.pmd.RuleSetFactory.createSingleRuleSet(RuleSetFactory.java:135)
+	at net.sourceforge.pmd.RuleSetFactory.createRuleSets(RuleSetFactory.java:85)
+	at net.sourceforge.pmd.RuleSetFactory.createRuleSets(RuleSetFactory.java:70)
+	at net.sourceforge.pmd.PMD.doPMD(PMD.java:359)
+	at net.sourceforge.pmd.PMD.main(PMD.java:415)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.dacapo.harness.Pmd.iterate(Pmd.java:58)
+	at org.dacapo.harness.Benchmark.run(Benchmark.java:187)
+	at org.dacapo.harness.TestHarness.runBenchmark(TestHarness.java:199)
+	at org.dacapo.harness.TestHarness.main(TestHarness.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at Harness.main(Unknown Source)
+
+
+
+Mandatory arguments:
+1) A java source code filename or directory
+2) A report format 
+3) A ruleset filename or a comma-delimited string of ruleset filenames
+
+For example: 
+c:\> java -jar pmd-4.2.5.jar c:\my\source\code html unusedcode
+
+Optional arguments that may be put before or after the mandatory arguments: 
+-debug: prints debugging information
+-targetjdk: specifies a language version to target - 1.3, 1.4, 1.5, 1.6 or 1.7; default is 1.5
+-cpus: specifies the number of threads to create
+-encoding: specifies the character set encoding of the source code files PMD is reading (i.e., UTF-8)
+-excludemarker: specifies the String that marks the a line which PMD should ignore; default is NOPMD
+-shortnames: prints shortened filenames in the report
+-linkprefix: path to HTML source, for summary html renderer only
+-lineprefix: custom anchor to affected line in the source file, for summary html renderer only
+-minimumpriority: rule priority threshold; rules with lower priority than they will not be used
+-nojava: do not check Java files; default to check Java files
+-jsp: check JSP/JSF files; default to do not check JSP/JSF files
+-reportfile: send report output to a file; default to System.out
+-benchmark: output a benchmark report upon completion; default to System.err
+-xslt: override default xslt for 'nicehtml' output.
+-auxclasspath: specifies the classpath for libraries used by the source code (used by type resolution)
+   (alternatively, a 'file://' URL to a text file containing path elements on consecutive lines)
+
+For example on windows: 
+c:\> java -jar pmd-4.2.5.jar c:\my\source\code text unusedcode,imports -targetjdk 1.5 -debug
+c:\> java -jar pmd-4.2.5.jar c:\my\source\code xml basic,design -encoding UTF-8
+c:\> java -jar pmd-4.2.5.jar c:\my\source\code html typeresolution -auxclasspath commons-collections.jar;derby.jar
+c:\> java -jar pmd-4.2.5.jar c:\my\source\code html typeresolution -auxclasspath file:///C:/my/classpathfile
+
+For example on *nix: 
+$ java -jar pmd-4.2.5.jar /home/workspace/src/main/java/code nicehtml basic,design
+$ java -jar pmd-4.2.5.jar /home/workspace/src/main/java/code nicehtml basic,design -xslt my-own.xsl
+$ java -jar pmd-4.2.5.jar /home/workspace/src/main/java/code nicehtml typeresolution -auxclasspath commons-collections.jar:derby.jar
+
+
