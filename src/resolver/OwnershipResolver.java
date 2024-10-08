@@ -63,6 +63,8 @@ public class OwnershipResolver {
             boolean flag = false;
             for (ObjectNode obj: listofobjects){
                 Set<SootMethod> original_owners = new Set<>();
+                // reason out if original_contextual_owners is even required bcz for later comparison you are
+                // using original_owners
                 ContextualOwnershipStatus original_contextual_owners = new ContextualOwnershipStatus();
                 if (solvedSummaries.get(key).containsKey(obj)){
                     for (SootMethod temp_method: solvedSummaries.get(key).get(obj)){
@@ -200,11 +202,13 @@ public class OwnershipResolver {
                                 } catch (Exception e) {
                                     throw e;
                                 }
-
                                 for (ObjectNode object: objects){
                                     for (SootMethod temp_method: solvedSummaries.get(edge.src()).get(object)){
                                         solvedSummaries.get(key).get(obj).add(temp_method);
-                                        // fill solvedcontextualsummaries here as well
+                                        if (utils.getBCI.get(edge.srcUnit()) > -1){
+                                            CallSite cs = new CallSite(e.src(), utils.getBCI.get(e.srcUnit()));
+                                            solvedContextualSummaries.get(key).get(obj).add(cs, temp_method);
+                                        }
                                     }
                                 }
                             }
