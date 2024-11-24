@@ -18,6 +18,8 @@ import soot.Transform;
 import utils.GetListOfNoEscapeObjects;
 import utils.Stats;
 import Inlining.PrintInlineInfo;
+import resolver.OwnershipResolver;
+import ownership.*;
 
 
 import java.io.IOException;
@@ -54,7 +56,6 @@ public class Main {
 		}
 	}
 	public static void main(String[] args) {
-
 		GetSootArgs g = new GetSootArgs();
 		String[] sootArgs = g.get(args);
 		setStoreEscapeOptions(args);
@@ -149,7 +150,7 @@ public class Main {
 		System.out.println("Time Taken:"+(analysis_end-analysis_start)/1000F);
 		System.out.println("**********************************************************");
 
-		printAllInfo(StaticAnalyser.ptgs, StaticAnalyser.summaries, StaticAnalyser.stackOrders, args[4]);
+		//printAllInfo(StaticAnalyser.ptgs, StaticAnalyser.summaries, StaticAnalyser.stackOrders, args[4]);
 
 		// TODO: Time analysis if we need
 		System.out.println("2. Creating Stack Orders using the Points to Graph : ");
@@ -174,13 +175,14 @@ public class Main {
 
 		// printSummary(staticAnalyser.summaries);
 		// System.err.println(staticAnalyser.ptgs);
-		printAllInfo(StaticAnalyser.ptgs, StaticAnalyser.summaries, StaticAnalyser.stackOrders, args[4]);
+		//printAllInfo(StaticAnalyser.ptgs, StaticAnalyser.summaries, StaticAnalyser.stackOrders, args[4]);
 		// if (true)
 		// 	return;
 		// printCFG();
 		System.out.println("2. Contextual Resolution Starts : ");
 		if(contextualResolver) {
-			ContextualResolver cr = new ContextualResolver(StaticAnalyser.summaries,
+			System.out.println("Suven");
+			OwnershipResolver cr = new OwnershipResolver(StaticAnalyser.summaries,
 					StaticAnalyser.ptgs,
 					StaticAnalyser.noBCIMethods);
 			long res_end = System.currentTimeMillis();
@@ -191,11 +193,11 @@ public class Main {
 			// System.out.println(staticAnalyser.summaries.size()+ " "+staticAnalyser.ptgs.size());
 
 
-			HashMap<SootMethod, HashMap<ObjectNode, EscapeStatus>> resolved = (HashMap) kill(ContextualResolver.solvedSummaries);
+			//**HashMap<SootMethod,HashMap<ObjectNode, Set<SootMethod>>> resolved = (HashMap) kill(OwnershipResolver.solvedSummaries);
 
-			HashMap<SootMethod, HashMap<ObjectNode, List<ContextualEscapeStatus>>> cresolved = (HashMap) (ContextualResolver.solvedContextualSummaries);
+			//**HashMap<SootMethod,HashMap<ObjectNode, ContextualOwnershipStatus>> cresolved = (HashMap) (OwnershipResolver.solvedContextualSummaries);
 
-			printAllInfo(StaticAnalyser.ptgs, resolved, StaticAnalyser.stackOrders, args[4]);
+			//printAllInfo(StaticAnalyser.ptgs, resolved, StaticAnalyser.stackOrders, args[4]);
 
 			//printContextualInfo(StaticAnalyser.ptgs, cresolved, args[4]);
 
@@ -203,20 +205,21 @@ public class Main {
 
 			//saveStats(cr.existingSummaries, resolved, args[4], staticAnalyser.ptgs);
 
-			saveConStats(ContextualResolver.existingSummaries, resolved, ContextualResolver.inlineSummaries, args[4], StaticAnalyser.ptgs);
-			if(args.length > 5 && args[5] != null && args[5].equals("inline")) {
-				printContReswitinlineForJVM(ContextualResolver.solvedSummaries, ContextualResolver.inlineSummaries, StaticAnalyser.stackOrders, args[2], args[4]);
-			} else {
-				printContResForJVM(ContextualResolver.solvedSummaries, ContextualResolver.inlineSummaries, StaticAnalyser.stackOrders, args[2], args[4]);
-			}
+			//**saveConStats(OwnershipResolver.existingSummaries, resolved, ContextualResolver.inlineSummaries, args[4], StaticAnalyser.ptgs);
+			//suven commented
+			// if(args.length > 5 && args[5] != null && args[5].equals("inline")) {
+			// 	printContReswitinlineForJVM(ContextualResolver.solvedSummaries, ContextualResolver.inlineSummaries, StaticAnalyser.stackOrders, args[2], args[4]);
+			// } else {
+			// 	printContResForJVM(ContextualResolver.solvedSummaries, ContextualResolver.inlineSummaries, StaticAnalyser.stackOrders, args[2], args[4]);
+			// }
 			//printCVresValues(ContextualResolver.ResolvedCVValue, args[4]);
-			for(SootMethod m : ContextualResolver.solvedSummaries.keySet()) {
+			for(SootMethod m : OwnershipResolver.solvedSummaries.keySet()) {
 				if(Main.ListofMethods.toString().contains(m.getBytecodeSignature().toString())) {
 					System.err.println("Method : " + m);
-					for (ObjectNode o : ContextualResolver.solvedSummaries.get(m).keySet()) {
+					for (ObjectNode o : OwnershipResolver.solvedSummaries.get(m).keySet()) {
 						if(o.type == ObjectType.internal) {
 							System.err.print(" For object : " + o);
-							System.err.println(ContextualResolver.solvedSummaries.get(m).get(o).status);
+							//System.err.println(OwnershipResolver.solvedSummaries.get(m).get(o).status);
 						}
 					}
 					System.err.println("----------");

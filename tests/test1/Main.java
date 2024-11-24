@@ -4,9 +4,9 @@ public class Main {
 		Node B = new Node();
 		Node C = new Node();
 		Node D = new Node();
-		A.n = B;
-		B.n = C;
-		C.n = D;
-		D.n = B;
+		func(A, C, D);
+	}
+
+	public static void func(Node p1, Node p2, Node p3) {
 	}
 }

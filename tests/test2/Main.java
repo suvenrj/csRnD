@@ -2,6 +2,14 @@ public class Main {
 	public static void main(String[] args) {
 		Node A = new Node();
 		Node B = new Node();
-		GlobalVars.n1 = A;
+		Node C = new Node();
+		Node D = new Node();
+		A.n = B;
+		func(A, C, D);
+	}
+
+	public static void func(Node p1, Node p2, Node p3) {
+		Node a = new Node();
+		p1.n = a;
 	}
 }

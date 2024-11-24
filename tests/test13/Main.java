@@ -1,7 +1,25 @@
-import jakarta.servlet.jsp.tagext.FunctionInfo;
 public class Main {
 	public static void main(String[] args) {
-		FunctionInfo[] A = new FunctionInfo[2];
-		System.out.println(A);
+		Node A = new Node();
+		Node B = new Node();
+		// Node C = new Node();
+		// Node D = new Node();
+		func(A);
+		func2(A,B);
+	}
+
+	public static void func(Node p1) {
+		Node a = new Node();
+		func4(a);
+		GlobalVars.n1 = a;
+	}
+
+	public static void func2(Node p1, Node p2){
+		Node b = new Node(); //O2
+		func4(b);
+	}
+
+	public static void func4(Node p1){
+		p1.n = new Node(); //O1
 	}
 }

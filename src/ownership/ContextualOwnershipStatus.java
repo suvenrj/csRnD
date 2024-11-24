@@ -9,9 +9,13 @@ import java.util.Iterator;
 import es.CallSite;
 
 public class ContextualOwnershipStatus {
-    public HashMap<CallSite, Set<SootMethod>> ownershipMap;
+    public HashMap<CallSite, HashSet<SootMethod>> ownershipMap;
 
-    public ContextualOwnershipStatus(CallSite c , Set<SootMethod> methodSet) {
+    public ContextualOwnershipStatus(){
+        ownershipMap = new HashMap<>();
+    }
+
+    public ContextualOwnershipStatus(CallSite c , HashSet<SootMethod> methodSet) {
         ownershipMap = new HashMap<>();
         ownershipMap.put(c,methodSet);
     }
@@ -26,8 +30,14 @@ public class ContextualOwnershipStatus {
             }
         }
         if (!flag){
-            ownershipMap.put(c , new Set<>());
+            ownershipMap.put(c , new HashSet<>());
             ownershipMap.get(c).add(m);
+        }
+    }
+    
+    public void addForAllCs(SootMethod m){
+        for (CallSite cs: ownershipMap.keySet()){
+            ownershipMap.get(cs).add(m);
         }
     }
 }

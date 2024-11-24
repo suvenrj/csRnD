@@ -4,13 +4,13 @@ public class Main {
 		Node B = new Node();
 		Node C = new Node();
 		Node D = new Node();
-		A.n = B;
-		B.n = C;
-		func(A, C, D);
+		Node a = func();
+		a.n.n = new Node();
 	}
 
-	public static void func(Node p1, Node p2, Node p3) {
-		GlobalVars.n1 = p1.n;
-		GlobalVars.n2 = p2;
+	public static Node func() {
+		Node a = new Node();
+		a.n = new Node();
+		return a;
 	}
 }

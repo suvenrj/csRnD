@@ -130,6 +130,9 @@ public class StaticAnalyser extends BodyTransformer {
 	}
 
 	private static void processBody(Body body) {
+		if (body.getMethod().isJavaLibraryMethod() || body.getMethod().toString().startsWith("<openj9") || body.getMethod().toString().contains("init")) {
+			return;
+		 }
 		// if (body.getMethod().getBytecodeSignature().toString()
 		// 	.compareTo("<java.util.HashMap$TreeNode: treeify([Ljava/util/HashMap$Node;)V>") != 0)
 		// {

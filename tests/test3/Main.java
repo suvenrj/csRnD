@@ -5,11 +5,11 @@ public class Main {
 		Node C = new Node();
 		Node D = new Node();
 		A.n = B;
-		B.n = C;
 		func(A, C, D);
 	}
 
 	public static void func(Node p1, Node p2, Node p3) {
-		
+		p1 = new Node();
+		p1.n = new Node();
 	}
 }
