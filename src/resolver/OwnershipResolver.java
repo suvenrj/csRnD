@@ -24,11 +24,19 @@ import java.util.*;
 
 public class OwnershipResolver {
     // need to evaluate private/public for these Data structures
+    /* Tip: The keySet of existingSummaries is the set of user defined functions*/
     public static Map<SootMethod,HashMap<ObjectNode, EscapeStatus>> existingSummaries; // from static analyser
     private static Map<SootMethod,PointsToGraph> ptgs; // to store method ptgs
     public static HashMap<SootMethod,HashMap<ObjectNode, HashSet<SootMethod>>> solvedSummaries; // non contextual ownership list
     public static HashMap<SootMethod,HashMap<ObjectNode, ContextualOwnershipStatus>> solvedContextualSummaries; // 1-level contextual ownership list
     List<SootMethod> noBCIMethods; // methods from where we need to consider an object escaping
+    private static Map<SootMethod, Integer> methodToSccIndex;
+    private static Map<Integer, Set<Integer>> sccDag;
+    public static HashMap<SootMethod,HashMap<ObjectNode, HashSet<Integer>>> solvedSummariesSCC;
+    Map<Integer, Map<Integer, Integer>> distances;
+    Map<Integer, Integer> sccObjCount;
+    //public static HashMap<SootMethod,HashMap<ObjectNode, ContextualOwnershipStatus>> solvedContextualSummariesSCC;
+
 
     public OwnershipResolver(Map<SootMethod, HashMap<ObjectNode, EscapeStatus>> existingSummaries, Map<SootMethod, PointsToGraph> ptgs, List<SootMethod> escapingMethods){
         // initialization of data structures
@@ -37,24 +45,32 @@ public class OwnershipResolver {
         this.noBCIMethods = escapingMethods;
         solvedContextualSummaries = new HashMap<>();
         solvedSummaries = new HashMap<>();
+        methodToSccIndex = new HashMap<>();
+        sccDag = new HashMap<>();
+        solvedSummariesSCC = new HashMap<>();
+        distances = new HashMap<>();
+        sccObjCount = new HashMap<>();
 
         for (Map.Entry<SootMethod, HashMap<ObjectNode, EscapeStatus>> entry : existingSummaries.entrySet()) {
             SootMethod method = entry.getKey();
             solvedContextualSummaries.put(method, new HashMap<>());
             solvedSummaries.put(method, new HashMap<>());
+            solvedSummariesSCC.put(method, new HashMap<>());
         }
 
+        // Compute the solvedSummaries and solvedContextualSummaries Data Structures
         AddCallerSummaries();
-
-        for (SootMethod key: solvedSummaries.keySet()){
-            for (ObjectNode obj: solvedSummaries.get(key).keySet()){
-                System.out.println(key.toString()+" "+obj.toString());
-                for (SootMethod m: solvedSummaries.get(key).get(obj)){
-                    System.out.println(m);
-                }
-            }
-        }
-        System.out.println("Suven");
+        // Compute sccDag and methodToSccIndex
+        StronglyConnectedMethods();
+        // System.out.println(sccDag.keySet().size());
+        // System.out.println(solvedSummaries.keySet().size());
+        // System.out.println(methodToSccIndex.keySet().size());
+        // Compute inter SCC distances
+        getInterSCCDistance();
+        // Compute the solvedSummariesSCC Data Structure
+        getSCCSummary();
+        // Get SCC statistics
+        getSCCStats();
         // for (SootMethod key: solvedContextualSummaries.keySet()){
         //     for(ObjectNode obj: solvedContextualSummaries.get(key).keySet()){
         //         System.out.println(key.toString()+" "+obj.toString());
@@ -70,28 +86,101 @@ public class OwnershipResolver {
 
     }
     //helper functions
+    /* Function to get solvedSummariesSCC from solvedSummaries*/
+    private void getSCCSummary(){
+        for (SootMethod key: solvedSummaries.keySet()){
+            HashSet<Integer> allSCCIndices = new HashSet<>();
+            for (ObjectNode obj: solvedSummaries.get(key).keySet()){
+                allSCCIndices.clear();
+                for (SootMethod m: solvedSummaries.get(key).get(obj)){
+                   allSCCIndices.add(methodToSccIndex.get(m));
+                }
+                HashSet<Integer> TopSCCIndices = getIndependentNodes(allSCCIndices);
+                solvedSummariesSCC.get(key).put(obj, TopSCCIndices);
+            }
+        }
+    }
+
+    /* Function to get SCC related Stats*/
+    private void getSCCStats(){
+        for(Integer sccInd: sccDag.keySet()){
+            sccObjCount.put(sccInd, 0);
+        }
+        int totalStaticObjects = 0;
+        int affectedStaticObjects = 0;
+        for (SootMethod key: solvedSummaries.keySet()){
+            for (ObjectNode obj: solvedSummaries.get(key).keySet()){
+                // only internal objects to be considered
+                if (obj.type != ObjectType.internal){
+                    continue;
+                }
+                totalStaticObjects++;
+                // ignore stack-allocatable objects
+                if (solvedSummaries.get(key).get(obj).size()==1){
+                    continue;
+                }
+                // ignore objects that have to be allocated on heap
+                boolean flag=false;
+                for (SootMethod m: solvedSummaries.get(key).get(obj)){
+                    if (m.isEntryMethod()){
+                        flag=true;
+                        break;
+                    }
+                }
+                if (flag){
+                    continue;
+                }
+                affectedStaticObjects++;
+                System.out.println(key.toString()+" "+obj.toString());
+                // System.out.println();
+                // for (SootMethod m: solvedSummaries.get(key).get(obj)){
+                //     System.out.println(m+" "+methodToSccIndex.get(m));
+                // }
+                System.out.println();
+                try{
+                    float avgDist = 0;
+                    int numAncestors = solvedSummariesSCC.get(key).get(obj).size();
+                    for (int sccInd : solvedSummariesSCC.get(key).get(obj)){
+                        avgDist+=distances.get(sccInd).get(methodToSccIndex.get(key));
+                        sccObjCount.put(sccInd, sccObjCount.get(sccInd)+1);
+                    }
+                    System.out.println(avgDist/numAncestors);
+                }
+                catch(Exception e){
+                    System.out.println(e);
+                }
+                System.out.println();
+            }
+        }
+        int nonZeroSCC = 0;
+        for(Integer sccInd: sccObjCount.keySet()){
+            if (sccObjCount.get(sccInd)!=0){
+                nonZeroSCC+=1;
+                System.out.println(sccInd + ": " + sccObjCount.get(sccInd));
+            }
+        }
+        System.out.println("Core SCCs: " + nonZeroSCC);
+        System.out.println("Affected Object Count: " + affectedStaticObjects);
+        System.out.println("Total Object Count: " + totalStaticObjects);
+    }
+
     public static List<ObjectNode> GetObjects(Unit u, int num, SootMethod src, List<SootField> fieldList) {
         List<ObjectNode> objs = new ArrayList<>();
         InvokeExpr expr;
         if (u instanceof JInvokeStmt) {
             expr = ((JInvokeStmt) u).getInvokeExpr();
-//            System.out.println("1"+ expr.toString());
         } else if (u instanceof JAssignStmt) {
             expr = (InvokeExpr) (((JAssignStmt) u).getRightOp());
-//            System.out.println("2"+ expr.toString());
         } else {
-//            System.out.println("3"+ u.toString());
             return null;
         }
         Value arg = null;
         try {
             if (num >= 0) {
-                //System.out.println("Num : "+ num + " expr is : "+ expr.toString());
                 if(expr.getArgCount() > num)
                     arg = expr.getArg(num);
             } else if (num == -1 && (expr instanceof AbstractInstanceInvokeExpr)) {
                 arg = ((AbstractInstanceInvokeExpr) expr).getBase();
-                //System.out.println("For -1 : expr is "+ expr + "arg value is : "+ arg.toString());
             }
             else return null;
 
@@ -113,25 +202,18 @@ public class OwnershipResolver {
                 return objs;
         }
         try {
-//            System.out.println("Reaching here with source: "+ src.toString() + "and arg : "+ arg);
             if(ptgs.containsKey(src)) {
                 if (ptgs.get(src).vars.containsKey(arg)) {
-//                    System.out.println("Reached Inside");
                     for (ObjectNode o : ptgs.get(src).vars.get(arg)) {
-//                        System.out.println("Object is : "+ o.toString());
                         if (fieldList != null) {
-//                            System.out.println("Reaching inside as field list is : "+ fieldList.toString());
                             Set<ObjectNode> obj = new HashSet<>();
                             Set<ObjectNode> obj1 = new HashSet<>();
                             obj1.add(o);
                             for (SootField f : fieldList) {
-//                                System.out.println("Field is "+ f.toString());
                                 obj = getfieldObject(src, obj1, f);
                                 if (obj.isEmpty()) {
-                                    //objs.add(o);
                                     return null;
                                 }
-//                                System.out.println("Obj is "+ obj.toString());
                                 obj1 = obj;
                             }
                             if (obj != null) {
@@ -148,35 +230,26 @@ public class OwnershipResolver {
                 }
             }
         } catch (Exception e) {
-//            System.out.println(src + " " + arg + " " + u + " " + num);
             e.printStackTrace();
             System.exit(0);
         }
-        //System.out.println("Obj has "+ objs.toString());
         return objs;
     }
     //helper functions
     public static List<ObjectNode> GetParmObjects(ObjectNode ob, int num, SootMethod tgt, List<SootField> fieldList) {
         List<ObjectNode> objs = new ArrayList<>();
         try {
-//          System.out.println("Reaching here with source: "+ tgt.toString() + "and fieldlist : "+ fieldList);
             if (fieldList != null) {
                 if(ptgs.containsKey(tgt)) {
                     if (ptgs.get(tgt).fields.containsKey(ob)) {
-//                        System.out.println("Reached Inside");
                         Set<ObjectNode> obj = new HashSet<>();
                         Set<ObjectNode> obj1 = new HashSet<>();
                         obj1.add(ob);
                         for (SootField f : fieldList) {
-//                          System.out.println("Object is : "+ ob.toString());
-//                          System.out.println("Reaching inside as field list is : "+ fieldList.toString());
-//                          System.out.println("Field is "+ f.toString());
                             obj = getfieldObject(tgt, obj1, f);
                             if (obj.isEmpty()) {
-                                //objs.add(o);
                                 return null;
                             }
-//                        System.out.println("Obj is "+ obj.toString());
                             obj1 = obj;
                         }
                         if (obj != null) {
@@ -223,6 +296,155 @@ public class OwnershipResolver {
         }
         return tmpobj;
     }
+
+    // SCC helper functions start
+    /* Computes the following:
+        1) Mapping of SootMethod to SCC index
+        2) DAG of SCCs
+    */
+    private void StronglyConnectedMethods() {
+        // Step 1: Generate the CallGraph
+        CallGraph cg = Scene.v().getCallGraph();
+
+        // Step 2: Create a directed graph representation
+        Map<SootMethod, List<SootMethod>> graph = new HashMap<>();
+        Iterator<Edge> edges = cg.iterator();
+        for(SootMethod m: solvedSummaries.keySet()){
+            graph.put(m, new ArrayList<>());
+        }
+        while (edges.hasNext()) {
+            Edge edge = edges.next();
+            SootMethod src = edge.src();
+            SootMethod tgt = edge.tgt();
+            if (!(solvedSummaries.keySet().contains(src) & solvedSummaries.keySet().contains(tgt)))
+                continue;
+            //graph.computeIfAbsent(src, k -> new ArrayList<>()).add(tgt);
+            graph.get(src).add(tgt);
+        }
+        System.out.println(graph.keySet().size());
+        findSCCs(graph);
+    }
+
+    /* Implememtation of Kosaraju's Algorithm */
+    private void findSCCs(Map<SootMethod, List<SootMethod>> graph) {
+        Stack<SootMethod> stack = new Stack<>();
+        Set<SootMethod> visited = new HashSet<>();
+        
+        // Step 1: Perform DFS and store finish order
+        for (SootMethod method : graph.keySet()) {
+            if (!visited.contains(method)) {
+                dfs1(graph, method, visited, stack);
+            }
+        }
+        
+        // Step 2: Transpose the graph
+        Map<SootMethod, List<SootMethod>> transposedGraph = transposeGraph(graph);
+        
+        // Step 3: Perform DFS on transposed graph in order of finish time
+        visited.clear();
+        List<Set<SootMethod>> sccs = new ArrayList<>();
+        int sccIndex = 0;
+        
+        while (!stack.isEmpty()) {
+            SootMethod method = stack.pop();
+            if (!visited.contains(method)) {
+                Set<SootMethod> scc = new HashSet<>();
+                dfs2(transposedGraph, method, visited, scc);
+                for (SootMethod m : scc) {
+                    methodToSccIndex.put(m, sccIndex);
+                }
+                sccs.add(scc);
+                sccIndex++;
+            }
+        }
+        
+        // Construct SCC DAG
+        for (int i = 0; i < sccs.size(); i++) {
+            sccDag.put(i, new HashSet<>());
+        }
+        for (SootMethod method : graph.keySet()) {
+            int fromScc = methodToSccIndex.get(method);
+            for (SootMethod neighbor : graph.getOrDefault(method, Collections.emptyList())) {
+                int toScc = methodToSccIndex.get(neighbor);
+                if (fromScc != toScc) {
+                    sccDag.get(fromScc).add(toScc);
+                }
+            }
+        }
+    }
+
+    private void dfs1(Map<SootMethod, List<SootMethod>> graph, SootMethod node, Set<SootMethod> visited, Stack<SootMethod> stack) {
+        visited.add(node);
+        for (SootMethod neighbor : graph.getOrDefault(node, Collections.emptyList())) {
+            if (!visited.contains(neighbor)) {
+                dfs1(graph, neighbor, visited, stack);
+            }
+        }
+        stack.push(node);
+    }
+
+    private Map<SootMethod, List<SootMethod>> transposeGraph(Map<SootMethod, List<SootMethod>> graph) {
+        Map<SootMethod, List<SootMethod>> transposed = new HashMap<>();
+        for (SootMethod node : graph.keySet()) {
+            for (SootMethod neighbor : graph.get(node)) {
+                transposed.computeIfAbsent(neighbor, k -> new ArrayList<>()).add(node);
+            }
+        }
+        return transposed;
+    }
+
+    private void dfs2(Map<SootMethod, List<SootMethod>> graph, SootMethod node, Set<SootMethod> visited, Set<SootMethod> scc) {
+        visited.add(node);
+        scc.add(node);
+        for (SootMethod neighbor : graph.getOrDefault(node, Collections.emptyList())) {
+            if (!visited.contains(neighbor)) {
+                dfs2(graph, neighbor, visited, scc);
+            }
+        }
+    }
+    /* Get the top most SCCs in the Call Graph in which the object is captured */
+    private HashSet<Integer> getIndependentNodes(HashSet<Integer> nodes) {
+        HashSet<Integer> independentNodes = new HashSet<>(nodes);
+        for (Integer node : nodes) {
+            for (Integer neighbor : sccDag.getOrDefault(node, Collections.emptySet())) {
+                independentNodes.remove(neighbor);
+            }
+        }
+        return independentNodes;
+    }
+
+    private void getInterSCCDistance() {
+        int n = sccDag.size();
+
+        // Initialize distances: 0 for same nodes, INF for others
+        for (int u = 0; u < n; u++) {
+            distances.put(u, new HashMap<>());
+            for (int v = 0; v < n; v++) {
+                distances.get(u).put(v, u == v ? 0 : Integer.MAX_VALUE);
+            }
+        }
+
+        // Set direct edges with weight 1 (assuming unit weight)
+        for (int u = 0; u < n; u++) {
+            for (int v : sccDag.getOrDefault(u, Collections.emptySet())) {
+                distances.get(u).put(v, 1);
+            }
+        }
+
+        // Process nodes in topological order (0,1,2,...)
+        for (int u = 0; u < n; u++) {
+            for (int v : sccDag.getOrDefault(u, Collections.emptySet())) {
+                for (int w = 0; w < n; w++) {
+                    if (distances.get(v).get(w) != Integer.MAX_VALUE && 
+                        distances.get(u).get(w) > distances.get(u).get(v) + distances.get(v).get(w)) {
+                        distances.get(u).put(w, distances.get(u).get(v) + distances.get(v).get(w));
+                    }
+                }
+            }
+        }
+    }
+    // SCC helper functions end
+
     // function to resolve
     void AddCallerSummaries(){
         CallGraph cg = Scene.v().getCallGraph();
@@ -234,11 +456,21 @@ public class OwnershipResolver {
                 System.out.println("Entry point is: "+globalMethod.toString());
             }
         }
-        Queue<SootMethod> listofMethods = new LinkedList<>(keySet);
+        ArrayList<SootMethod> listofMethods = new ArrayList<>(keySet);
         Iterator<Edge> iter;
+        // count number of iterations for convergence
+        int counter = 0;
+        // methods to add in worklist after this iteration
+        HashSet<SootMethod> methodsToAdd = new HashSet<>();
+        // methods to be added to worklist if a given object's solvedSummaries changes in present iteration
+        HashSet<SootMethod> dependentMethods = new HashSet<>();
+        HashSet<SootMethod> original_owners = new HashSet<>();
         while (!listofMethods.isEmpty()) {
-            // get head of worklist
-            SootMethod key = listofMethods.remove();
+            methodsToAdd.clear();
+            counter++;
+            System.out.println(listofMethods.size());
+            SootMethod key = listofMethods.get(0);
+            listofMethods.remove(0);
             if(!existingSummaries.containsKey(key)) {
                 continue;
             }
@@ -246,8 +478,13 @@ public class OwnershipResolver {
             List<ObjectNode> listofobjects = sortedorder(key);
             // boolean depicting if there has been change in solvedSummaries in this iteration
             boolean flag = false;
+            // boolean depicting if there has been change in solvedSummaries of a given object in this iteration
+            boolean flagObject = false;
+
             for (ObjectNode obj: listofobjects){
-                HashSet<SootMethod> original_owners = new HashSet<>();
+                original_owners.clear();
+                dependentMethods.clear();
+                flagObject = false;
                 // reason out if original_contextual_owners is even required bcz for later comparison you are
                 // using original_owners
                 //ContextualOwnershipStatus original_contextual_owners = new ContextualOwnershipStatus();
@@ -272,8 +509,11 @@ public class OwnershipResolver {
                 iter = cg.edgesInto(key);
                 while(iter.hasNext()){
                     Edge e = iter.next();
+                    if (e.srcUnit()==null){
+                        continue;
+                    }
                     if (utils.getBCI.get(e.srcUnit()) > -1){
-                        if (e.src().isJavaLibraryMethod()){
+                        if (!solvedSummaries.keySet().contains(e.src())){
                             continue;
                         }
                         CallSite cs = new CallSite(e.src(), utils.getBCI.get(e.srcUnit()));
@@ -288,6 +528,7 @@ public class OwnershipResolver {
                         ConditionalValue cstate = (ConditionalValue) state;
                         if (cstate.object.type == ObjectType.parameter) {
                             SootMethod sm = cstate.getMethod(); // the method on which this CV depends
+                            dependentMethods.add(sm);
                             ObjectNode o = cstate.object;
                             CallSite c = new CallSite(key, cstate.BCI);
                             List<ObjectNode> objects = null;
@@ -349,6 +590,7 @@ public class OwnershipResolver {
                                 while(itr.hasNext()){
                                     Edge e = itr.next();
                                     if (existingSummaries.containsKey(e.src())){
+                                        dependentMethods.add(e.src());
                                         for (ObjectNode object : existingSummaries.get(e.src()).keySet()) {
                                             Iterator<EscapeState> it = existingSummaries.get(e.src()).get(object).status.iterator();
                                             while(it.hasNext()){
@@ -392,12 +634,16 @@ public class OwnershipResolver {
                             while (iter.hasNext()) {
                                 Edge edge = iter.next();
                                 List<ObjectNode> objects;
+                                if (!solvedSummaries.containsKey(edge.src())){
+                                    continue;
+                                }
                                 try {
                                     objects = GetObjects(edge.srcUnit(), parameternumber, edge.src(), cstate.fieldList);
                                 } catch (Exception e) {
                                     throw e;
                                 }
                                 if (objects!=null){
+                                    dependentMethods.add(edge.src());
                                     for (ObjectNode object: objects){
                                         if (solvedSummaries.get(edge.src()).containsKey(object)){
                                             for (SootMethod temp_method: solvedSummaries.get(edge.src()).get(object)){
@@ -413,33 +659,39 @@ public class OwnershipResolver {
                             }
                         }
                         if (!original_owners.equals(solvedSummaries.get(key).get(obj))){
+                            flagObject = true;
                             flag = true;
                         }
                     }
                 }
-                // System.out.println(key.toString()+" "+obj.toString());
-                // for (SootMethod t: solvedSummaries.get(key).get(obj)){
-                //     System.out.println(t);
-                // }
+                if (flagObject){
+                    for (SootMethod m: dependentMethods){
+                        methodsToAdd.add(m);
+                    }
+                }
             }
             if (flag){
-                iter = cg.edgesOutOf(key);
-                while (iter.hasNext()) {
-                    Edge edge = iter.next();
-                    if (edge.tgt().isJavaLibraryMethod() || edge.tgt().toString().startsWith("<openj9") || edge.tgt().toString().contains("init")){
-                        continue;
-                    }
-                    listofMethods.add(edge.tgt());
-                }
-                iter = cg.edgesInto(key);
-                while (iter.hasNext()) {
-                    Edge edge = iter.next();
-                    // if (edge.src().isJavaLibraryMethod()){
-                    //     continue;
-                    // }
-                    listofMethods.add(edge.src());
+                // iter = cg.edgesOutOf(key);
+                // while (iter.hasNext()) {
+                //     Edge edge = iter.next();
+                //     if (!solvedSummaries.keySet().contains(edge.tgt())){
+                //         continue;
+                //     }
+                //     listofMethods.add(edge.tgt());
+                // }
+                // iter = cg.edgesInto(key);
+                // while (iter.hasNext()) {
+                //     Edge edge = iter.next();
+                //     if (!solvedSummaries.keySet().contains(edge.src())){
+                //         continue;
+                //     }
+                //     listofMethods.add(edge.src());
+                // }
+                for (SootMethod m: methodsToAdd){
+                    listofMethods.add(m);
                 }
             }
         }
+        System.out.println("Counter value: "+counter);
     }
 }
