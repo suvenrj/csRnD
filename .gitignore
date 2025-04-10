@@ -7,11 +7,7 @@
 *.info
 *.res
 *.iml
-/out/
 stava.iml
 .DS_Store
-/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar
 
 .vscode/
-/benchmarks/dacapo/out/
-/benchmarks/dacapo/scratch/
