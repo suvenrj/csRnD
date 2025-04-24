@@ -15,3 +15,12 @@ stava.iml
 .vscode/
 /benchmarks/dacapo/out/
 /benchmarks/dacapo/scratch/
+/scripts/fop_v2.txt
+/scripts/h2_v2.txt
+/scripts/eclipse_v2.txt
+/scripts/lusearch_v2.txt
+/scripts/luindex_v2.txt
+/scripts/xalan_v2.txt
+/scripts/avrora_v2.txt
+/scripts/batik_v2.txt
+/scripts/pmd_v2.txt
