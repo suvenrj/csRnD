@@ -108,6 +108,8 @@ public class OwnershipResolver {
         }
         int totalStaticObjects = 0;
         int affectedStaticObjects = 0;
+        int stackObjects = 0;
+        int heapObjects = 0;
         for (SootMethod key: solvedSummaries.keySet()){
             for (ObjectNode obj: solvedSummaries.get(key).keySet()){
                 // only internal objects to be considered
@@ -117,6 +119,7 @@ public class OwnershipResolver {
                 totalStaticObjects++;
                 // ignore stack-allocatable objects
                 if (solvedSummaries.get(key).get(obj).size()==1){
+                    stackObjects++;
                     continue;
                 }
                 // ignore objects that have to be allocated on heap
@@ -124,6 +127,7 @@ public class OwnershipResolver {
                 for (SootMethod m: solvedSummaries.get(key).get(obj)){
                     if (m.isEntryMethod()){
                         flag=true;
+                        heapObjects++;
                         break;
                     }
                 }
@@ -153,14 +157,18 @@ public class OwnershipResolver {
             }
         }
         int nonZeroSCC = 0;
+        int totalSCC=sccObjCount.keySet().size();
         for(Integer sccInd: sccObjCount.keySet()){
             if (sccObjCount.get(sccInd)!=0){
                 nonZeroSCC+=1;
                 System.out.println(sccInd + ": " + sccObjCount.get(sccInd));
             }
         }
+        System.out.println("Total SCCs: " + totalSCC);
         System.out.println("Core SCCs: " + nonZeroSCC);
-        System.out.println("Affected Object Count: " + affectedStaticObjects);
+        System.out.println("Special Memory Region Object Count: " + affectedStaticObjects);
+        System.out.println("Stack Object Count: " + stackObjects);
+        System.out.println("Heap Object Count: " + heapObjects);
         System.out.println("Total Object Count: " + totalStaticObjects);
     }
 
@@ -468,7 +476,7 @@ public class OwnershipResolver {
         while (!listofMethods.isEmpty()) {
             methodsToAdd.clear();
             counter++;
-            System.out.println(listofMethods.size());
+            //System.out.println(listofMethods.size());
             SootMethod key = listofMethods.get(0);
             listofMethods.remove(0);
             if(!existingSummaries.containsKey(key)) {

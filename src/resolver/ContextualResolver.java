@@ -165,28 +165,38 @@ public class ContextualResolver {
          * objects passed. We are just moving towards inter-procedural resolution :P
          *
          */
-        AddCallerSummaries();
-
-        for (CallSite c : inlineSummaries.keySet()) {
-            //if (!c.methodName.isJavaLibraryMethod()) {
-            if (!inlineSummaries.get(c).isEmpty()) {
-                for (SootMethod s : inlineSummaries.get(c).keySet()) {
-                    //for(SootMethod sm: solvedSummaries.get())
-                    ArrayList<Integer> arr = new ArrayList<>();
-                    for (Map.Entry<ObjectNode, EscapeStatus> entry : solvedSummaries.get(s).entrySet()) {
-                        ObjectNode obj = entry.getKey();
-                        if (obj.type != ObjectType.internal)
-                            continue;
-                        EscapeStatus es = entry.getValue();
-                        if (es.containsNoEscape()) arr.add(obj.ref);
-                    }
-                    for (Integer i : arr) {
-                        inlineSummaries.get(c).get(s).add(i);
-                    }
-                }
+        int totalStaticObjects=0;
+        int numMethods = 0;
+        for (SootMethod m : existingSummaries.keySet()) {
+            if (existingSummaries.get(m).size() > 0) {
+                totalStaticObjects += existingSummaries.get(m).size();
             }
-            //}
+            numMethods++;
         }
+        System.out.println("Number of methods in the list: " + numMethods);
+        System.out.println("Number of static objects in the list: " + totalStaticObjects);
+        //AddCallerSummaries();
+
+        // for (CallSite c : inlineSummaries.keySet()) {
+        //     //if (!c.methodName.isJavaLibraryMethod()) {
+        //     if (!inlineSummaries.get(c).isEmpty()) {
+        //         for (SootMethod s : inlineSummaries.get(c).keySet()) {
+        //             //for(SootMethod sm: solvedSummaries.get())
+        //             ArrayList<Integer> arr = new ArrayList<>();
+        //             for (Map.Entry<ObjectNode, EscapeStatus> entry : solvedSummaries.get(s).entrySet()) {
+        //                 ObjectNode obj = entry.getKey();
+        //                 if (obj.type != ObjectType.internal)
+        //                     continue;
+        //                 EscapeStatus es = entry.getValue();
+        //                 if (es.containsNoEscape()) arr.add(obj.ref);
+        //             }
+        //             for (Integer i : arr) {
+        //                 inlineSummaries.get(c).get(s).add(i);
+        //             }
+        //         }
+        //     }
+        //     //}
+        // }
 
 
 
@@ -243,8 +253,11 @@ public class ContextualResolver {
         CallGraph cg = Scene.v().getCallGraph();
         //Get the list of methods for which static results are generated
         ArrayList<SootMethod> listofMethods = new ArrayList<>(existingSummaries.keySet());
+        int maxMethods = 0;
         while (!listofMethods.isEmpty()) {
             // A temporary list of methods for fix-point
+            System.out.println(listofMethods.size());
+            maxMethods = Math.max(maxMethods, listofMethods.size());
             ArrayList<SootMethod> tmpWorklistofMethods = new ArrayList<>();
             for (SootMethod key : listofMethods) {
                 // Key is the current method
@@ -1012,6 +1025,7 @@ public class ContextualResolver {
             System.out.println("Methods getting re-analyzed " + listofMethods.toString());
             tmpWorklistofMethods.clear();
         }
+        System.out.println("Maximum Methods : " + maxMethods);
     }
 
     public void propagateStatustofields(SootMethod key, ObjectNode x, HashSet<ObjectNode> visited) {

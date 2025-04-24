@@ -141,7 +141,7 @@ public class StaticAnalyser extends BodyTransformer {
 		// if ( !this.sArrays.contains(body.getMethod().getBytecodeSignature()))
 		// 	return;
 
-		System.out.println("Method Name: "+ body.getMethod().getBytecodeSignature().toString());
+		//System.out.println("Method Name: "+ body.getMethod().getBytecodeSignature().toString());
 		//System.out.println("Method is : "+ body.getMethod().getBytecodeSignature().toString());
 		boolean verboseFlag = false;
 //		if(body.getMethod().getBytecodeSignature().equals("<moldyn.md: <init>()V>")) {

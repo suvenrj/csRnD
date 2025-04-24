@@ -19,6 +19,7 @@ import utils.GetListOfNoEscapeObjects;
 import utils.Stats;
 import Inlining.PrintInlineInfo;
 import resolver.OwnershipResolver;
+import resolver.OwnershipResolverV2;
 import ownership.*;
 
 
@@ -182,7 +183,10 @@ public class Main {
 		System.out.println("2. Contextual Resolution Starts : ");
 		if(contextualResolver) {
 			System.out.println("Suven");
-			OwnershipResolver cr = new OwnershipResolver(StaticAnalyser.summaries,
+			// OwnershipResolver cr = new OwnershipResolver(StaticAnalyser.summaries,
+			// 		StaticAnalyser.ptgs,
+			// 		StaticAnalyser.noBCIMethods);
+			OwnershipResolverV2 cr = new OwnershipResolverV2(StaticAnalyser.summaries,
 					StaticAnalyser.ptgs,
 					StaticAnalyser.noBCIMethods);
 			long res_end = System.currentTimeMillis();
@@ -213,10 +217,10 @@ public class Main {
 			// 	printContResForJVM(ContextualResolver.solvedSummaries, ContextualResolver.inlineSummaries, StaticAnalyser.stackOrders, args[2], args[4]);
 			// }
 			//printCVresValues(ContextualResolver.ResolvedCVValue, args[4]);
-			for(SootMethod m : OwnershipResolver.solvedSummaries.keySet()) {
+			for(SootMethod m : OwnershipResolverV2.solvedSummaries.keySet()) {
 				if(Main.ListofMethods.toString().contains(m.getBytecodeSignature().toString())) {
 					System.err.println("Method : " + m);
-					for (ObjectNode o : OwnershipResolver.solvedSummaries.get(m).keySet()) {
+					for (ObjectNode o : OwnershipResolverV2.solvedSummaries.get(m).keySet()) {
 						if(o.type == ObjectType.internal) {
 							System.err.print(" For object : " + o);
 							//System.err.println(OwnershipResolver.solvedSummaries.get(m).get(o).status);

@@ -1,0 +1,1527 @@
+compiling...
+compiled!
+clearing output_files...
+compiling...
+compiled!
+launching...
+-whole-program -app -allow-phantom-refs -keep-bytecode-offset -no-bodies-for-excluded -keep-offset -soot-classpath /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar -prepend-classpath -keep-line-number -main-class Harness -process-dir /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out -p cg.spark on -p cg reflection-log:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/out/refl.log -output-dir /Users/suvenjagtiani/csRnD/out/dacapo -output-format jimple -ire -i jdt.* -i jdk.* -i java.* -i org.* -i com.* -i sun.* 
+Read from file: 
+
+ 1. Static Analysis starts: 
+Static Analysis is done!
+Time Taken:68.253
+**********************************************************
+2. Creating Stack Orders using the Points to Graph : 
+PRIYAM - Starting topological sorting
+2. Contextual Resolution Starts : 
+Suven
+Entry point is: <avrora.Main: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.Config: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.ConfigFile: void main(java.lang.String[])>
+Entry point is: <avrora.Version: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.TestHarness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.FileDigest: void main(java.lang.String[])>
+Entry point is: <Harness: void main(java.lang.String[])>
+Counter value: 43506
+3245
+<avrora.sim.radio.CC1000Radio: avrora.sim.radio.Medium createMedium(avrora.sim.clock.Synchronizer,avrora.sim.radio.Medium$Arbitrator)> <internal,0>
+
+2.14748365E9
+
+<cck.text.StringUtil: java.lang.String toFixedFloat(float,int)> <internal,20>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRTC_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRLT_0(int)> <internal,11>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,0>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,52>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,171>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,183>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,232>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,92>
+
+1.07374182E9
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,251>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,265>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,108>
+
+1.07374182E9
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,158>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,291>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,146>
+
+0.0
+
+<avrora.sim.mcu.ATMega128: void installDevices()> <internal,279>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BST_0(int)> <internal,29>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_INC_0(int)> <internal,11>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,408>
+
+0.0
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,635>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_AND_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_OR_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_EOR_0(int)> <internal,42>
+
+2.14748365E9
+
+<org.dacapo.harness.TeeOutputStream: void newLog()> <internal,1>
+
+2.0
+
+<avrora.sim.mcu.ATMegaFamily: void buildPort(char)> <internal,73>
+
+1.07374182E9
+
+<avrora.sim.mcu.ATMegaFamily: void buildPort(char)> <internal,137>
+
+1.07374182E9
+
+<avrora.sim.mcu.ATMegaFamily: void buildPort(char)> <internal,105>
+
+1.07374182E9
+
+<avrora.sim.Simulation$Node: void processTimeout()> <internal,36>
+
+1.90887437E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBIC_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.sim.platform.Mica2$Factory: avrora.sim.platform.Platform newPlatform(int,avrora.sim.Simulation,avrora.core.Program)> <internal,0>
+
+0.0
+
+<avrora.sim.platform.Mica2$Factory: avrora.sim.platform.Platform newPlatform(int,avrora.sim.Simulation,avrora.core.Program)> <internal,23>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLV_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.sim.mcu.ReprogrammableCodeSegment$Factory: avrora.sim.CodeSegment newCodeSegment(java.lang.String,avrora.sim.AtmelInterpreter,avrora.core.Program)> <internal,4>
+
+0.0
+
+<avrora.sim.util.TransactionalList: void add(java.lang.Object)> <internal,45>
+
+1.71798694E9
+
+<avrora.sim.util.TransactionalList: void add(java.lang.Object)> <internal,23>
+
+1.71798694E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_MULS_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ADD_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.core.LoadableProgram: void load()> <internal,2>
+
+0.0
+
+<cck.elf.ELFLoader: cck.elf.ELFProgramHeaderTable readPHT(java.io.RandomAccessFile,cck.elf.ELFHeader)> <internal,0>
+
+2.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ADIW_0(int)> <internal,30>
+
+2.14748365E9
+
+<avrora.sim.mcu.ATMegaFamily: avrora.sim.mcu.ATMegaFamily$FlagRegister buildInterruptRange(boolean,java.lang.String,java.lang.String,int,int)> <internal,80>
+
+1.07374182E9
+
+<avrora.sim.mcu.ATMegaFamily: avrora.sim.mcu.ATMegaFamily$FlagRegister buildInterruptRange(boolean,java.lang.String,java.lang.String,int,int)> <internal,65>
+
+1.07374182E9
+
+<org.dacapo.parser.ConfigFile: org.dacapo.parser.ParseException generateParseException()> <internal,125>
+
+2.14748365E9
+
+<cck.text.Verbose: cck.text.Verbose$Printer getPrinter(java.lang.String)> <internal,15>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LD_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRPL_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.Simulation: avrora.sim.output.SimPrinter getPrinter(avrora.sim.Simulator)> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SPM_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.sim.Simulation$Node: void processEepromLoad()> <internal,86>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CPC_0(int)> <internal,42>
+
+2.14748365E9
+
+<cck.elf.ELFLoader: cck.elf.ELFHeader readELFHeader(java.io.RandomAccessFile)> <internal,0>
+
+2.0
+
+<avrora.arch.avr.AVRArchitecture: avrora.arch.AbstractDisassembler getDisassembler()> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_RCALL_0(int)> <internal,10>
+
+2.14748365E9
+
+<avrora.sim.Simulation: avrora.sim.platform.PlatformFactory getPlatform()> <internal,76>
+
+1.0
+
+<avrora.Main: void loadUserDefaults()> <internal,54>
+
+0.0
+
+<cck.text.StringUtil: java.lang.String toHex(long,int)> <internal,4>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_NOP_0(int)> <internal,10>
+
+2.14748365E9
+
+<com.ibm.oti.util.Util: java.lang.String urlEncode(java.lang.String)> <internal,2>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDD_0(int)> <internal,63>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SWAP_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_COM_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.mcu.ReprogrammableCodeSegment: void pageErase(int,int)> <internal,25>
+
+1.90887437E9
+
+<avrora.sim.mcu.RegisterSet: avrora.sim.mcu.RegisterSet$MultiFieldRegister createMultiFieldRegister(avrora.sim.mcu.RegisterLayout$RegisterInfo)> <internal,5>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRTS_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.util.Options: void parseCommandLine(java.lang.String[])> <internal,43>
+
+1.0
+
+<org.dacapo.harness.Benchmark: void unpackZipFileResource(java.lang.String,java.io.File)> <internal,41>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LPM_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation: void createNoise()> <internal,56>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation: void createNoise()> <internal,18>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDS_0(int)> <internal,29>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassHelperFactoryImpl: com.ibm.oti.shared.SharedClassURLClasspathHelper getURLClasspathHelper(java.lang.ClassLoader,java.net.URL[])> <internal,148>
+
+1.61061274E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_FMULS_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPI_2(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ICALL_0(int)> <internal,0>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_JMP_0(int)> <internal,36>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRGE_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.elf.ELFProgramHeaderTable: void read(java.io.RandomAccessFile)> <internal,45>
+
+2.14748365E9
+
+<cck.elf.ELFProgramHeaderTable: void read(java.io.RandomAccessFile)> <internal,21>
+
+1.61061274E9
+
+<avrora.Defaults: java.util.List getAllCategories()> <internal,7>
+
+1.0
+
+<cck.text.StringUtil: java.util.List toList(java.lang.String)> <internal,0>
+
+1.43165581E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: byte[] findSharedClass(java.lang.String,java.lang.String,com.ibm.oti.shared.SharedClassURLClasspathHelper$IndexHolder)> <internal,123>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDI_0(int)> <internal,32>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEC_0(int)> <internal,0>
+
+2.14748365E9
+
+<avrora.sim.Simulation: java.util.Iterator getNodeIterator()> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLS_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.sim.util.TransactionalList: void addTransaction(java.lang.Object,boolean)> <internal,9>
+
+2.14748365E9
+
+<avrora.sim.util.TransactionalList: void addTransaction(java.lang.Object,boolean)> <internal,32>
+
+2.14748365E9
+
+<org.dacapo.parser.Config: java.lang.String[] preprocessArgs(java.lang.String,java.io.File)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEI_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.msp430.MSP430Architecture: avrora.arch.AbstractDisassembler getDisassembler()> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SLEEP_0(int)> <internal,8>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)> <internal,199>
+
+1.43165581E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SUBI_0(int)> <internal,32>
+
+2.14748365E9
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,4>
+
+0.0
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,42>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ELPMD_0(int)> <internal,13>
+
+2.14748365E9
+
+<avrora.sim.clock.DeltaQueue: avrora.sim.clock.DeltaQueue$Link newLink(avrora.sim.Simulator$Event,long,avrora.sim.clock.DeltaQueue$Link)> <internal,7>
+
+2.0
+
+<com.ibm.oti.util.Util: java.lang.String convertFromUTF8(byte[],int,int)> <internal,2>
+
+0.0
+
+<avrora.sim.clock.RippleSynchronizer: avrora.sim.clock.RippleSynchronizer$WaitLink advance(long,avrora.sim.clock.RippleSynchronizer$WaitLink)> <internal,69>
+
+2.14748365E9
+
+<cck.text.StringUtil: java.lang.String justify(boolean,java.lang.String,int)> <internal,11>
+
+1.78956966E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CPSE_0(int)> <internal,42>
+
+2.14748365E9
+
+<cck.util.Option$Interval: void set(java.lang.String)> <internal,0>
+
+1.43165581E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_RET_0(int)> <internal,0>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPD_0(int)> <internal,11>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,19>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,8>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,30>
+
+2.14748365E9
+
+<avrora.syntax.elf.ELFParser: void loadSymbolTables(avrora.core.Program,java.io.RandomAccessFile)> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: java.lang.String GetImage()> <internal,11>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: void fillCache(int)> <internal,197>
+
+1.43165581E9
+
+<cck.util.Options: void setOption(java.lang.String,java.lang.String)> <internal,16>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ASR_0(int)> <internal,31>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STS_0(int)> <internal,29>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_MULSU_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPD_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation: void createNodes(java.lang.String[],avrora.sim.platform.PlatformFactory)> <internal,50>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ELPMPI_0(int)> <internal,13>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_EICALL_0(int)> <internal,0>
+
+2.14748365E9
+
+<org.apache.commons.cli.Parser: void setOptions(org.apache.commons.cli.Options)> <internal,6>
+
+2.0
+
+<avrora.sim.platform.ExternalFlash$PA3Output: void write(boolean)> <internal,1211>
+
+1.90887437E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CP_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBI_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ROR_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CPI_0(int)> <internal,32>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLT_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRVS_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.mcu.RegisterLayout: int readReservedField(java.text.StringCharacterIterator,avrora.sim.mcu.RegisterLayout$SubField[],int,int)> <internal,0>
+
+1.0
+
+<avrora.Defaults: void addInputFormats()> <internal,80>
+
+1.78956966E9
+
+<cck.text.StringUtil: java.lang.String convertToHex(long,int,int,char[],char[])> <internal,107>
+
+9.2035014E8
+
+<avrora.sim.clock.RippleSynchronizer: void addNode(avrora.sim.Simulation$Node)> <internal,22>
+
+1.90887437E9
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL getURLToCheck(java.net.URL)> <internal,24>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBCI_0(int)> <internal,32>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void cleanup()> <internal,6>
+
+0.0
+
+<avrora.Defaults: void addSimulations()> <internal,50>
+
+1.78956966E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_EIJMP_0(int)> <internal,0>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BREQ_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ST_1(int)> <internal,11>
+
+2.14748365E9
+
+<cck.help.HelpCategory: void addSubcategorySection(java.lang.String,java.lang.String,java.util.List)> <internal,8>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPI_2(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SET_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation: avrora.sim.Simulation$Node newNode(int,avrora.sim.platform.PlatformFactory,avrora.core.LoadableProgram)> <internal,0>
+
+2.14748365E9
+
+<avrora.Defaults: void addActions()> <internal,100>
+
+1.78956966E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_POP_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.Simulation: void grow()> <internal,7>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_DEC_0(int)> <internal,19>
+
+2.14748365E9
+
+<avrora.Main: cck.help.HelpCategory buildHelpCategory()> <internal,0>
+
+1.78956966E9
+
+<avrora.sim.radio.Medium$Receiver: java.util.List getIntersection(long)> <internal,60>
+
+1.5
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CBI_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.sim.platform.ExternalFlash$Memory: avrora.sim.platform.ExternalFlash$Page getPage(int)> <internal,11>
+
+5.3687091E8
+
+<cck.util.Options: cck.util.Option$Str newOption(java.lang.String,java.lang.String,java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$Field getField(java.lang.String)> <internal,16>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ELPM_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRCC_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.util.Options: cck.util.Option$List newOptionList(java.lang.String,java.lang.String,java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.sim.radio.Medium$TXRX: void insertProbe(avrora.sim.radio.Medium$Probe)> <internal,8>
+
+1.71798694E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ORI_0(int)> <internal,32>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRID_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBRC_0(int)> <internal,29>
+
+2.14748365E9
+
+<avrora.sim.output.SimPrinter: void println(java.lang.String)> <internal,5>
+
+1.78956966E9
+
+<avrora.monitors.PacketMonitor$Mon: void append(char)> <internal,37>
+
+2.14748365E9
+
+<avrora.monitors.PacketMonitor$Mon: void append(char)> <internal,10>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEV_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLH_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.ArchitectureRegistry: void addArchitectures()> <internal,53>
+
+1.78956966E9
+
+<avrora.monitors.LEDMonitor: avrora.monitors.Monitor newMonitor(avrora.sim.Simulator)> <internal,0>
+
+1.0
+
+<avrora.sim.radio.Medium: avrora.sim.radio.Medium$Transmission newTransmission(avrora.sim.radio.Medium$Transmitter,double,double)> <internal,0>
+
+2.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPD_2(int)> <internal,11>
+
+2.14748365E9
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object)> <internal,2>
+
+1.07374182E9
+
+<cck.elf.ELFSymbolTable: void read(java.io.RandomAccessFile)> <internal,12>
+
+1.61061274E9
+
+<cck.elf.ELFSymbolTable: void read(java.io.RandomAccessFile)> <internal,36>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SUB_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation$SensorNode: void createRadioModel()> <internal,82>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation$SensorNode: void createRadioModel()> <internal,65>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation$SensorNode: void createRadioModel()> <internal,40>
+
+2.14748365E9
+
+<avrora.sim.types.SensorSimulation$SensorNode: void createRadioModel()> <internal,107>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_RETI_0(int)> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,43>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,49>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,38>
+
+1.61061274E9
+
+<com.ibm.oti.vm.MsgHelp: java.util.Hashtable loadMessages(java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LSR_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.Defaults: void addMonitors()> <internal,280>
+
+1.78956966E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BREAK_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.Main: void loadFile(java.lang.String)> <internal,13>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLC_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEH_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBC_0(int)> <internal,42>
+
+2.14748365E9
+
+<org.dacapo.parser.ConfigFile: void sizeClause(org.dacapo.parser.Config,java.lang.String)> <internal,0>
+
+0.0
+
+<avrora.sim.mcu.RegisterLayout$Field: void add(avrora.sim.mcu.RegisterLayout$SubField)> <internal,9>
+
+1.0
+
+<avrora.sim.mcu.RegisterLayout$Field: void add(avrora.sim.mcu.RegisterLayout$SubField)> <internal,25>
+
+1.0
+
+<avrora.sim.clock.DeltaQueue: avrora.sim.clock.DeltaQueue$EventList newEventList(avrora.sim.Simulator$Event,avrora.sim.clock.DeltaQueue$EventList)> <internal,7>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPI_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.util.Options: cck.util.Option$Interval newOption(java.lang.String,long,long,java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.sim.mcu.ReprogrammableCodeSegment: void pageWrite(int,int)> <internal,25>
+
+1.90887437E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ANDI_0(int)> <internal,32>
+
+2.14748365E9
+
+<cck.elf.ELFLoader: cck.elf.ELFSectionHeaderTable readSHT(java.io.RandomAccessFile,cck.elf.ELFHeader)> <internal,0>
+
+2.0
+
+<cck.elf.ELFLoader: cck.elf.ELFSectionHeaderTable readSHT(java.io.RandomAccessFile,cck.elf.ELFHeader)> <internal,36>
+
+2.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object,java.lang.String)> <internal,2>
+
+1.07374182E9
+
+<cck.help.HelpCategory: void addOptionValueSection(java.lang.String,java.lang.String,java.lang.String,cck.util.ClassMap)> <internal,0>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_RJMP_0(int)> <internal,10>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRHC_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.radio.CC2420Radio: avrora.sim.radio.Medium createMedium(avrora.sim.clock.Synchronizer,avrora.sim.radio.Medium$Arbitrator)> <internal,0>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LD_1(int)> <internal,11>
+
+2.14748365E9
+
+<cck.util.Options: cck.util.Option$Double newOption(java.lang.String,double,java.lang.String)> <internal,0>
+
+1.0
+
+<org.dacapo.parser.Token: org.dacapo.parser.Token newToken(int,java.lang.String)> <internal,12>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_MOV_0(int)> <internal,42>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader$2: java.lang.Object run()> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEZ_0(int)> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,97>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,84>
+
+0.0
+
+<avrora.sim.radio.CC1000Radio: void setMedium(avrora.sim.radio.Medium)> <internal,6>
+
+2.14748365E9
+
+<avrora.sim.radio.CC1000Radio: void setMedium(avrora.sim.radio.Medium)> <internal,19>
+
+2.14748365E9
+
+<avrora.sim.output.SimPrinter: java.lang.StringBuffer getBuffer(int)> <internal,0>
+
+7.158279E8
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ST_2(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.mcu.RegisterSet: void createSubRegWriter(avrora.sim.mcu.RegisterLayout$RegisterInfo,int,avrora.sim.mcu.RegisterSet$SubRegWriter[])> <internal,82>
+
+1.0
+
+<avrora.sim.mcu.RegisterSet: void createSubRegWriter(avrora.sim.mcu.RegisterLayout$RegisterInfo,int,avrora.sim.mcu.RegisterSet$SubRegWriter[])> <internal,28>
+
+1.0
+
+<avrora.sim.mcu.RegisterSet: void createSubRegWriter(avrora.sim.mcu.RegisterLayout$RegisterInfo,int,avrora.sim.mcu.RegisterSet$SubRegWriter[])> <internal,54>
+
+1.0
+
+<avrora.sim.mcu.RegisterSet: void createSubRegWriter(avrora.sim.mcu.RegisterLayout$RegisterInfo,int,avrora.sim.mcu.RegisterSet$SubRegWriter[])> <internal,112>
+
+1.0
+
+<org.apache.commons.cli.Option: java.lang.Object clone()> <internal,9>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPI_1(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.syntax.elf.ELFParser: avrora.core.Program read(java.lang.String[])> <internal,29>
+
+0.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,276>
+
+1.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,234>
+
+1.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,72>
+
+0.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,143>
+
+0.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,8>
+
+0.0
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,13>
+
+1.43165581E9
+
+<avrora.sim.mcu.RegisterLayout: avrora.sim.mcu.RegisterLayout$SubField[] parseSubFields(java.lang.String,int,java.lang.String)> <internal,112>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRIE_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.util.SimUtil: void toIDTimeString(java.lang.StringBuffer,int,avrora.sim.clock.Clock)> <internal,25>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_IN_0(int)> <internal,31>
+
+2.14748365E9
+
+<org.dacapo.harness.CommandLineArgs: void defineCallback()> <internal,165>
+
+0.0
+
+<cck.text.StringUtil: java.lang.String to0xHex(long,int)> <internal,3>
+
+0.0
+
+<avrora.sim.types.SensorSimulation: void process(cck.util.Options,java.lang.String[])> <internal,34>
+
+1.07374182E9
+
+<avrora.core.SourceMapping: avrora.core.SourceMapping$Location getLocation(java.lang.String)> <internal,12>
+
+1.0
+
+<avrora.sim.mcu.RegisterLayout: int readUnusedField(java.text.StringCharacterIterator,avrora.sim.mcu.RegisterLayout$SubField[],int,int)> <internal,0>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_FMUL_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.Defaults: void addMicrocontrollers()> <internal,55>
+
+0.0
+
+<avrora.Defaults: void addMicrocontrollers()> <internal,40>
+
+0.0
+
+<avrora.Defaults: void addMicrocontrollers()> <internal,25>
+
+0.0
+
+<avrora.Main: void printUsage()> <internal,2>
+
+0.0
+
+<avrora.Main: void printUsage()> <internal,168>
+
+0.0
+
+<avrora.Main: void printUsage()> <internal,64>
+
+0.0
+
+<avrora.Main: void printUsage()> <internal,138>
+
+0.0
+
+<org.dacapo.parser.SimpleCharStream: char[] GetSuffix(int)> <internal,1>
+
+1.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.InputStream)> <internal,0>
+
+0.0
+
+<avrora.Defaults$AutoProgramReader: avrora.core.Program read(java.lang.String[])> <internal,133>
+
+0.0
+
+<avrora.Defaults$AutoProgramReader: avrora.core.Program read(java.lang.String[])> <internal,111>
+
+0.0
+
+<avrora.Defaults$AutoProgramReader: avrora.core.Program read(java.lang.String[])> <internal,89>
+
+0.0
+
+<avrora.Defaults$AutoProgramReader: avrora.core.Program read(java.lang.String[])> <internal,155>
+
+0.0
+
+<com.ibm.oti.util.Util: java.lang.String convertUTF8WithBuf(byte[],char[],int,int)> <internal,287>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_FMULSU_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.sim.mcu.USART$Transmitter: void enableTransmit()> <internal,11>
+
+1.67026509E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRMI_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.elf.ELFLoader: java.util.List readSymbolTables(java.io.RandomAccessFile,cck.elf.ELFHeader,cck.elf.ELFSectionHeaderTable)> <internal,0>
+
+2.14748365E9
+
+<cck.elf.ELFLoader: java.util.List readSymbolTables(java.io.RandomAccessFile,cck.elf.ELFHeader,cck.elf.ELFSectionHeaderTable)> <internal,85>
+
+0.0
+
+<cck.elf.ELFLoader: java.util.List readSymbolTables(java.io.RandomAccessFile,cck.elf.ELFHeader,cck.elf.ELFSectionHeaderTable)> <internal,38>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BLD_0(int)> <internal,29>
+
+2.14748365E9
+
+<avrora.sim.energy.Energy: void activate()> <internal,14>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_MUL_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.actions.SimAction$ShutdownThread: void run()> <internal,4>
+
+0.0
+
+<org.apache.commons.cli.Options: java.util.List helpOptions()> <internal,0>
+
+1.0
+
+<avrora.monitors.PacketMonitor: avrora.monitors.Monitor newMonitor(avrora.sim.Simulator)> <internal,0>
+
+1.0
+
+<avrora.sim.radio.Medium$Transmitter$Ticker: void fire()> <internal,126>
+
+1.90887437E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_MOVW_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBIS_0(int)> <internal,20>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLN_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRVC_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_IJMP_0(int)> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void postIterationCleanup(java.lang.String)> <internal,66>
+
+0.0
+
+<avrora.arch.legacy.LegacyArchitecture: avrora.arch.AbstractDisassembler getDisassembler()> <internal,0>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: java.net.URL[] getClasspath()> <internal,4>
+
+1.0
+
+<cck.text.StringUtil: int evaluateIntegerLiteral(java.lang.String)> <internal,0>
+
+1.43165581E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ST_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBRS_0(int)> <internal,29>
+
+2.14748365E9
+
+<avrora.sim.mcu.ReprogrammableCodeSegment: void resetBuffer()> <internal,5>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLI_0(int)> <internal,8>
+
+2.14748365E9
+
+<cck.util.Options: cck.util.Option$Bool newOption(java.lang.String,boolean,java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.sim.Simulation: java.util.Random getRandom()> <internal,37>
+
+2.14748365E9
+
+<avrora.sim.Simulation: java.util.Random getRandom()> <internal,22>
+
+2.14748365E9
+
+<org.dacapo.harness.CommandLineArgs: org.apache.commons.cli.Option makeOption(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> <internal,18>
+
+0.0
+
+<avrora.sim.Simulation: avrora.sim.output.SimPrinter getPrinter(avrora.sim.Simulator,java.lang.String)> <internal,7>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPD_2(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.syntax.elf.ELFParser: avrora.core.Program createProgram()> <internal,87>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,195>
+
+2.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,82>
+
+2.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SEN_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_NEG_0(int)> <internal,11>
+
+2.14748365E9
+
+<cck.elf.ELFSectionHeaderTable: void read(java.io.RandomAccessFile)> <internal,45>
+
+2.14748365E9
+
+<cck.elf.ELFSectionHeaderTable: void read(java.io.RandomAccessFile)> <internal,21>
+
+1.61061274E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRCS_0(int)> <internal,11>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL convertJarURL(java.net.URL)> <internal,29>
+
+1.61061274E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_PUSH_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPI_1(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SBIW_0(int)> <internal,30>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STD_0(int)> <internal,59>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream openFile(java.lang.String)> <internal,16>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LPMPI_0(int)> <internal,13>
+
+2.14748365E9
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,65>
+
+1.0
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,47>
+
+2.05411482E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LPMD_0(int)> <internal,13>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_SES_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPI_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRNE_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_BRHS_0(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CALL_0(int)> <internal,36>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_WDR_0(int)> <internal,8>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_CLZ_0(int)> <internal,8>
+
+2.14748365E9
+
+<cck.elf.ELFDataInputStream: byte[] read_section(int,int)> <internal,1>
+
+1.0
+
+<cck.elf.ELFHeader: void read(java.io.RandomAccessFile)> <internal,51>
+
+1.61061274E9
+
+<avrora.sim.clock.ClockDomain: avrora.sim.clock.Clock newClock(java.lang.String,long)> <internal,30>
+
+0.0
+
+<avrora.Main: void buildAllCategories()> <internal,0>
+
+1.78956966E9
+
+<avrora.syntax.elf.ELFParser: avrora.core.Program loadSections(java.io.RandomAccessFile)> <internal,0>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_ADC_0(int)> <internal,42>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LD_2(int)> <internal,11>
+
+2.14748365E9
+
+<cck.util.Options: cck.util.Option$Long newOption(java.lang.String,long,java.lang.String)> <internal,0>
+
+1.0
+
+<avrora.sim.clock.RippleSynchronizer: avrora.sim.clock.RippleSynchronizer$WaitLink insertLink(long,avrora.sim.clock.RippleSynchronizer$WaitLink,avrora.sim.clock.RippleSynchronizer$WaitLink)> <internal,0>
+
+2.0
+
+<cck.text.StringUtil: java.lang.String toMultirepString(int,int)> <internal,0>
+
+0.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.File)> <internal,0>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,0>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,342>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,316>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,16>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,139>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,368>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,286>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,47>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,31>
+
+0.0
+
+<avrora.sim.platform.Mica2: void addDevices()> <internal,271>
+
+0.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_OUT_0(int)> <internal,31>
+
+2.14748365E9
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_LDPD_1(int)> <internal,11>
+
+2.14748365E9
+
+<avrora.sim.mcu.RegisterLayout: int readNamedField(java.text.StringCharacterIterator,int,avrora.sim.mcu.RegisterLayout$SubField[],int,int)> <internal,14>
+
+1.0
+
+<avrora.arch.legacy.LegacyDisassembler: avrora.arch.legacy.LegacyInstr decode_STPD_1(int)> <internal,11>
+
+2.14748365E9
+
+14: 10
+36: 1
+128: 2
+266: 1
+355: 1
+383: 1
+411: 6
+416: 1
+422: 1
+441: 5
+450: 2
+459: 1
+460: 1
+497: 10
+498: 3
+548: 1
+571: 2
+602: 7
+604: 1
+675: 1
+737: 1
+755: 1
+874: 1
+875: 1
+959: 1
+965: 1
+970: 1
+971: 1
+972: 1
+973: 1
+980: 3
+981: 1
+996: 1
+1023: 3
+1032: 1
+1095: 4
+1099: 1
+1120: 1
+1294: 2
+1309: 3
+1327: 7
+1354: 1
+1387: 1
+1388: 4
+1398: 1
+1422: 6
+1437: 1
+1442: 5
+1493: 1
+1511: 1
+1534: 1
+1584: 1
+1604: 5
+1608: 1
+1611: 1
+1706: 7
+1758: 1
+1759: 1
+1760: 1
+1761: 1
+1762: 1
+1765: 1
+1782: 1
+1783: 5
+1788: 2
+1789: 2
+1796: 1
+1801: 1
+1819: 1
+1839: 1
+1841: 1
+1889: 2
+1903: 2
+1936: 1
+1937: 1
+1939: 1
+1942: 1
+1948: 7
+1949: 4
+1951: 1
+1955: 1
+1980: 7
+1982: 1
+1987: 3
+1996: 1
+1997: 7
+1998: 13
+1999: 1
+2012: 3
+2016: 4
+2018: 2
+2022: 124
+2183: 1
+2191: 4
+2199: 4
+2202: 4
+2235: 2
+2237: 3
+2248: 1
+2249: 7
+2374: 9
+2513: 15
+2546: 3
+2547: 1
+2560: 1
+2578: 9
+2579: 2
+2586: 1
+2593: 3
+2625: 1
+2626: 1
+2628: 15
+2631: 1
+2639: 15
+2657: 3
+2659: 7
+2660: 7
+2662: 7
+2663: 7
+2664: 7
+2665: 1
+2679: 1
+2713: 8
+2724: 1
+2725: 15
+2728: 15
+2734: 1
+2736: 1
+2744: 1
+2761: 1
+2778: 16
+2790: 1
+2793: 1
+2801: 3
+2819: 1
+2842: 16
+2889: 1
+2931: 16
+2965: 2
+3008: 1
+3018: 1
+3020: 3
+3027: 1
+3029: 1
+3031: 1
+3048: 1
+3086: 1
+3092: 1
+3097: 1
+3104: 1
+3115: 3
+3140: 1
+3149: 3
+3153: 1
+3196: 2
+3236: 1
+Total SCCs: 3242
+Core SCCs: 156
+Special Memory Region Object Count: 334
+Stack Object Count: 1333
+Heap Object Count: 41
+Total Object Count: 1708
+Resolution is done
+Time Taken in phase 1:68.253
+Time Taken in phase 2:364.385

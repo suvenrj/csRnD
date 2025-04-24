@@ -1,0 +1,1208 @@
+compiling...
+compiled!
+clearing output_files...
+compiling...
+compiled!
+launching...
+-whole-program -app -allow-phantom-refs -keep-bytecode-offset -no-bodies-for-excluded -keep-offset -soot-classpath /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar -prepend-classpath -keep-line-number -main-class Harness -process-dir /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out -p cg.spark on -p cg reflection-log:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/out/refl.log -output-dir /Users/suvenjagtiani/csRnD/out/dacapo -output-format jimple -ire -i jdt.* -i jdk.* -i java.* -i org.* -i com.* -i sun.* 
+Read from file: 
+
+ 1. Static Analysis starts: 
+[Copystmthelper] r69 = r1
+[Copystmthelper] Vars:{}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r69 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r69 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r75 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r75 found!
+[Copystmthelper] r82 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], r80=[<internal,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], $r20=[<external,-1>], r80=[<internal,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[Copystmthelper] r86 = r0
+[Copystmthelper] Vars:{$r25=[<internal,-1>], r72=[<external,-1>], $r68=[<external,-1>], $r32=[<internal,-1>], r60=[<external,-1>], $r18=[<internal,-1>], $r34=[<external,-1>], $r36=[<external,-1>], $r20=[<external,-1>], $r26=[<external,-1>], $r35=[<external,-1>], $r10=[<external,-1>], r66=[<external,-1>], r24=[<external,-1>], r81=[<external,-1>], $r27=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>], $r71=[<external,-1>], $r38=[<external,-1>], r80=[<internal,-1>], $r29=[<external,-1>], $r65=[<external,-1>], $r59=[<external,-1>], r69=[<external,-1>], $r28=[<external,-1>], $r31=[<internal,-1>], $r33=[<external,-1>], $r15=[<internal,-1>], $r9=[<external,-1>], $r63=[<external,-1>], $r79=[<internal,-1>], $r30=[<external,-1>], $r17=[<external,-1>], $r8=[<external,-1>], r64=[<external,-1>], $r37=[<external,-1>], $r21=[<internal,-1>], $r19=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r86 = r0
+[Copystmthelper] Vars:{$r25=[<internal,-1>], r72=[<external,-1>], $r68=[<external,-1>], $r32=[<internal,-1>], r60=[<external,-1>], $r18=[<internal,-1>], $r34=[<external,-1>], $r36=[<external,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r26=[<external,-1>], $r35=[<external,-1>], $r10=[<external,-1>], r66=[<external,-1>], r24=[<external,-1>], r81=[<external,-1>], $r27=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>], $r71=[<external,-1>], $r38=[<external,-1>], r80=[<internal,-1>], $r29=[<external,-1>], $r65=[<external,-1>], $r59=[<external,-1>], r69=[<external,-1>], $r28=[<external,-1>], $r31=[<internal,-1>], $r33=[<external,-1>], $r67=[<external,-1>], $r15=[<internal,-1>], $r9=[<external,-1>], $r63=[<external,-1>], $r79=[<internal,-1>], $r30=[<external,-1>], $r17=[<external,-1>], $r8=[<external,-1>], r64=[<external,-1>], $r37=[<external,-1>], $r21=[<internal,-1>], $r19=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[Copystmthelper] r82 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], r80=[<internal,-1>], r81=[<external,-1>], r22=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r17=[<external,-1>], r80=[<internal,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r17=[<external,-1>], r80=[<internal,-1>], $r8=[<external,-1>]}
+Fields:{}
+[Copystmthelper] r82 = r0
+[Copystmthelper] Vars:{$r79=[<internal,-1>], r24=[<external,-1>], r80=[<internal,-1>], r81=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r82 = r0
+[Copystmthelper] Vars:{$r25=[<internal,-1>], r24=[<external,-1>], r81=[<external,-1>], $r27=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>], $r28=[<external,-1>], $r79=[<internal,-1>], $r30=[<external,-1>], r80=[<internal,-1>], $r26=[<external,-1>], $r29=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r9=[<external,-1>], $r79=[<internal,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r17=[<external,-1>], r80=[<internal,-1>], $r8=[<external,-1>], $r19=[<external,-1>], $r11=[<external,-1>], $r10=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{r81=[<external,-1>], $r9=[<external,-1>], r22=[<external,-1>], $r79=[<internal,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r17=[<external,-1>], r80=[<internal,-1>], $r8=[<external,-1>], $r19=[<external,-1>], $r11=[<external,-1>], $r10=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r16=[<external,-1>], $r20=[<external,-1>], $r11=[<external,-1>], $r10=[<external,-1>], r24=[<external,-1>], r81=[<external,-1>], $r9=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>], $r79=[<internal,-1>], $r17=[<external,-1>], r80=[<internal,-1>], $r8=[<external,-1>], $r19=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[Copystmthelper] r84 = r0
+[Copystmthelper] Vars:{$r25=[<internal,-1>], $r28=[<external,-1>], $r16=[<external,-1>], $r20=[<external,-1>], $r26=[<external,-1>], $r11=[<external,-1>], $r10=[<external,-1>], r24=[<external,-1>], r81=[<external,-1>], $r9=[<external,-1>], $r27=[<external,-1>], r22=[<external,-1>], $r23=[<external,-1>], $r79=[<internal,-1>], $r30=[<external,-1>], $r17=[<external,-1>], r80=[<internal,-1>], $r8=[<external,-1>], $r29=[<external,-1>], $r19=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[Copystmthelper] r76 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], r75=[<external,-1>], $r71=[<external,-1>], $r70=[<internal,-1>], $r57=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], $r25=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r76 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r76 found!
+[Copystmthelper] r78 = r1
+[Copystmthelper] Vars:{}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r78 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r78 found!
+[Copystmthelper] r79 = r1
+[Copystmthelper] Vars:{$r18=[<external,-1>], $r16=[<external,-1>], $r15=[<external,-1>], $r17=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r79 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r79 found!
+[Copystmthelper] r80 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], $r71=[<external,-1>], $r70=[<internal,-1>], $r21=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], $r25=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r80 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r80 found!
+[Copystmthelper] r82 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], $r59=[<external,-1>], r75=[<external,-1>], $r71=[<external,-1>], $r70=[<internal,-1>], $r57=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], $r25=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r82 found!
+[Copystmthelper] r84 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], $r71=[<external,-1>], $r70=[<internal,-1>], $r51=[<external,-1>], $r52=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], r77=[<external,-1>], $r25=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r84 found!
+[Copystmthelper] r86 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], $r46=[<external,-1>], r47=[<external,-1>], r75=[<external,-1>], $r48=[<external,-1>], $r70=[<internal,-1>], $r51=[<external,-1>], $r25=[<external,-1>], r56=[<external,-1>], $r71=[<external,-1>], $r57=[<external,-1>], $r55=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], r77=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r86 found!
+[Copystmthelper] r78 = r1
+[Copystmthelper] Vars:{r74=[<external,-1>], $r59=[<external,-1>], r75=[<external,-1>], $r70=[<internal,-1>], $r54=[<external,-1>], $r51=[<external,-1>], $r61=[<external,-1>], $r25=[<external,-1>], $r23=[<external,-1>], $r71=[<external,-1>], $r57=[<external,-1>], $r52=[<external,-1>], $r21=[<external,-1>], $r72=[<external,-1>], $r73=[<external,-1>], r77=[<external,-1>]}
+Fields:{}
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r78 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r78 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r44 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r47 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r1 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for entermonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r0 found!
+Static Analysis is done!
+Time Taken:61.88
+**********************************************************
+2. Creating Stack Orders using the Points to Graph : 
+PRIYAM - Starting topological sorting
+2. Contextual Resolution Starts : 
+Suven
+Entry point is: <org.apache.lucene.index.IndexReader: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.TestHarness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.Config: void main(java.lang.String[])>
+Entry point is: <Harness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.FileDigest: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.ConfigFile: void main(java.lang.String[])>
+Counter value: 32683
+2589
+<org.dacapo.parser.SimpleCharStream: char[] GetSuffix(int)> <internal,1>
+
+1.0
+
+<org.apache.lucene.index.SegmentInfos: org.apache.lucene.index.SegmentInfos range(int,int)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.TermsHashPerField: void rehashPostings(int)> <internal,161>
+
+2.0
+
+<org.apache.lucene.index.TermsHashPerField: void rehashPostings(int)> <internal,193>
+
+2.0
+
+<org.apache.lucene.index.TermsHashPerField: void rehashPostings(int)> <internal,5>
+
+2.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF8toUTF16(byte[],int,int,org.apache.lucene.util.UnicodeUtil$UTF16Result)> <internal,98>
+
+1.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF8toUTF16(byte[],int,int,org.apache.lucene.util.UnicodeUtil$UTF16Result)> <internal,25>
+
+1.0
+
+<org.apache.lucene.index.SegmentReader: org.apache.lucene.index.TermPositions termPositions()> <internal,4>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermsHashPerField: void add(org.apache.lucene.analysis.Token)> <internal,316>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,195>
+
+2.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,82>
+
+2.0
+
+<org.apache.lucene.index.DocFieldConsumers: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.DocFieldConsumers: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,8>
+
+0.0
+
+<org.apache.lucene.index.IndexFileDeleter: void deleteFile(java.lang.String)> <internal,113>
+
+1.43165581E9
+
+<org.apache.lucene.index.TermVectorsTermsWriter: void createPostings(org.apache.lucene.index.RawPostingList[],int,int)> <internal,18>
+
+2.14748365E9
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackRowMap()> <internal,2>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: java.net.URL[] getClasspath()> <internal,4>
+
+1.0
+
+<com.ibm.oti.vm.MsgHelp: java.util.Hashtable loadMessages(java.lang.String)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.SegmentTermEnum: java.lang.Object clone()> <internal,72>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentTermEnum: java.lang.Object clone()> <internal,29>
+
+2.14748365E9
+
+<org.dacapo.parser.ConfigFile: void sizeClause(org.dacapo.parser.Config,java.lang.String)> <internal,0>
+
+0.0
+
+<org.dacapo.harness.CommandLineArgs: org.apache.commons.cli.Option makeOption(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> <internal,18>
+
+0.0
+
+<com.ibm.oti.util.Util: java.lang.String convertFromUTF8(byte[],int,int)> <internal,2>
+
+0.0
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,408>
+
+0.0
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,635>
+
+0.0
+
+<org.apache.lucene.index.SegmentMerger: int appendPostings(org.apache.lucene.index.SegmentMergeInfo[],int)> <internal,406>
+
+2.14748365E9
+
+<org.dacapo.luindex.Index: void main(java.io.File,java.lang.String[])> <internal,0>
+
+0.0
+
+<org.dacapo.luindex.Index: void main(java.io.File,java.lang.String[])> <internal,30>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassHelperFactoryImpl: com.ibm.oti.shared.SharedClassURLClasspathHelper getURLClasspathHelper(java.lang.ClassLoader,java.net.URL[])> <internal,148>
+
+1.61061274E9
+
+<org.apache.lucene.index.StoredFieldsWriter: org.apache.lucene.index.DocFieldConsumerPerThread addThread(org.apache.lucene.index.DocFieldProcessorPerThread)> <internal,0>
+
+1.0
+
+<org.apache.lucene.store.BufferedIndexInput: void refill()> <internal,66>
+
+1.61061274E9
+
+<org.dacapo.harness.TeeOutputStream: void newLog()> <internal,1>
+
+2.0
+
+<org.apache.lucene.index.BufferedDeletes: void remap(org.apache.lucene.index.MergeDocIDRemapper,org.apache.lucene.index.SegmentInfos,int[][],int[],org.apache.lucene.index.MergePolicy$OneMerge,int)> <internal,117>
+
+1.0
+
+<org.apache.lucene.index.BufferedDeletes: void remap(org.apache.lucene.index.MergeDocIDRemapper,org.apache.lucene.index.SegmentInfos,int[][],int[],org.apache.lucene.index.MergePolicy$OneMerge,int)> <internal,10>
+
+1.0
+
+<org.apache.lucene.index.BufferedDeletes: void remap(org.apache.lucene.index.MergeDocIDRemapper,org.apache.lucene.index.SegmentInfos,int[][],int[],org.apache.lucene.index.MergePolicy$OneMerge,int)> <internal,211>
+
+1.0
+
+<org.apache.lucene.index.SegmentReader: void doDelete(int)> <internal,8>
+
+2.14748365E9
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMergesForOptimize(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter,int,java.util.Set)> <internal,181>
+
+0.0
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMergesForOptimize(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter,int,java.util.Set)> <internal,328>
+
+0.0
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMergesForOptimize(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter,int,java.util.Set)> <internal,78>
+
+1.0
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMergesForOptimize(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter,int,java.util.Set)> <internal,102>
+
+0.0
+
+<org.apache.lucene.index.FieldInfos: org.apache.lucene.index.FieldInfo addInternal(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean)> <internal,0>
+
+2.0
+
+<org.apache.lucene.util.UnicodeUtil$UTF16Result: void setLength(int)> <internal,16>
+
+1.3333334
+
+<org.apache.lucene.demo.FileDocument: org.apache.lucene.document.Document Document(java.io.File)> <internal,61>
+
+0.0
+
+<org.apache.lucene.demo.FileDocument: org.apache.lucene.document.Document Document(java.io.File)> <internal,0>
+
+1.0
+
+<org.apache.lucene.demo.FileDocument: org.apache.lucene.document.Document Document(java.io.File)> <internal,9>
+
+0.0
+
+<org.apache.lucene.demo.FileDocument: org.apache.lucene.document.Document Document(java.io.File)> <internal,32>
+
+0.0
+
+<org.apache.lucene.index.SegmentMergeInfo: int[] getDocMap()> <internal,27>
+
+2.14748365E9
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: java.util.Collection fields()> <internal,0>
+
+1.0
+
+<org.apache.lucene.store.SimpleFSLockFactory: org.apache.lucene.store.Lock makeLock(java.lang.String)> <internal,34>
+
+1.0
+
+<org.apache.commons.cli.Option: java.lang.Object clone()> <internal,9>
+
+1.0
+
+<org.apache.lucene.index.TermsHash: void getPostings(org.apache.lucene.index.RawPostingList[])> <internal,325>
+
+1.0
+
+<org.apache.lucene.index.IndexFileDeleter: org.apache.lucene.index.IndexFileDeleter$RefCount getRefCount(java.lang.String)> <internal,13>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL getURLToCheck(java.net.URL)> <internal,24>
+
+1.0
+
+<org.apache.lucene.index.TermsHashPerField: void shrinkHash(int)> <internal,65>
+
+1.28849024E9
+
+<org.apache.lucene.index.SegmentReader: byte[] createFakeNorms(int)> <internal,1>
+
+1.0
+
+<org.dacapo.harness.CommandLineArgs: void defineCallback()> <internal,165>
+
+0.0
+
+<org.dacapo.harness.CommandLineArgs: java.util.List extractBenchmarkSet()> <internal,0>
+
+1.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readString()> <internal,56>
+
+1.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readString()> <internal,41>
+
+1.87904819E9
+
+<org.apache.lucene.util.UnicodeUtil: void UTF16toUTF8(char[],int,org.apache.lucene.util.UnicodeUtil$UTF8Result)> <internal,34>
+
+1.07374182E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,38>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,43>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,49>
+
+1.61061274E9
+
+<org.apache.lucene.index.SegmentMerger: void setMatchingSegmentReaders()> <internal,133>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void setMatchingSegmentReaders()> <internal,142>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void setMatchingSegmentReaders()> <internal,10>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentInfo: java.util.List files()> <internal,13>
+
+2.01326592E9
+
+<org.apache.lucene.index.DocumentsWriter: char[] getCharBlock()> <internal,28>
+
+2.14748365E9
+
+<org.apache.lucene.store.FSDirectory: org.apache.lucene.store.IndexInput openInput(java.lang.String,int)> <internal,4>
+
+1.48671949E9
+
+<org.apache.lucene.index.TermsHash: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.TermsHash: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,15>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL convertJarURL(java.net.URL)> <internal,29>
+
+1.61061274E9
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,47>
+
+2.05411482E9
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,65>
+
+1.0
+
+<org.dacapo.harness.Luindex: void preIteration(java.lang.String)> <internal,14>
+
+0.0
+
+<org.apache.lucene.index.FieldInfo: java.lang.Object clone()> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.SegmentInfos: void read(org.apache.lucene.store.Directory)> <internal,12>
+
+0.0
+
+<org.dacapo.harness.Luindex: void cleanup()> <internal,6>
+
+0.0
+
+<org.apache.lucene.store.IndexOutput: void copyBytes(org.apache.lucene.store.IndexInput,long)> <internal,14>
+
+2.14748365E9
+
+<org.apache.lucene.store.RAMFile: byte[] newBuffer(int)> <internal,1>
+
+2.14748365E9
+
+<org.apache.lucene.index.IndexWriter: void setRollbackSegmentInfos(org.apache.lucene.index.SegmentInfos)> <internal,37>
+
+2.14748365E9
+
+<org.apache.lucene.util.ArrayUtil: byte[] grow(byte[],int)> <internal,10>
+
+2.0
+
+<org.apache.lucene.util.UnicodeUtil$UTF8Result: void setLength(int)> <internal,16>
+
+1.0
+
+<org.apache.lucene.index.SegmentMerger: void mergeTerms()> <internal,-1>
+
+2.0
+
+<org.apache.lucene.util.ArrayUtil: int[] shrink(int[],int)> <internal,14>
+
+2.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: boolean zzRefill()> <internal,107>
+
+2.0
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,19>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,30>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,8>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermBuffer: org.apache.lucene.index.Term toTerm()> <internal,17>
+
+1.0
+
+<org.apache.lucene.index.DocumentsWriter$ByteBlockAllocator: byte[] getByteBlock(boolean)> <internal,37>
+
+1.07374182E9
+
+<com.ibm.oti.util.Util: java.lang.String urlEncode(java.lang.String)> <internal,2>
+
+0.0
+
+<org.apache.lucene.analysis.StopFilter: java.util.Set makeStopSet(java.lang.String[],boolean)> <internal,0>
+
+1.0
+
+<org.dacapo.harness.Benchmark: void unpackZipFileResource(java.lang.String,java.io.File)> <internal,41>
+
+0.0
+
+<com.ibm.oti.vm.AbstractClassLoader: void fillCache(int)> <internal,197>
+
+1.43165581E9
+
+<org.apache.lucene.index.TermBuffer: java.lang.Object clone()> <internal,31>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermBuffer: java.lang.Object clone()> <internal,20>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermsHash: void shrinkFreePostings(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,103>
+
+2.0
+
+<org.apache.commons.cli.Parser: void setOptions(org.apache.commons.cli.Options)> <internal,6>
+
+2.0
+
+<org.apache.lucene.index.DocFieldProcessor: void flush(java.util.Collection,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.CompoundFileReader: org.apache.lucene.store.IndexInput openInput(java.lang.String,int)> <internal,65>
+
+1.98229261E9
+
+<org.apache.lucene.index.SegmentMerger: java.util.List createCompoundFile(java.lang.String)> <internal,0>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackTrans()> <internal,3>
+
+0.0
+
+<org.apache.lucene.index.SegmentInfos: void read(org.apache.lucene.store.Directory,java.lang.String)> <internal,6>
+
+1.61061274E9
+
+<org.dacapo.parser.Config: java.lang.String[] preprocessArgs(java.lang.String,java.io.File)> <internal,8>
+
+1.0
+
+<org.apache.lucene.index.CharBlockPool: void nextBuffer()> <internal,25>
+
+2.0
+
+<org.apache.lucene.index.SegmentInfos: void write(org.apache.lucene.store.Directory)> <internal,34>
+
+2.01326592E9
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,4>
+
+0.0
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,42>
+
+0.0
+
+<org.apache.lucene.util.ArrayUtil: int[] grow(int[],int)> <internal,10>
+
+1.07374182E9
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,84>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,97>
+
+0.0
+
+<org.apache.lucene.index.IndexWriter: boolean doFlush(boolean,boolean)> <internal,594>
+
+1.07374182E9
+
+<com.ibm.oti.vm.AbstractClassLoader$2: java.lang.Object run()> <internal,0>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)> <internal,199>
+
+1.43165581E9
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object,java.lang.String)> <internal,2>
+
+1.07374182E9
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: void rehash()> <internal,32>
+
+2.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: void rehash()> <internal,94>
+
+2.0
+
+<org.dacapo.parser.SimpleCharStream: java.lang.String GetImage()> <internal,11>
+
+1.0
+
+<org.apache.lucene.index.SegmentReader: org.apache.lucene.index.TermDocs termDocs()> <internal,4>
+
+1.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void createPostings(org.apache.lucene.index.RawPostingList[],int,int)> <internal,18>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,52>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.DocumentsWriter: void createCompoundFile(java.lang.String)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.DocInverterPerThread: org.apache.lucene.index.DocFieldConsumerPerField addField(org.apache.lucene.index.FieldInfo)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,543>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,373>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,220>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,553>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,533>
+
+1.0
+
+<org.apache.lucene.index.DocFieldProcessorPerThread: org.apache.lucene.index.DocumentsWriter$DocWriter processDocument()> <internal,445>
+
+1.0
+
+<org.apache.lucene.index.SegmentReader: void loadDeletedDocs()> <internal,11>
+
+1.78956966E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream openFile(java.lang.String)> <internal,16>
+
+1.0
+
+<org.apache.lucene.index.DocFieldConsumers: org.apache.lucene.index.DocFieldConsumers$PerDoc getPerDoc()> <internal,71>
+
+2.0
+
+<org.apache.lucene.index.DocFieldConsumers: org.apache.lucene.index.DocFieldConsumers$PerDoc getPerDoc()> <internal,65>
+
+1.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF16toUTF8(java.lang.String,int,int,org.apache.lucene.util.UnicodeUtil$UTF8Result)> <internal,47>
+
+2.01326592E9
+
+<org.apache.lucene.index.IndexWriter: boolean flushDocStores()> <internal,128>
+
+0.0
+
+<org.dacapo.harness.Luindex: void postIteration(java.lang.String)> <internal,6>
+
+0.0
+
+<org.dacapo.parser.ConfigFile: org.dacapo.parser.ParseException generateParseException()> <internal,125>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermInfosReader: org.apache.lucene.index.TermInfosReader$ThreadResources getThreadResources()> <internal,15>
+
+1.43165581E9
+
+<org.apache.lucene.index.TermInfosReader: org.apache.lucene.index.TermInfosReader$ThreadResources getThreadResources()> <internal,33>
+
+1.43165581E9
+
+<org.apache.lucene.index.DocumentsWriter$WaitQueue: boolean add(org.apache.lucene.index.DocumentsWriter$DocWriter)> <internal,268>
+
+1.0
+
+<org.apache.lucene.index.DocumentsWriter$WaitQueue: boolean add(org.apache.lucene.index.DocumentsWriter$DocWriter)> <internal,119>
+
+1.0
+
+<org.apache.lucene.store.FSDirectory: org.apache.lucene.store.IndexOutput createOutput(java.lang.String)> <internal,58>
+
+1.61061274E9
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMerges(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter)> <internal,475>
+
+0.0
+
+<org.apache.lucene.index.LogMergePolicy: org.apache.lucene.index.MergePolicy$MergeSpecification findMerges(org.apache.lucene.index.SegmentInfos,org.apache.lucene.index.IndexWriter)> <internal,425>
+
+1.0
+
+<org.apache.lucene.util.ArrayUtil: long[] grow(long[],int)> <internal,10>
+
+2.14748365E9
+
+<org.apache.lucene.analysis.CharArraySet: void rehash()> <internal,15>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.Token: char[] growTermBuffer(int)> <internal,22>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.Token: char[] growTermBuffer(int)> <internal,59>
+
+1.07374182E9
+
+<org.apache.lucene.index.DocumentsWriter: int[] getIntBlock(boolean)> <internal,28>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentTermEnum: org.apache.lucene.index.TermInfo termInfo()> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.index.StoredFieldsWriterPerThread: org.apache.lucene.index.DocFieldConsumerPerField addField(org.apache.lucene.index.FieldInfo)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void appendPostings(org.apache.lucene.index.DocumentsWriter$FlushState,org.apache.lucene.index.FreqProxTermsWriterPerField[],org.apache.lucene.index.TermInfosWriter,org.apache.lucene.store.IndexOutput,org.apache.lucene.store.IndexOutput,org.apache.lucene.index.DefaultSkipListWriter)> <internal,36>
+
+0.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void appendPostings(org.apache.lucene.index.DocumentsWriter$FlushState,org.apache.lucene.index.FreqProxTermsWriterPerField[],org.apache.lucene.index.TermInfosWriter,org.apache.lucene.store.IndexOutput,org.apache.lucene.store.IndexOutput,org.apache.lucene.index.DefaultSkipListWriter)> <internal,399>
+
+0.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void appendPostings(org.apache.lucene.index.DocumentsWriter$FlushState,org.apache.lucene.index.FreqProxTermsWriterPerField[],org.apache.lucene.index.TermInfosWriter,org.apache.lucene.store.IndexOutput,org.apache.lucene.store.IndexOutput,org.apache.lucene.index.DefaultSkipListWriter)> <internal,366>
+
+0.0
+
+<org.apache.lucene.index.ByteBlockPool: void nextBuffer()> <internal,25>
+
+2.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF16toUTF8(char[],int,int,org.apache.lucene.util.UnicodeUtil$UTF8Result)> <internal,48>
+
+1.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.InputStream)> <internal,0>
+
+0.0
+
+<org.apache.commons.cli.Options: java.util.List helpOptions()> <internal,0>
+
+1.0
+
+<org.dacapo.harness.Luindex: void iterate(java.lang.String)> <internal,97>
+
+0.0
+
+<org.dacapo.harness.Luindex: void iterate(java.lang.String)> <internal,27>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackAction()> <internal,2>
+
+0.0
+
+<org.apache.lucene.index.DocumentsWriter: void remapDeletes(org.apache.lucene.index.SegmentInfos,int[][],int[],org.apache.lucene.index.MergePolicy$OneMerge,int)> <internal,5>
+
+0.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.File)> <internal,0>
+
+0.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object)> <internal,2>
+
+1.07374182E9
+
+<org.apache.lucene.index.DocInverter: org.apache.lucene.index.DocFieldConsumerPerThread addThread(org.apache.lucene.index.DocFieldProcessorPerThread)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.StoredFieldsWriter: org.apache.lucene.index.StoredFieldsWriter$PerDoc getPerDoc()> <internal,71>
+
+1.0
+
+<org.apache.lucene.index.StoredFieldsWriter: org.apache.lucene.index.StoredFieldsWriter$PerDoc getPerDoc()> <internal,65>
+
+1.0
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,168>
+
+0.0
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,41>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,84>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,76>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,314>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentMerger: void mergeTermInfos()> <internal,204>
+
+2.14748365E9
+
+<org.dacapo.luindex.Index: void indexDocs(org.apache.lucene.index.IndexWriter,java.io.File)> <internal,56>
+
+1.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackAttribute()> <internal,2>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,54>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,12>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,69>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,27>
+
+1.43165581E9
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,39>
+
+0.0
+
+<org.apache.lucene.index.TermInfosWriter: void writeTerm(int,byte[],int)> <internal,111>
+
+2.14748365E9
+
+<org.apache.lucene.index.IndexWriter: void _mergeInit(org.apache.lucene.index.MergePolicy$OneMerge)> <internal,494>
+
+2.0
+
+<org.apache.lucene.index.DocInverter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.DocInverter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,8>
+
+0.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readModifiedUTF8String()> <internal,23>
+
+1.87904819E9
+
+<org.apache.lucene.store.IndexInput: java.lang.String readModifiedUTF8String()> <internal,38>
+
+2.0
+
+<org.apache.lucene.index.IntBlockPool: void nextBuffer()> <internal,25>
+
+2.0
+
+<org.apache.lucene.index.SegmentInfo: void setNumFields(int)> <internal,9>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermInfosReader: void ensureIndexIsRead()> <internal,-1>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: byte[] findSharedClass(java.lang.String,java.lang.String,com.ibm.oti.shared.SharedClassURLClasspathHelper$IndexHolder)> <internal,123>
+
+1.0
+
+<com.ibm.oti.util.Util: java.lang.String convertUTF8WithBuf(byte[],char[],int,int)> <internal,287>
+
+1.0
+
+<org.apache.lucene.util.ArrayUtil: byte[] shrink(byte[],int)> <internal,14>
+
+2.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,402>
+
+0.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,201>
+
+1.07374182E9
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,124>
+
+1.07374182E9
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,310>
+
+0.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,431>
+
+0.0
+
+<org.apache.lucene.index.FreqProxTermsWriter: void flush(java.util.Map,org.apache.lucene.index.DocumentsWriter$FlushState)> <internal,358>
+
+0.0
+
+<org.apache.lucene.index.TermVectorsTermsWriter: org.apache.lucene.index.TermVectorsTermsWriter$PerDoc getPerDoc()> <internal,71>
+
+1.0
+
+<org.apache.lucene.index.TermVectorsTermsWriter: org.apache.lucene.index.TermVectorsTermsWriter$PerDoc getPerDoc()> <internal,65>
+
+1.0
+
+43: 9
+45: 1
+64: 1
+65: 5
+80: 2
+113: 1
+154: 8
+164: 1
+193: 5
+225: 1
+253: 5
+332: 1
+349: 1
+350: 1
+359: 3
+429: 1
+437: 2
+486: 3
+489: 5
+519: 1
+568: 8
+640: 3
+646: 4
+665: 2
+725: 1
+752: 1
+910: 1
+912: 2
+915: 1
+950: 1
+1076: 1
+1077: 1
+1078: 1
+1083: 1
+1103: 1
+1104: 3
+1105: 6
+1128: 1
+1145: 4
+1151: 1
+1156: 1
+1169: 1
+1170: 1
+1171: 1
+1172: 1
+1208: 1
+1253: 1
+1284: 2
+1305: 1
+1315: 1
+1346: 5
+1347: 1
+1359: 6
+1388: 1
+1399: 1
+1414: 1
+1425: 2
+1438: 6
+1452: 3
+1453: 1
+1454: 3
+1459: 3
+1473: 2
+1484: 2
+1513: 2
+1519: 3
+1520: 1
+1530: 1
+1551: 1
+1596: 1
+1630: 1
+1651: 1
+1659: 3
+1661: 17
+1662: 2
+1668: 21
+1675: 3
+1685: 1
+1691: 1
+1703: 4
+1720: 1
+1739: 1
+1740: 1
+1746: 10
+1768: 1
+1786: 1
+1791: 5
+1815: 1
+1818: 1
+1819: 27
+1841: 4
+1846: 3
+1847: 1
+1848: 1
+1850: 2
+1853: 8
+1855: 1
+1862: 2
+1864: 3
+1873: 1
+1877: 2
+1893: 2
+1895: 1
+1930: 2
+1931: 4
+1935: 2
+1946: 1
+1952: 2
+1955: 2
+1956: 11
+1957: 1
+1958: 8
+1960: 9
+1977: 1
+1979: 2
+1985: 5
+1992: 1
+1997: 4
+2004: 3
+2007: 7
+2020: 1
+2023: 6
+2025: 1
+2026: 5
+2036: 5
+2045: 1
+2056: 9
+2065: 1
+2070: 6
+2072: 2
+2074: 2
+2077: 6
+2082: 1
+2092: 5
+2101: 5
+2102: 5
+2105: 1
+2117: 5
+2141: 1
+2143: 1
+2235: 2
+2236: 2
+2249: 7
+2252: 5
+2261: 3
+2262: 1
+2271: 1
+2298: 2
+2332: 8
+2389: 1
+2467: 1
+2469: 1
+2545: 1
+2561: 1
+Total SCCs: 2586
+Core SCCs: 154
+Special Memory Region Object Count: 202
+Stack Object Count: 1513
+Heap Object Count: 16
+Total Object Count: 1731
+Resolution is done
+Time Taken in phase 1:61.88
+Time Taken in phase 2:60.481

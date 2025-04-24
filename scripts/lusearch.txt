@@ -1,0 +1,892 @@
+compiling...
+compiled!
+clearing output_files...
+compiling...
+compiled!
+launching...
+-whole-program -app -allow-phantom-refs -keep-bytecode-offset -no-bodies-for-excluded -keep-offset -soot-classpath /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar -prepend-classpath -keep-line-number -main-class Harness -process-dir /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out -p cg.spark on -p cg reflection-log:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/out/refl.log -output-dir /Users/suvenjagtiani/csRnD/out/dacapo -output-format jimple -ire -i jdt.* -i jdk.* -i java.* -i org.* -i com.* -i sun.* 
+Read from file: 
+
+ 1. Static Analysis starts: 
+Static Analysis is done!
+Time Taken:54.513
+**********************************************************
+2. Creating Stack Orders using the Points to Graph : 
+PRIYAM - Starting topological sorting
+2. Contextual Resolution Starts : 
+Suven
+Entry point is: <org.apache.lucene.queryParser.QueryParser: void main(java.lang.String[])>
+Entry point is: <Harness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.TestHarness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.FileDigest: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.ConfigFile: void main(java.lang.String[])>
+Entry point is: <org.apache.lucene.index.IndexReader: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.Config: void main(java.lang.String[])>
+Counter value: 26675
+2391
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,43>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,49>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,38>
+
+1.61061274E9
+
+<org.apache.lucene.index.FieldsReader: void addFieldLazy(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,242>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addFieldLazy(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,28>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addFieldLazy(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,143>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addFieldLazy(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,55>
+
+0.0
+
+<org.apache.lucene.index.MultiSegmentReader: org.apache.lucene.index.TermDocs termDocs()> <internal,4>
+
+2.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newTermQuery(org.apache.lucene.index.Term)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermInfosReader: void ensureIndexIsRead()> <internal,-1>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentInfo: java.util.List files()> <internal,13>
+
+1.0
+
+<org.dacapo.harness.Lusearch: void iterate(java.lang.String)> <internal,9>
+
+0.0
+
+<com.ibm.oti.vm.AbstractClassLoader$2: java.lang.Object run()> <internal,0>
+
+1.0
+
+<org.apache.lucene.util.UnicodeUtil$UTF8Result: void setLength(int)> <internal,16>
+
+1.0
+
+<org.dacapo.harness.Benchmark: void unpackZipFileResource(java.lang.String,java.io.File)> <internal,41>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer countingConjunctionSumScorer(java.util.List)> <internal,7>
+
+1.0
+
+<org.apache.lucene.analysis.CharArraySet: void rehash()> <internal,15>
+
+1.07374182E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.queryParser.ParseException generateParseException()> <internal,125>
+
+2.14748365E9
+
+<org.apache.commons.cli.Option: java.lang.Object clone()> <internal,9>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFuzzyQuery(java.lang.String,java.lang.String,float)> <internal,12>
+
+0.0
+
+<org.apache.lucene.search.WildcardQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,13>
+
+2.14748365E9
+
+<org.dacapo.lusearch.Search$QueryProcessor: void run()> <internal,8>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer dualConjunctionSumScorer(org.apache.lucene.search.Scorer,org.apache.lucene.search.Scorer)> <internal,0>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: void jj_add_error_token(int,int)> <internal,49>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: java.net.URL[] getClasspath()> <internal,4>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getWildcardQuery(java.lang.String,java.lang.String)> <internal,70>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,15>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,194>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,65>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,129>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,38>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addField(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,146>
+
+0.0
+
+<org.apache.lucene.index.MultiSegmentReader: org.apache.lucene.index.TermEnum terms(org.apache.lucene.index.Term)> <internal,4>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.PhraseQuery newPhraseQuery()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: void fillCache(int)> <internal,197>
+
+1.43165581E9
+
+<org.apache.lucene.search.BooleanQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.index.FieldsReader: int addFieldSize(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean)> <internal,72>
+
+0.0
+
+<com.ibm.oti.util.Util: java.lang.String convertFromUTF8(byte[],int,int)> <internal,2>
+
+0.0
+
+<org.dacapo.parser.SimpleCharStream: char[] GetSuffix(int)> <internal,1>
+
+1.0
+
+<org.apache.lucene.analysis.Token: char[] growTermBuffer(int)> <internal,22>
+
+2.14748365E9
+
+<org.apache.lucene.analysis.Token: char[] growTermBuffer(int)> <internal,59>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentTermEnum: org.apache.lucene.index.TermInfo termInfo()> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newPrefixQuery(org.apache.lucene.index.Term)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentTermEnum: java.lang.Object clone()> <internal,29>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentTermEnum: java.lang.Object clone()> <internal,72>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: java.lang.String discardEscapeChar(java.lang.String)> <internal,173>
+
+2.14748365E9
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackRowMap()> <internal,2>
+
+0.0
+
+<org.apache.lucene.index.TermInfosReader: org.apache.lucene.index.TermInfosReader$ThreadResources getThreadResources()> <internal,15>
+
+1.07374182E9
+
+<org.apache.lucene.index.TermInfosReader: org.apache.lucene.index.TermInfosReader$ThreadResources getThreadResources()> <internal,33>
+
+1.07374182E9
+
+<org.apache.lucene.util.UnicodeUtil$UTF16Result: void setLength(int)> <internal,16>
+
+1.3333334
+
+<org.apache.lucene.search.MultiPhraseQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,26>
+
+2.14748365E9
+
+<org.apache.lucene.search.MultiPhraseQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,46>
+
+0.0
+
+<org.apache.lucene.index.SegmentInfos: void write(org.apache.lucene.store.Directory)> <internal,34>
+
+2.14748365E9
+
+<org.apache.lucene.search.RangeQuery: void addTermToQuery(org.apache.lucene.index.Term,org.apache.lucene.search.BooleanQuery)> <internal,0>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: void ReInit(org.apache.lucene.queryParser.CharStream)> <internal,9>
+
+2.0
+
+<org.apache.lucene.index.SegmentInfo: void setNumFields(int)> <internal,9>
+
+2.14748365E9
+
+<org.apache.lucene.store.FSDirectory: org.apache.lucene.store.IndexOutput createOutput(java.lang.String)> <internal,58>
+
+1.07374182E9
+
+<com.ibm.oti.util.Util: java.lang.String urlEncode(java.lang.String)> <internal,2>
+
+0.0
+
+<org.apache.lucene.search.ConstantScoreRangeQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,68>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentInfo: void reset(org.apache.lucene.index.SegmentInfo)> <internal,81>
+
+1.0
+
+<org.apache.lucene.queryParser.Token: org.apache.lucene.queryParser.Token newToken(int,java.lang.String)> <internal,12>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newRangeQuery(java.lang.String,java.lang.String,java.lang.String,boolean)> <internal,7>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newRangeQuery(java.lang.String,java.lang.String,java.lang.String,boolean)> <internal,39>
+
+2.14748365E9
+
+<org.apache.lucene.index.SegmentInfos: void read(org.apache.lucene.store.Directory,java.lang.String)> <internal,6>
+
+1.53391693E9
+
+<org.dacapo.harness.CommandLineArgs: void defineCallback()> <internal,165>
+
+0.0
+
+<org.apache.lucene.queryParser.FastCharStream: void refill()> <internal,28>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.FastCharStream: void refill()> <internal,55>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,8>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,19>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,30>
+
+2.14748365E9
+
+<org.apache.lucene.search.BooleanQuery: org.apache.lucene.search.Similarity getSimilarity(org.apache.lucene.search.Searcher)> <internal,13>
+
+1.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readModifiedUTF8String()> <internal,23>
+
+1.84070029E9
+
+<org.apache.lucene.store.IndexInput: java.lang.String readModifiedUTF8String()> <internal,38>
+
+2.0
+
+<org.apache.lucene.search.TopDocCollector: void collect(int,float)> <internal,24>
+
+1.07374182E9
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,42>
+
+0.0
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,4>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL convertJarURL(java.net.URL)> <internal,29>
+
+1.61061274E9
+
+<org.apache.lucene.search.TopDocCollector: org.apache.lucene.search.TopDocs topDocs()> <internal,63>
+
+1.5
+
+<org.apache.lucene.index.DirectoryIndexReader$1: java.lang.Object doBody(java.lang.String)> <internal,0>
+
+0.0
+
+<org.apache.lucene.index.DirectoryIndexReader$1: java.lang.Object doBody(java.lang.String)> <internal,67>
+
+1.0
+
+<org.apache.lucene.index.DirectoryIndexReader$1: java.lang.Object doBody(java.lang.String)> <internal,50>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.BooleanClause newBooleanClause(org.apache.lucene.search.Query,org.apache.lucene.search.BooleanClause$Occur)> <internal,0>
+
+1.0
+
+<org.apache.lucene.search.TermQuery$TermWeight: org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader)> <internal,18>
+
+1.0
+
+<org.apache.lucene.search.IndexSearcher: org.apache.lucene.search.TopDocs search(org.apache.lucene.search.Weight,org.apache.lucene.search.Filter,int)> <internal,14>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackAttribute()> <internal,2>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL getURLToCheck(java.net.URL)> <internal,24>
+
+1.0
+
+<org.apache.lucene.index.SegmentTermDocs: boolean skipTo(int)> <internal,19>
+
+1.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer countingDisjunctionSumScorer(java.util.List,int)> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.SegmentReader: org.apache.lucene.index.TermDocs termDocs()> <internal,4>
+
+2.0
+
+<org.apache.lucene.analysis.StopFilter: java.util.Set makeStopSet(java.lang.String[],boolean)> <internal,0>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.MultiPhraseQuery newMultiPhraseQuery()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.InputStream)> <internal,0>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackAction()> <internal,2>
+
+0.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object)> <internal,2>
+
+1.07374182E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,195>
+
+2.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,82>
+
+2.0
+
+<org.apache.lucene.search.PhraseQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,46>
+
+2.14748365E9
+
+<org.apache.lucene.search.PhraseQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,23>
+
+0.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)> <internal,199>
+
+1.43165581E9
+
+<org.dacapo.harness.TeeOutputStream: void newLog()> <internal,1>
+
+2.0
+
+<org.apache.commons.cli.Options: java.util.List helpOptions()> <internal,0>
+
+1.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,12>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,27>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,69>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,39>
+
+1.07374182E9
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream reusableTokenStream(java.lang.String,java.io.Reader)> <internal,54>
+
+1.07374182E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query Query(java.lang.String)> <internal,0>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassHelperFactoryImpl: com.ibm.oti.shared.SharedClassURLClasspathHelper getURLClasspathHelper(java.lang.ClassLoader,java.net.URL[])> <internal,148>
+
+1.61061274E9
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,408>
+
+0.0
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,635>
+
+0.0
+
+<org.dacapo.parser.ConfigFile: void sizeClause(org.dacapo.parser.Config,java.lang.String)> <internal,0>
+
+0.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF16toUTF8(char[],int,int,org.apache.lucene.util.UnicodeUtil$UTF8Result)> <internal,48>
+
+1.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newMatchAllDocsQuery()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream openFile(java.lang.String)> <internal,16>
+
+1.0
+
+<org.dacapo.lusearch.Search$QueryThread: void run()> <internal,44>
+
+0.0
+
+<org.apache.lucene.index.SegmentReader: void loadDeletedDocs()> <internal,11>
+
+1.61061274E9
+
+<org.apache.lucene.util.UnicodeUtil: void UTF8toUTF16(byte[],int,int,org.apache.lucene.util.UnicodeUtil$UTF16Result)> <internal,25>
+
+1.0
+
+<org.apache.lucene.util.UnicodeUtil: void UTF8toUTF16(byte[],int,int,org.apache.lucene.util.UnicodeUtil$UTF16Result)> <internal,98>
+
+1.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readString()> <internal,56>
+
+1.0
+
+<org.apache.lucene.store.IndexInput: java.lang.String readString()> <internal,41>
+
+1.84070029E9
+
+<org.apache.lucene.queryParser.FastCharStream: java.lang.String GetImage()> <internal,0>
+
+1.0
+
+<org.apache.lucene.store.FSDirectory: org.apache.lucene.store.FSDirectory getDirectory(java.lang.String)> <internal,0>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: int[] zzUnpackTrans()> <internal,3>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newFuzzyQuery(org.apache.lucene.index.Term,float,int)> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.CommandLineArgs: java.util.List extractBenchmarkSet()> <internal,0>
+
+1.0
+
+<org.apache.lucene.index.FieldsReader: org.apache.lucene.document.Document doc(int,org.apache.lucene.document.FieldSelector)> <internal,21>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermBuffer: org.apache.lucene.index.Term toTerm()> <internal,17>
+
+1.0
+
+<org.dacapo.parser.Config: java.lang.String[] preprocessArgs(java.lang.String,java.io.File)> <internal,8>
+
+1.0
+
+<org.dacapo.harness.CommandLineArgs: org.apache.commons.cli.Option makeOption(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> <internal,18>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,177>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,578>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,5>
+
+1.07374182E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,601>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,52>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,242>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getFieldQuery(java.lang.String,java.lang.String)> <internal,31>
+
+0.0
+
+<org.apache.lucene.store.FSDirectory: org.apache.lucene.store.IndexInput openInput(java.lang.String,int)> <internal,4>
+
+1.43165581E9
+
+<org.dacapo.parser.SimpleCharStream: java.lang.String GetImage()> <internal,11>
+
+1.0
+
+<org.apache.lucene.search.BooleanQuery: void add(org.apache.lucene.search.Query,org.apache.lucene.search.BooleanClause$Occur)> <internal,1>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerNoReq()> <internal,88>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerNoReq()> <internal,10>
+
+1.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerNoReq()> <internal,46>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: byte[] findSharedClass(java.lang.String,java.lang.String,com.ibm.oti.shared.SharedClassURLClasspathHelper$IndexHolder)> <internal,123>
+
+1.0
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,84>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,97>
+
+0.0
+
+<com.ibm.oti.vm.MsgHelp: java.util.Hashtable loadMessages(java.lang.String)> <internal,0>
+
+1.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.File)> <internal,0>
+
+0.0
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,47>
+
+2.05411482E9
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,65>
+
+1.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object,java.lang.String)> <internal,2>
+
+1.07374182E9
+
+<org.dacapo.harness.Benchmark: void cleanup()> <internal,6>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query parse(java.lang.String)> <internal,1>
+
+0.0
+
+<org.apache.lucene.index.FieldsReader: void addFieldForMerge(org.apache.lucene.document.Document,org.apache.lucene.index.FieldInfo,boolean,boolean,boolean)> <internal,54>
+
+0.0
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.BooleanQuery newBooleanQuery(boolean)> <internal,0>
+
+1.07374182E9
+
+<org.apache.lucene.index.TermBuffer: java.lang.Object clone()> <internal,20>
+
+2.14748365E9
+
+<org.apache.lucene.index.TermBuffer: java.lang.Object clone()> <internal,31>
+
+2.14748365E9
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream tokenStream(java.lang.String,java.io.Reader)> <internal,0>
+
+0.0
+
+<org.apache.lucene.analysis.standard.StandardAnalyzer: org.apache.lucene.analysis.TokenStream tokenStream(java.lang.String,java.io.Reader)> <internal,42>
+
+1.07374182E9
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,0>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,52>
+
+0.0
+
+<org.apache.lucene.search.MatchAllDocsQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.lusearch.Search$QueryProcessor: void doPagingSearch(org.apache.lucene.search.Query)> <internal,0>
+
+1.07374182E9
+
+<org.apache.lucene.search.BooleanQuery$BooleanWeight: org.apache.lucene.search.Scorer scorer(org.apache.lucene.index.IndexReader)> <internal,0>
+
+1.0
+
+<org.dacapo.parser.ConfigFile: org.dacapo.parser.ParseException generateParseException()> <internal,125>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query newWildcardQuery(org.apache.lucene.index.Term)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.search.RangeQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,-1>
+
+2.14748365E9
+
+<org.apache.lucene.index.CompoundFileReader: org.apache.lucene.store.IndexInput openInput(java.lang.String,int)> <internal,65>
+
+1.90887437E9
+
+<org.dacapo.harness.Benchmark: void postIterationCleanup(java.lang.String)> <internal,66>
+
+0.0
+
+<org.apache.lucene.search.PrefixQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,-1>
+
+2.14748365E9
+
+<org.apache.commons.cli.Parser: void setOptions(org.apache.commons.cli.Options)> <internal,6>
+
+2.0
+
+<com.ibm.oti.util.Util: java.lang.String convertUTF8WithBuf(byte[],char[],int,int)> <internal,287>
+
+1.0
+
+<org.apache.lucene.search.TermQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.search.MultiPhraseQuery: org.apache.lucene.search.Weight createWeight(org.apache.lucene.search.Searcher)> <internal,0>
+
+2.14748365E9
+
+<org.apache.lucene.search.MultiTermQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,-1>
+
+2.14748365E9
+
+<org.apache.lucene.store.BufferedIndexInput: void refill()> <internal,66>
+
+1.84070029E9
+
+<org.apache.lucene.search.FuzzyQuery: org.apache.lucene.search.Query rewrite(org.apache.lucene.index.IndexReader)> <internal,-1>
+
+2.14748365E9
+
+<org.apache.lucene.util.UnicodeUtil: void UTF16toUTF8(java.lang.String,int,int,org.apache.lucene.util.UnicodeUtil$UTF8Result)> <internal,47>
+
+2.14748365E9
+
+<org.apache.lucene.queryParser.QueryParser: org.apache.lucene.search.Query getPrefixQuery(java.lang.String,java.lang.String)> <internal,38>
+
+0.0
+
+<org.apache.lucene.index.MultiSegmentReader: byte[] norms(java.lang.String)> <internal,44>
+
+1.84070029E9
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerSomeReq()> <internal,36>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerSomeReq()> <internal,138>
+
+1.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerSomeReq()> <internal,78>
+
+0.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer makeCountingSumScorerSomeReq()> <internal,14>
+
+1.0
+
+<org.apache.lucene.analysis.standard.StandardTokenizerImpl: boolean zzRefill()> <internal,107>
+
+2.0
+
+<org.apache.lucene.search.BooleanScorer2: org.apache.lucene.search.Scorer addProhibitedScorers(org.apache.lucene.search.Scorer)> <internal,14>
+
+2.0
+
+237: 1
+311: 1
+315: 5
+324: 9
+351: 2
+389: 1
+441: 1
+500: 4
+567: 1
+607: 6
+617: 1
+630: 1
+642: 9
+667: 3
+685: 5
+686: 5
+687: 3
+704: 1
+718: 5
+770: 1
+795: 1
+891: 1
+978: 2
+991: 1
+1045: 3
+1046: 1
+1170: 1
+1250: 2
+1259: 1
+1268: 1
+1272: 17
+1342: 1
+1403: 9
+1404: 1
+1405: 7
+1491: 1
+1493: 2
+1504: 4
+1537: 2
+1589: 4
+1613: 5
+1669: 1
+1670: 1
+1671: 1
+1673: 1
+1674: 1
+1675: 1
+1691: 1
+1692: 1
+1693: 1
+1694: 1
+1695: 1
+1696: 1
+1703: 1
+1704: 1
+1705: 1
+1706: 1
+1707: 1
+1711: 1
+1716: 1
+1721: 1
+1731: 2
+1743: 2
+1753: 2
+1755: 5
+1756: 25
+1757: 6
+1758: 3
+1759: 5
+1761: 5
+1762: 9
+1769: 1
+1802: 4
+1837: 1
+1845: 1
+1858: 1
+1861: 1
+1862: 2
+1863: 12
+1875: 1
+1878: 7
+1880: 1
+1881: 1
+1883: 5
+1895: 1
+1909: 5
+1927: 1
+1928: 1
+1929: 6
+1961: 1
+1963: 1
+1967: 1
+1977: 18
+1979: 1
+1988: 1
+1993: 1
+2009: 1
+2011: 1
+2023: 1
+2025: 1
+2027: 1
+2044: 1
+2086: 1
+2089: 1
+2096: 1
+2129: 4
+2147: 5
+2148: 1
+2157: 2
+2159: 2
+2175: 1
+2177: 1
+2212: 1
+2214: 1
+2282: 4
+2315: 1
+2330: 6
+Total SCCs: 2361
+Core SCCs: 117
+Special Memory Region Object Count: 185
+Stack Object Count: 1295
+Heap Object Count: 15
+Total Object Count: 1495
+Resolution is done
+Time Taken in phase 1:54.513
+Time Taken in phase 2:69.872

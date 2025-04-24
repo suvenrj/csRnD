@@ -1,0 +1,137 @@
+compiling...
+compiled!
+clearing output_files...
+compiling...
+compiled!
+launching...
+-whole-program -app -allow-phantom-refs -keep-bytecode-offset -no-bodies-for-excluded -keep-offset -soot-classpath /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar -prepend-classpath -keep-line-number -main-class Harness -process-dir /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out -p cg.spark on -p cg reflection-log:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/out/refl.log -output-dir /Users/suvenjagtiani/csRnD/out/dacapo -output-format jimple -ire -i jdt.* -i jdk.* -i java.* -i org.* -i com.* -i sun.* 
+Read from file: 
+
+ 1. Static Analysis starts: 
+[Copystmthelper] r4 = r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r4 = r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r16 = $r6
+[Copystmthelper] Vars:{}
+Fields:{}
+Static Analysis is done!
+Time Taken:89.43
+**********************************************************
+2. Creating Stack Orders using the Points to Graph : 
+PRIYAM - Starting topological sorting
+2. Contextual Resolution Starts : 
+Suven
+Entry point is: <org.dacapo.parser.ConfigFile: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.Config: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.TestHarness: void main(java.lang.String[])>
+Entry point is: <org.apache.batik.apps.rasterizer.Main: void main(java.lang.String[])>
+Entry point is: <Harness: void main(java.lang.String[])>
+Counter value: 30496
+6580
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream openFile(java.lang.String)> <internal,16>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassHelperFactoryImpl: com.ibm.oti.shared.SharedClassURLClasspathHelper getURLClasspathHelper(java.lang.ClassLoader,java.net.URL[])> <internal,148>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: byte[] findSharedClass(java.lang.String,java.lang.String,com.ibm.oti.shared.SharedClassURLClasspathHelper$IndexHolder)> <internal,123>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,43>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,38>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,49>
+
+1.61061274E9
+
+<com.ibm.oti.util.Util: java.lang.String convertFromUTF8(byte[],int,int)> <internal,2>
+
+0.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object)> <internal,2>
+
+1.07374182E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)> <internal,199>
+
+1.43165581E9
+
+<com.ibm.oti.vm.MsgHelp: java.util.Hashtable loadMessages(java.lang.String)> <internal,0>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: void fillCache(int)> <internal,197>
+
+1.43165581E9
+
+<com.ibm.oti.util.Util: java.lang.String convertUTF8WithBuf(byte[],char[],int,int)> <internal,287>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL getURLToCheck(java.net.URL)> <internal,24>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader$2: java.lang.Object run()> <internal,0>
+
+1.0
+
+<com.ibm.oti.util.Util: java.lang.String urlEncode(java.lang.String)> <internal,2>
+
+0.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object,java.lang.String)> <internal,2>
+
+1.07374182E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,195>
+
+2.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,82>
+
+2.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL convertJarURL(java.net.URL)> <internal,29>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: java.net.URL[] getClasspath()> <internal,4>
+
+1.0
+
+910: 1
+1125: 5
+3009: 1
+3490: 3
+3588: 2
+4645: 5
+4646: 1
+4819: 5
+4984: 6
+5700: 4
+5846: 2
+5847: 2
+6051: 1
+6052: 4
+6061: 1
+Total SCCs: 6579
+Core SCCs: 15
+Special Memory Region Object Count: 20
+Stack Object Count: 4743
+Heap Object Count: 19
+Total Object Count: 4782
+Resolution is done
+Time Taken in phase 1:89.43
+Time Taken in phase 2:28.107

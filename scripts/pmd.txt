@@ -1,0 +1,2566 @@
+compiling...
+compiled!
+clearing output_files...
+compiling...
+compiled!
+launching...
+-whole-program -app -allow-phantom-refs -keep-bytecode-offset -no-bodies-for-excluded -keep-offset -soot-classpath /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/dacapo-9.12-MR1-bach.jar -prepend-classpath -keep-line-number -main-class Harness -process-dir /Users/suvenjagtiani/csRnD/benchmarks/dacapo/out -p cg.spark on -p cg reflection-log:/Users/suvenjagtiani/csRnD/benchmarks/dacapo/out/refl.log -output-dir /Users/suvenjagtiani/csRnD/out/dacapo -output-format jimple -ire -i jdt.* -i jdk.* -i java.* -i org.* -i com.* -i sun.* 
+Read from file: 
+
+ 1. Static Analysis starts: 
+[Copystmthelper] r12 = r0
+[Copystmthelper] Vars:{r11=[<external,38>], $r6=[<external,78>], $r5=[<external,33>], $r4=[<external,26>]}
+Fields:{<external,33>={ArrayObject=[<external,38>]}}
+[Copystmthelper] $r22 = (org.w3c.dom.Element) r32
+[Copystmthelper] Vars:{$r19=[<external,324>], r20=[<external,330>]}
+Fields:{<external,324>={ArrayObject=[<external,330>]}}
+[Copystmthelper] r35 = r34
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r51 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r22=[<external,241>], r39=[<external,241>], $r25=[<external,284>], $r24=[<external,259>], $r23=[<external,263>]}
+Fields:{<external,241>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,284>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,259>]}}
+[Copystmthelper] $r52 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r18=[<external,398>], $r17=[<external,402>], $r16=[<external,380>], r43=[<external,380>], $r19=[<external,423>]}
+Fields:{<external,380>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,423>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,398>]}}
+[Copystmthelper] $r53 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{r48=[<external,540>], $r13=[<external,558>], $r11=[<external,540>], $r14=[<external,583>], $r12=[<external,562>]}
+Fields:{<external,540>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,583>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,558>]}}
+[Copystmthelper] $r51 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r22=[<external,241>], r39=[<external,241>], $r20=[<external,187>], r36=[<external,187>], r38=[<external,216>], $r21=[<external,216>], $r24=[<external,259>], $r23=[<external,263>], $r29=[<external,-1>], $r25=[<external,284>], r37=[<external,207>], r40=[<external,-1>]}
+Fields:{<external,241>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,284>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,259>]}}
+[Copystmthelper] $r53 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{r48=[<external,540>], $r9=[<external,486>], $r26=[<external,-1>], $r13=[<external,558>], r45=[<external,486>], r46=[<external,506>], r47=[<external,515>], $r14=[<external,583>], $r10=[<external,515>], r27=[<external,-1>], $r11=[<external,540>], $r12=[<external,562>]}
+Fields:{<external,540>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,583>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,558>]}}
+[Copystmthelper] r23 = r24
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r20 = r21
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r9 = (org.apache.xerces.dom.AttrImpl) r21
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r11 = (org.apache.xerces.dom.EntityReferenceImpl) r17
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r7 = (org.apache.xerces.dom.EntityReferenceImpl) r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r7 = (org.apache.xerces.dom.DeferredNode) r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r12 = r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r14 = (org.w3c.dom.Element) r12
+[Copystmthelper] Vars:{r11=[<external,38>], $r6=[<external,78>], $r5=[<external,33>], r13=[<external,171>, <external,125>], $r4=[<external,26>]}
+Fields:{<external,33>={ArrayObject=[<external,38>]}}
+[Copystmthelper] r5 = r9
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r79 = (org.apache.xerces.impl.XMLEntityManager$ExternalEntity) r4
+[Copystmthelper] Vars:{$r8=[<internal,451>], r78=[<external,476>], $r16=[<external,569>], $r10=[<external,476>], $r14=[<internal,558>], $r13=[<external,527>], $r75=[<external,434>, <external,422>], $r11=[<external,496>], $r17=[<external,578>], $r12=[<external,524>], $r18=[<external,585>], $r7=[<external,444>], r77=[<internal,451>], r76=[<external,434>, <external,422>], $r6=[<external,434>], $r9=[<external,471>], $r15=[<external,550>], $r5=[<external,429>]}
+Fields:{<external,524>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,527>]}, <internal,558>={ArrayObject=[<external,569>]}, <external,476>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,496>]}, <external,434>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,444>]}, <external,422>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,444>]}}
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r52 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r52 found!
+[Copystmthelper] r79 = (org.apache.xerces.impl.XMLEntityManager$ExternalEntity) r4
+[Copystmthelper] Vars:{$r8=[<internal,451>], r78=[<external,476>], $r16=[<external,569>], $r10=[<external,476>], $r14=[<internal,558>], $r13=[<external,527>], $r75=[<external,434>, <external,422>], $r11=[<external,496>], $r17=[<external,578>], $r12=[<external,524>], $r18=[<external,585>], $r7=[<external,444>], $r6=[<external,434>], $r9=[<external,471>], $r15=[<external,550>], $r5=[<external,429>]}
+Fields:{<external,524>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,527>]}, <internal,558>={ArrayObject=[<external,569>]}, <external,476>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,496>]}, <external,434>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,444>]}, <external,422>={<org.apache.xerces.impl.XMLEntityManager$Entity: java.lang.String name>=[<external,444>]}}
+[Copystmthelper] r32 = (org.apache.xerces.util.XMLAttributesImpl) r5
+[Copystmthelper] Vars:{$r2=[<external,25>], $r10=[<external,78>], $r11=[<external,83>], $r6=[<external,83>], r14=[<external,183>, <internal,189>], $r28=[<external,126>], $r29=[<external,83>], $r26=[<internal,120>], $r31=[<external,183>, <internal,189>], r30=[<external,54>, <external,73>], $r35=[<internal,151>], r3=[<external,25>], $r7=[<external,78>], r4=[<external,40>], $r12=[<external,83>], r13=[<internal,151>], $r8=[<external,86>]}
+Fields:{<external,25>={<org.apache.xerces.impl.xs.XSAttributeUseImpl: org.apache.xerces.impl.dv.ValidatedInfo fDefault>=[<external,54>], <org.apache.xerces.impl.xs.XSAttributeUseImpl: org.apache.xerces.impl.xs.XSAttributeDecl fAttrDecl>=[<external,40>]}, <internal,120>={ArrayObject=[<external,126>, <external,83>]}, <external,40>={<org.apache.xerces.impl.xs.XSAttributeDecl: java.lang.String fTargetNamespace>=[<external,78>], <org.apache.xerces.impl.xs.XSAttributeDecl: java.lang.String fName>=[<external,83>], <org.apache.xerces.impl.xs.XSAttributeDecl: org.apache.xerces.impl.dv.ValidatedInfo fDefault>=[<external,73>]}}
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r52 found!
+[MonitorStmtHandler] Warning: No ptset for exitmonitor r52 found!
+[Copystmthelper] $r24 = (org.apache.xerces.dom.ElementImpl) r41
+[Copystmthelper] Vars:{$r18=[<external,71>], $r28=[<external,56>], r49=[<external,182>], $r62=[<external,78>], r48=[<external,168>], $r22=[<external,239>], r42=[<external,56>], $r19=[<external,78>], $r45=[<external,130>], $r23=[<external,246>], r47=[<external,269>], $r16=[<external,40>], $r26=[<external,168>], $r27=[<external,182>], $r21=[<external,233>], $r17=[<external,50>], r43=[<external,66>], r44=[<external,78>], $r63=[<external,78>], $r25=[<internal,271>], r46=[<external,56>]}
+Fields:{}
+[Copystmthelper] $r24 = (org.apache.xerces.dom.ElementImpl) r41
+[Copystmthelper] Vars:{$r18=[<external,71>], $r28=[<external,56>], r49=[<external,182>], $r62=[<external,78>], r48=[<external,168>], $r22=[<external,239>], r42=[<external,56>], $r19=[<external,78>], $r45=[<external,130>], $r23=[<external,246>], r47=[<external,269>], $r16=[<external,40>], $r26=[<external,168>], $r27=[<external,182>], $r21=[<external,233>], $r17=[<external,50>], r43=[<external,66>], r44=[<external,78>], $r63=[<external,78>], $r25=[<internal,271>], r46=[<external,56>]}
+Fields:{}
+[Copystmthelper] r5 = r9
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r4 = (org.w3c.dom.Text) r11
+[Copystmthelper] Vars:{r12=[<external,31>]}
+Fields:{}
+[Copystmthelper] r12 = r11
+[Copystmthelper] Vars:{r12=[<external,31>], $r5=[<external,57>]}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r3
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r22 = (org.w3c.dom.Element) r32
+[Copystmthelper] Vars:{$r19=[<external,324>], r20=[<external,330>]}
+Fields:{<external,324>={ArrayObject=[<external,330>]}}
+[Copystmthelper] r12 = r0
+[Copystmthelper] Vars:{r11=[<external,38>], $r6=[<external,78>], $r5=[<external,33>], $r4=[<external,26>]}
+Fields:{<external,33>={ArrayObject=[<external,38>]}}
+[Copystmthelper] $r7 = (org.apache.xerces.dom.DeferredNode) r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r12 = r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r14 = (org.w3c.dom.Element) r12
+[Copystmthelper] Vars:{r11=[<external,38>], $r6=[<external,78>], $r5=[<external,33>], r13=[<external,171>, <external,125>], $r4=[<external,26>]}
+Fields:{<external,33>={ArrayObject=[<external,38>]}}
+[Copystmthelper] $r11 = (org.apache.xerces.dom.EntityReferenceImpl) r17
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r4 = r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r5 = r7
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r4 = r10
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r5 = r11
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r8 = r12
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r9 = r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r19 = r21
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r20 = r22
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r19 = r26
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r20 = r28
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r23 = r29
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r24 = r30
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r3
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r3
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r3
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.TextImpl) r7
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r7
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.NodeImpl) r7
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r2 = (org.apache.xerces.dom.TextImpl) r7
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r7 = (org.apache.xerces.dom.EntityReferenceImpl) r13
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r6 = (org.w3c.dom.Text) r9
+[Copystmthelper] Vars:{r10=[<external,34>]}
+Fields:{}
+[Copystmthelper] r10 = r9
+[Copystmthelper] Vars:{$r7=[<external,64>], r10=[<external,34>]}
+Fields:{}
+[Copystmthelper] $r51 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r22=[<external,241>], r39=[<external,241>], $r25=[<external,284>], $r24=[<external,259>], $r23=[<external,263>]}
+Fields:{<external,241>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,284>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,259>]}}
+[Copystmthelper] $r52 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r18=[<external,398>], $r17=[<external,402>], $r16=[<external,380>], r43=[<external,380>], $r19=[<external,423>]}
+Fields:{<external,380>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,423>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,398>]}}
+[Copystmthelper] $r53 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{r48=[<external,540>], $r13=[<external,558>], $r11=[<external,540>], $r14=[<external,583>], $r12=[<external,562>]}
+Fields:{<external,540>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,583>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,558>]}}
+[Copystmthelper] $r51 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{$r22=[<external,241>], r39=[<external,241>], $r20=[<external,187>], r36=[<external,187>], r38=[<external,216>], $r21=[<external,216>], $r24=[<external,259>], $r23=[<external,263>], $r29=[<external,-1>], $r25=[<external,284>], r37=[<external,207>]}
+Fields:{<external,241>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,284>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,259>]}}
+[Copystmthelper] $r53 = (org.w3c.dom.events.Event) r1
+[Copystmthelper] Vars:{r48=[<external,540>], $r9=[<external,486>], $r26=[<external,-1>], $r13=[<external,558>], r45=[<external,486>], r46=[<external,506>], r47=[<external,515>], $r14=[<external,583>], $r10=[<external,515>], $r11=[<external,540>], $r12=[<external,562>]}
+Fields:{<external,540>={<org.apache.xerces.dom.DocumentImpl$LEntry: org.w3c.dom.events.EventListener listener>=[<external,583>], <org.apache.xerces.dom.DocumentImpl$LEntry: java.lang.String type>=[<external,558>]}}
+[Copystmthelper] $r1 = (org.apache.xerces.dom.NodeImpl) r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r5 = (org.apache.xerces.dom.NodeImpl) r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r1 = (org.apache.xerces.dom.NodeImpl) r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r5 = (org.apache.xerces.dom.NodeImpl) r6
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r20 = r21
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] $r9 = (org.apache.xerces.dom.AttrImpl) r21
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r23 = r24
+[Copystmthelper] Vars:{}
+Fields:{}
+[Copystmthelper] r32 = (org.apache.xerces.util.XMLAttributesImpl) r5
+[Copystmthelper] Vars:{$r2=[<external,25>], $r10=[<external,78>], $r11=[<external,83>], $r6=[<external,83>], r14=[<external,183>, <internal,189>], $r28=[<external,126>], $r29=[<external,83>], $r26=[<internal,120>], $r31=[<external,183>, <internal,189>], r30=[<external,54>, <external,73>], $r35=[<internal,151>], r3=[<external,25>], $r7=[<external,78>], r4=[<external,40>], $r12=[<external,83>], $r8=[<external,86>]}
+Fields:{<external,25>={<org.apache.xerces.impl.xs.XSAttributeUseImpl: org.apache.xerces.impl.dv.ValidatedInfo fDefault>=[<external,54>], <org.apache.xerces.impl.xs.XSAttributeUseImpl: org.apache.xerces.impl.xs.XSAttributeDecl fAttrDecl>=[<external,40>]}, <internal,120>={ArrayObject=[<external,126>, <external,83>]}, <external,40>={<org.apache.xerces.impl.xs.XSAttributeDecl: java.lang.String fTargetNamespace>=[<external,78>], <org.apache.xerces.impl.xs.XSAttributeDecl: java.lang.String fName>=[<external,83>], <org.apache.xerces.impl.xs.XSAttributeDecl: org.apache.xerces.impl.dv.ValidatedInfo fDefault>=[<external,73>]}}
+Static Analysis is done!
+Time Taken:94.666
+**********************************************************
+2. Creating Stack Orders using the Points to Graph : 
+PRIYAM - Starting topological sorting
+2. Contextual Resolution Starts : 
+Suven
+Entry point is: <net.sourceforge.pmd.util.Benchmark: void main(java.lang.String[])>
+Entry point is: <Harness: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.ConfigFile: void main(java.lang.String[])>
+Entry point is: <org.dacapo.parser.Config: void main(java.lang.String[])>
+Entry point is: <net.sourceforge.pmd.dcd.DCD: void main(java.lang.String[])>
+Entry point is: <net.sourceforge.pmd.cpd.CPD: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.TestHarness: void main(java.lang.String[])>
+Entry point is: <net.sourceforge.pmd.PMD: void main(java.lang.String[])>
+Entry point is: <org.dacapo.harness.FileDigest: void main(java.lang.String[])>
+Entry point is: <net.sourceforge.pmd.cpd.GUI: void main(java.lang.String[])>
+Entry point is: <org.apache.xerces.impl.Constants: void main(java.lang.String[])>
+Counter value: 159314
+6480
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Node,java.lang.String)> <internal,87>
+
+0.0
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Node,java.lang.String)> <internal,368>
+
+0.0
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Node,java.lang.String)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Node,java.lang.String)> <internal,112>
+
+0.0
+
+<org.jaxen.expr.PredicateSet: void addPredicate(org.jaxen.expr.Predicate)> <internal,11>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void PreDecrementExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.FunctionCallExpr createFunctionCallExpr(java.lang.String,java.lang.String)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void PackageDeclaration()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: char[] GetSuffix(int)> <internal,1>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void MemberValuePairs()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.RuleChain: net.sourceforge.pmd.RuleChainVisitor getRuleChainVisitor(net.sourceforge.pmd.Language)> <internal,36>
+
+1.0
+
+<net.sourceforge.pmd.RuleChain: net.sourceforge.pmd.RuleChainVisitor getRuleChainVisitor(net.sourceforge.pmd.Language)> <internal,57>
+
+1.0
+
+<org.jaxen.DefaultNavigator: java.util.Iterator getSelfAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<org.dacapo.parser.SimpleCharStream: java.lang.String GetImage()> <internal,11>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeArgument()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.AbstractJavaRule: void addViolation(java.lang.Object,net.sourceforge.pmd.ast.SimpleNode,java.lang.String)> <internal,11>
+
+1.43165581E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: java.lang.Object visit(net.sourceforge.pmd.ast.ASTClassOrInterfaceDeclaration,java.lang.Object)> <internal,17>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ExclusiveOrExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaCharStream: char[] GetSuffix(int)> <internal,1>
+
+1.0
+
+<org.jaxen.expr.DefaultLocationPath: java.lang.Object evaluate(org.jaxen.Context)> <internal,5>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultLocationPath: java.lang.Object evaluate(org.jaxen.Context)> <internal,20>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Block()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.function.RoundFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,27>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token div()> <internal,32>
+
+2.14748365E9
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: boolean ifVerify(net.sourceforge.pmd.ast.ASTIfStatement,java.lang.String)> <internal,0>
+
+1.43165581E9
+
+<org.objectweb.asm.ClassReader: org.objectweb.asm.Label readLabel(int,org.objectweb.asm.Label[])> <internal,8>
+
+1.0
+
+<net.sourceforge.pmd.PMD: void processFile(java.io.Reader,net.sourceforge.pmd.RuleSets,net.sourceforge.pmd.RuleContext,net.sourceforge.pmd.SourceType)> <internal,221>
+
+0.0
+
+<org.jaxen.DefaultNavigator: java.util.Iterator getDescendantOrSelfAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<org.jaxen.function.ext.LocaleFunctionSupport: java.util.Locale findLocale(java.lang.String)> <internal,49>
+
+2.14748365E9
+
+<org.jaxen.function.ext.LocaleFunctionSupport: java.util.Locale findLocale(java.lang.String)> <internal,66>
+
+2.14748365E9
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type a(char[],int)> <internal,236>
+
+2.14748365E9
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type a(char[],int)> <internal,203>
+
+2.14748365E9
+
+<org.jaxen.function.SumFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,67>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void RUNSIGNEDSHIFT()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void cleanup()> <internal,6>
+
+0.0
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: java.net.URL[] getClasspath()> <internal,4>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void MemberSelector()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD: void processFile(java.io.InputStream,java.lang.String,net.sourceforge.pmd.RuleSets,net.sourceforge.pmd.RuleContext)> <internal,1>
+
+0.0
+
+<org.jaxen.function.CeilingFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,6>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token whitespace()> <internal,70>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token plus()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createClassScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,8>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createClassScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,23>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ContinueStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.RuleSetFactory: net.sourceforge.pmd.RuleSets createRuleSets(java.lang.String,java.lang.ClassLoader)> <internal,0>
+
+1.07374182E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token leftParen()> <internal,0>
+
+1.0
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL convertJarURL(java.net.URL)> <internal,29>
+
+1.61061274E9
+
+<net.sourceforge.pmd.ast.JavaParser: void WildcardBounds()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token number()> <internal,99>
+
+1.0
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type getObjectType(java.lang.String)> <internal,5>
+
+2.0
+
+<net.sourceforge.pmd.ast.JavaParser: void CastExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultStep: java.util.List evaluate(org.jaxen.Context)> <internal,21>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultStep: java.util.List evaluate(org.jaxen.Context)> <internal,5>
+
+0.0
+
+<org.jaxen.expr.DefaultStep: java.util.List evaluate(org.jaxen.Context)> <internal,30>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ClassScope: java.util.Map getVariableDeclarations()> <internal,0>
+
+1.84070029E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token relationalOperator()> <internal,72>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token relationalOperator()> <internal,112>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token relationalOperator()> <internal,143>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token relationalOperator()> <internal,42>
+
+1.0
+
+<org.jaxen.expr.DefaultFunctionCallExpr: java.util.List evaluateParams(org.jaxen.Context)> <internal,12>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void Annotation()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.PathExpr createPathExpr(org.jaxen.expr.FilterExpr,org.jaxen.expr.LocationPath)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ConditionalAndExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ForStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void DefaultValue()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void FinallyStatement()> <internal,0>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: org.objectweb.asm.Attribute a(org.objectweb.asm.Attribute[],java.lang.String,int,int,char[],int,org.objectweb.asm.Label[])> <internal,48>
+
+0.0
+
+<net.sourceforge.pmd.sourcetypehandlers.Java15Handler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.typeresolution.visitors.PMDASMVisitor: void visitInnerClass(java.lang.String,java.lang.String,java.lang.String,int)> <internal,8>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Step createNameStep(int,java.lang.String,java.lang.String)> <internal,7>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,24>
+
+0.0
+
+<net.sourceforge.pmd.typeresolution.ClassTypeResolver: java.lang.Object visit(net.sourceforge.pmd.ast.ASTCompilationUnit,java.lang.Object)> <internal,3>
+
+1.07374182E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token minus()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,298>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,342>
+
+1.07374182E9
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,249>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,275>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,356>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void doPMD(net.sourceforge.pmd.CommandLineOptions)> <internal,4>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.OccurrenceFinder: java.lang.Object visit(net.sourceforge.pmd.ast.ASTPrimaryExpression,java.lang.Object)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.OccurrenceFinder: java.lang.Object visit(net.sourceforge.pmd.ast.ASTPrimaryExpression,java.lang.Object)> <internal,49>
+
+0.0
+
+<org.jaxen.function.IdFunction: java.util.List evaluate(java.util.List,java.lang.Object,org.jaxen.Navigator)> <internal,13>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.JspTypeHandler: net.sourceforge.pmd.sourcetypehandlers.VisitorStarter getSymbolFacade()> <internal,0>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,82>
+
+2.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.net.URL findResourceImpl(int,java.lang.String)> <internal,195>
+
+2.0
+
+<org.jaxen.expr.DefaultPathExpr: java.lang.Object evaluate(org.jaxen.Context)> <internal,22>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultUnionExpr: java.lang.Object evaluate(org.jaxen.Context)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void AssignmentOperator()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.Java14Handler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createMethodScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,1>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void PostfixExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.PredicateSet: java.util.List applyPredicate(org.jaxen.expr.Predicate,java.util.List,org.jaxen.ContextSupport)> <internal,19>
+
+2.14748365E9
+
+<org.jaxen.expr.PredicateSet: java.util.List applyPredicate(org.jaxen.expr.Predicate,java.util.List,org.jaxen.ContextSupport)> <internal,8>
+
+0.0
+
+<org.jaxen.expr.PredicateSet: java.util.List applyPredicate(org.jaxen.expr.Predicate,java.util.List,org.jaxen.ContextSupport)> <internal,29>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token leftBracket()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ImportDeclaration()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createAdditiveExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,28>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createAdditiveExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,38>
+
+1.0
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,0>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void unpackZipStream(java.io.BufferedInputStream,java.io.File)> <internal,52>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.SourceFileScope: net.sourceforge.pmd.symboltable.NameDeclaration findVariableHere(net.sourceforge.pmd.symboltable.NameOccurrence)> <internal,0>
+
+1.84070029E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getPrecedingSiblingAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<com.ibm.oti.vm.AbstractClassLoader$2: java.lang.Object run()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ExtendsList()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeParameters()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token equals()> <internal,0>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token doubleColon()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.renderers.XMLRenderer: void end()> <internal,5>
+
+1.07374182E9
+
+<net.sourceforge.pmd.ast.JavaParser: void UnaryExpressionNotPlusMinus()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ImplementsList()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getFollowingSiblingAxisIterator(java.lang.Object)> <internal,0>
+
+1.28849024E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token colon()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.renderers.CSVRenderer: void start()> <internal,0>
+
+1.07374182E9
+
+<org.jaxen.expr.DefaultNameStep: java.util.List evaluate(org.jaxen.Context)> <internal,324>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultNameStep: java.util.List evaluate(org.jaxen.Context)> <internal,250>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultNameStep: java.util.List evaluate(org.jaxen.Context)> <internal,171>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultNameStep: java.util.List evaluate(org.jaxen.Context)> <internal,315>
+
+0.0
+
+<org.jaxen.expr.DefaultNameStep: java.util.List evaluate(org.jaxen.Context)> <internal,334>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void NameList()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.NameFinder: void checkForNameChild(net.sourceforge.pmd.ast.SimpleNode)> <internal,8>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.NameFinder: void checkForNameChild(net.sourceforge.pmd.ast.SimpleNode)> <internal,169>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.NameFinder: void checkForNameChild(net.sourceforge.pmd.ast.SimpleNode)> <internal,72>
+
+0.0
+
+<org.jaxen.BaseXPath: org.jaxen.ContextSupport getContextSupport()> <internal,8>
+
+1.43165581E9
+
+<net.sourceforge.pmd.jaxen.TypeOfFunction: void registerSelfInSimpleContext()> <internal,9>
+
+0.0
+
+<net.sourceforge.pmd.RuleReference: void addExample(java.lang.String)> <internal,19>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ExplicitConstructorInvocation()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.JavaTypeHandler: net.sourceforge.pmd.sourcetypehandlers.VisitorStarter getTypeResolutionFacade(java.lang.ClassLoader)> <internal,0>
+
+1.0
+
+<org.apache.commons.cli.Option: java.lang.Object clone()> <internal,9>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: net.sourceforge.pmd.ast.ParseException generateParseException()> <internal,164>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ConditionalOrExpression()> <internal,0>
+
+2.14748365E9
+
+<org.apache.commons.cli.Options: java.util.List helpOptions()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void NullLiteral()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void SwitchLabel()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object,java.lang.String)> <internal,2>
+
+1.07374182E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token identifier()> <internal,33>
+
+2.0
+
+<net.sourceforge.pmd.dfa.report.ReportTree: java.util.Iterator iterator()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.MethodScope: java.util.Map getVariableDeclarations()> <internal,0>
+
+1.84070029E9
+
+<net.sourceforge.pmd.ast.JavaParser: void AnnotationMethodDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void PrimitiveType()> <internal,0>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: java.lang.String a(int,int,char[])> <internal,207>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void VariableDeclaratorId()> <internal,0>
+
+2.14748365E9
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type[] getArgumentTypes(java.lang.String)> <internal,105>
+
+2.14748365E9
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type[] getArgumentTypes(java.lang.String)> <internal,68>
+
+2.14748365E9
+
+<org.objectweb.asm.Type: org.objectweb.asm.Type[] getArgumentTypes(java.lang.String)> <internal,98>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void Initializer()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ArrayDimsAndInits()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeArguments()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: void fillCache(int)> <internal,197>
+
+1.43165581E9
+
+<net.sourceforge.pmd.ast.JavaParser: void jj_add_error_token(int,int)> <internal,49>
+
+2.14748365E9
+
+<net.sourceforge.pmd.util.Benchmark: void mark(int,java.lang.String,long,long)> <internal,107>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void EnumDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createLocalScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,1>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ShiftExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Step createProcessingInstructionNodeStep(int,java.lang.String)> <internal,6>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token rightBracket()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.jaxen.AttributeAxisIterator: net.sourceforge.pmd.jaxen.Attribute getNextAttribute()> <internal,31>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void NormalAnnotation()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createSourceFileScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,28>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: void createSourceFileScope(net.sourceforge.pmd.ast.SimpleNode)> <internal,53>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void MemberValue()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void SwitchStatement()> <internal,0>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: java.lang.Object readConst(int,char[])> <internal,61>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: java.lang.Object readConst(int,char[])> <internal,77>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: java.lang.Object readConst(int,char[])> <internal,90>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: java.lang.Object readConst(int,char[])> <internal,48>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void BreakStatement()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void unpackZipFileResource(java.lang.String,java.io.File)> <internal,41>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void IfStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.util.StringUtil: java.lang.String[] substringsOf(java.lang.String,char)> <internal,71>
+
+1.0
+
+<net.sourceforge.pmd.util.StringUtil: java.lang.String[] substringsOf(java.lang.String,char)> <internal,60>
+
+1.0
+
+<com.ibm.oti.util.Msg: java.lang.String getString(java.lang.String,java.lang.Object,java.lang.Object)> <internal,2>
+
+1.07374182E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token and()> <internal,32>
+
+2.14748365E9
+
+<net.sourceforge.pmd.FileDataSource: java.io.InputStream getInputStream()> <internal,0>
+
+1.0
+
+<org.jaxen.function.FloorFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,6>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassHelperFactoryImpl: com.ibm.oti.shared.SharedClassURLClasspathHelper getURLClasspathHelper(java.lang.ClassLoader,java.net.URL[])> <internal,148>
+
+1.61061274E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token dots()> <internal,59>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token dots()> <internal,24>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaCharStream: java.lang.String GetImage()> <internal,11>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void VariableInitializer()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void EmptyStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.Token: net.sourceforge.pmd.ast.Token newToken(int,java.lang.String)> <internal,28>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.Token: net.sourceforge.pmd.ast.Token newToken(int,java.lang.String)> <internal,38>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void postIterationCleanup(java.lang.String)> <internal,66>
+
+0.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token pipe()> <internal,0>
+
+1.0
+
+<org.dacapo.parser.Config: java.lang.String[] preprocessArgs(java.lang.String,java.io.File)> <internal,8>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ClassOrInterfaceBodyDeclaration()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.UnionExpr createUnionExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.renderers.XSLTRenderer: void end()> <internal,26>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void RelationalExpression()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,4>
+
+0.0
+
+<org.dacapo.harness.FileDigest: byte[] get(java.lang.String,boolean,boolean,java.io.File)> <internal,42>
+
+0.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token nextToken()> <internal,772>
+
+2.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token nextToken()> <internal,796>
+
+2.0
+
+<org.jaxen.function.NumberFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,117>
+
+2.14748365E9
+
+<org.jaxen.function.NumberFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,108>
+
+2.14748365E9
+
+<org.jaxen.function.NumberFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,24>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD: java.util.List collectFromCommaDelimitedString(java.lang.String,net.sourceforge.pmd.SourceFileSelector)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void SingleMemberAnnotation()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.util.Util: java.lang.String urlEncode(java.lang.String)> <internal,2>
+
+0.0
+
+<net.sourceforge.pmd.rules.XPathRule: org.jaxen.BaseXPath createXPath(java.lang.String)> <internal,36>
+
+1.43165581E9
+
+<net.sourceforge.pmd.rules.XPathRule: org.jaxen.BaseXPath createXPath(java.lang.String)> <internal,9>
+
+1.43165581E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ClassOrInterfaceType()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.function.PositionFunction: java.lang.Double evaluate(org.jaxen.Context)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void MarkerAnnotation()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Expr createUnaryExpr(org.jaxen.expr.Expr,int)> <internal,20>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void AnnotationTypeDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void FormalParameter()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ReferenceType()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.YAHTMLRenderer: void render(java.io.Writer,net.sourceforge.pmd.Report)> <internal,9>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void EqualityExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.JavaTypeHandler: net.sourceforge.pmd.sourcetypehandlers.VisitorStarter getSymbolFacade()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Arguments()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.SummaryHTMLRenderer: void render(java.io.Writer,net.sourceforge.pmd.Report)> <internal,62>
+
+2.0
+
+<org.jaxen.saxpath.base.XPathReader: void setUpParse(java.lang.String)> <internal,12>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathReader: void setUpParse(java.lang.String)> <internal,1>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: net.sourceforge.pmd.ast.ASTCompilationUnit CompilationUnit()> <internal,0>
+
+2.0
+
+<net.sourceforge.pmd.ast.JavaParser: void MultiplicativeExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.JspTypeHandler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Type()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getPrecedingAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Step createCommentNodeStep(int)> <internal,6>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createEqualityExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,28>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createEqualityExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,38>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token or()> <internal,22>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.XSLTRenderer: void start()> <internal,8>
+
+1.0
+
+<net.sourceforge.pmd.renderers.XSLTRenderer: void start()> <internal,49>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Expression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.JavaTypeHandler: net.sourceforge.pmd.sourcetypehandlers.VisitorStarter getDataFlowFacade()> <internal,0>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.LocationPath createRelativeLocationPath()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.RuleSetFactory: void parseSingleRuleNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Node,java.lang.ClassLoader)> <internal,352>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void PreIncrementExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void FieldDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void LabeledStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.XMLRenderer: void renderFileViolations(java.util.Iterator)> <internal,5>
+
+1.07374182E9
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter buildRegexFilterIncludeOverExclude(java.util.List,java.util.List)> <internal,55>
+
+0.0
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter buildRegexFilterIncludeOverExclude(java.util.List,java.util.List)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter buildRegexFilterIncludeOverExclude(java.util.List,java.util.List)> <internal,40>
+
+0.0
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter buildRegexFilterIncludeOverExclude(java.util.List,java.util.List)> <internal,113>
+
+1.0
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter buildRegexFilterIncludeOverExclude(java.util.List,java.util.List)> <internal,98>
+
+0.0
+
+<net.sourceforge.pmd.renderers.XSLTRenderer: void transform(org.w3c.dom.Document)> <internal,10>
+
+2.0
+
+<net.sourceforge.pmd.renderers.PapariTextRenderer: java.io.Reader getReader(java.lang.String)> <internal,0>
+
+1.0
+
+<org.dacapo.harness.CommandLineArgs: void defineCallback()> <internal,165>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void EnumConstant()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void PrimaryExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.util.filter.Filters: net.sourceforge.pmd.util.filter.Filter toNormalizedFileFilter(net.sourceforge.pmd.util.filter.Filter)> <internal,0>
+
+2.0
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getChildAxisIterator(java.lang.Object)> <internal,0>
+
+1.28849024E9
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.InputStream)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.AbstractJavaRule: void addViolation(java.lang.Object,net.sourceforge.pmd.ast.SimpleNode)> <internal,9>
+
+1.43165581E9
+
+<com.ibm.oti.vm.MsgHelp: java.util.Hashtable loadMessages(java.lang.String)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.renderers.IDEAJRenderer: void render(java.io.Writer,java.util.Iterator,java.lang.String)> <internal,0>
+
+0.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,167>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,77>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,122>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,68>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,86>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,131>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,158>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,140>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,95>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,149>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,176>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,104>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.iter.IterableAxis getIterableAxis(int)> <internal,113>
+
+1.0
+
+<org.jaxen.expr.DefaultAbsoluteLocationPath: java.lang.Object evaluate(org.jaxen.Context)> <internal,10>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultAbsoluteLocationPath: java.lang.Object evaluate(org.jaxen.Context)> <internal,69>
+
+2.14748365E9
+
+<net.sourceforge.pmd.sourcetypehandlers.Java16Handler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void BlockStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.parsers.Java15Parser: java.lang.Object parse(java.io.Reader)> <internal,1>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void DoStatement()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.parser.ConfigFile: void sizeClause(org.dacapo.parser.Config,java.lang.String)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void VariableDeclarator()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void AssertStatement()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.PredicateSet createPredicateSet()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.SimpleNode: void jjtAddChild(net.sourceforge.pmd.ast.Node,int)> <internal,11>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.SimpleNode: void jjtAddChild(net.sourceforge.pmd.ast.Node,int)> <internal,32>
+
+2.14748365E9
+
+<org.dacapo.harness.Pmd: java.lang.String collectFilesFromFile(java.lang.String)> <internal,23>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void InclusiveOrExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.AbstractRenderer: void start()> <internal,1>
+
+1.0
+
+<org.jaxen.Context: org.jaxen.Context duplicate()> <internal,0>
+
+1.0
+
+<org.jaxen.Context: org.jaxen.Context duplicate()> <internal,21>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void MemberValueArrayInitializer()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,635>
+
+0.0
+
+<org.dacapo.harness.Benchmark: boolean validate(java.lang.String)> <internal,408>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void InstanceOfExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createMultiplicativeExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,28>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createMultiplicativeExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,38>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createMultiplicativeExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,48>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.LocalScope: java.util.Map getVariableDeclarations()> <internal,0>
+
+1.84070029E9
+
+<net.sourceforge.pmd.ast.JavaParser: void LocalVariableDeclaration()> <internal,0>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,2303>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,5406>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,3320>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,5398>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,5145>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,2987>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4766>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4716>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4722>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4647>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4783>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,2949>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4668>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4616>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,3327>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,3734>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4478>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,1829>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,4446>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,92>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,10>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,3087>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,3112>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,org.objectweb.asm.Attribute[],int)> <internal,589>
+
+0.0
+
+<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,int)> <internal,3>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void SynchronizedStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ConstructorDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void PrimarySuffix()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.Report: java.util.Map getSummary()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void MethodDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void RSIGNEDSHIFT()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD$PmdRunnable: net.sourceforge.pmd.Report call()> <internal,21>
+
+1.0
+
+<net.sourceforge.pmd.PMD$PmdRunnable: net.sourceforge.pmd.Report call()> <internal,199>
+
+0.0
+
+<net.sourceforge.pmd.PMD$PmdRunnable: net.sourceforge.pmd.Report call()> <internal,146>
+
+0.0
+
+<net.sourceforge.pmd.PMD$PmdRunnable: net.sourceforge.pmd.Report call()> <internal,287>
+
+0.0
+
+<net.sourceforge.pmd.PMD$PmdRunnable: net.sourceforge.pmd.Report call()> <internal,238>
+
+0.0
+
+<net.sourceforge.pmd.util.FileFinder: java.util.List findFilesFrom(java.lang.String,java.io.FilenameFilter,boolean)> <internal,5>
+
+1.0
+
+<net.sourceforge.pmd.util.FileFinder: java.util.List findFilesFrom(java.lang.String,java.io.FilenameFilter,boolean)> <internal,15>
+
+0.0
+
+<org.jaxen.BaseXPath: org.jaxen.NamespaceContext createNamespaceContext()> <internal,0>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.FilterExpr createFilterExpr(org.jaxen.expr.Expr)> <internal,0>
+
+1.07374182E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.LocationPath createAbsoluteLocationPath()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ForUpdate()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ResultType()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeBound()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.XMLRenderer: void start()> <internal,5>
+
+0.0
+
+<net.sourceforge.pmd.properties.BooleanProperty: java.lang.Object[] arrayFor(int)> <internal,1>
+
+2.14748365E9
+
+<net.sourceforge.pmd.RuleReference: void addProperty(java.lang.String,java.lang.String)> <internal,28>
+
+2.0
+
+<org.dacapo.parser.ConfigFile: org.dacapo.parser.ParseException generateParseException()> <internal,125>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,571>
+
+1.07374182E9
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,674>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,726>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,763>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,800>
+
+0.0
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,465>
+
+1.07374182E9
+
+<net.sourceforge.pmd.PMD: void processFiles(int,net.sourceforge.pmd.RuleSetFactory,net.sourceforge.pmd.SourceType,java.util.List,net.sourceforge.pmd.RuleContext,java.util.List,boolean,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.ClassLoader)> <internal,546>
+
+1.07374182E9
+
+<net.sourceforge.pmd.ast.JavaParser: void Statement()> <internal,0>
+
+2.14748365E9
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,97>
+
+0.0
+
+<org.dacapo.harness.Benchmark: void extractFileResource(java.lang.String,java.io.File)> <internal,84>
+
+0.0
+
+<org.jaxen.BaseXPath: org.jaxen.Context getContext(java.lang.Object)> <internal,12>
+
+2.14748365E9
+
+<org.jaxen.BaseXPath: org.jaxen.Context getContext(java.lang.Object)> <internal,42>
+
+2.14748365E9
+
+<com.ibm.oti.util.Util: java.lang.String convertUTF8WithBuf(byte[],char[],int,int)> <internal,287>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void AnnotationTypeBody()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.function.LastFunction: java.lang.Double evaluate(org.jaxen.Context)> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,38>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,49>
+
+1.61061274E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: void growURLs(int)> <internal,43>
+
+1.61061274E9
+
+<org.jaxen.XPathFunctionContext: void registerXSLTFunctions()> <internal,4>
+
+0.0
+
+<net.sourceforge.pmd.util.ConsoleLogHandler: void publish(java.util.logging.LogRecord)> <internal,28>
+
+0.0
+
+<org.jaxen.function.NormalizeSpaceFunction: java.lang.String evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,101>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ArgumentList()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void MemberValuePair()> <internal,0>
+
+2.14748365E9
+
+<org.apache.commons.cli.Parser: void setOptions(org.apache.commons.cli.Options)> <internal,6>
+
+2.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Step createTextNodeStep(int)> <internal,6>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void MethodDeclarator()> <internal,0>
+
+2.14748365E9
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)> <internal,199>
+
+1.43165581E9
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeDeclaration()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.typeresolution.ClassTypeResolver: void populateImports(net.sourceforge.pmd.ast.ASTCompilationUnit)> <internal,8>
+
+2.14748365E9
+
+<org.dacapo.harness.TeeOutputStream: void newLog()> <internal,1>
+
+2.0
+
+<org.jaxen.DefaultNavigator: java.util.Iterator getDescendantAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<org.jaxen.expr.DefaultFunctionCallExpr: org.jaxen.expr.Expr simplify()> <internal,12>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void AndExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.function.StringLengthFunction: java.lang.Double evaluate(java.lang.Object,org.jaxen.Navigator)> <internal,130>
+
+2.14748365E9
+
+<net.sourceforge.pmd.typeresolution.visitors.PMDASMVisitor: void extractSignature(java.lang.String)> <internal,4>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Name()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token comma()> <internal,0>
+
+1.0
+
+<org.jaxen.function.TranslateFunction: java.lang.String[] toUnicodeCharacters(java.lang.String)> <internal,143>
+
+1.0
+
+<org.jaxen.function.TranslateFunction: java.lang.String[] toUnicodeCharacters(java.lang.String)> <internal,4>
+
+1.0
+
+<org.dacapo.parser.Config: org.dacapo.parser.Config parse(java.io.File)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void AnnotationTypeMemberDeclaration()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void ArrayInitializer()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.SimpleFunctionContext: org.jaxen.Function getFunction(java.lang.String,java.lang.String,java.lang.String)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ClassOrInterfaceDeclaration(int)> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.renderers.CSVRenderer: void renderFileViolations(java.util.Iterator)> <internal,0>
+
+1.07374182E9
+
+<net.sourceforge.pmd.ast.JavaParser: void WhileStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.SimpleNode: java.util.List findChildNodesWithXPath(java.lang.String)> <internal,0>
+
+1.43165581E9
+
+<com.ibm.oti.shared.SharedClassAbstractHelper: java.net.URL getURLToCheck(java.net.URL)> <internal,24>
+
+1.0
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,54>
+
+1.43165581E9
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,236>
+
+1.43165581E9
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,331>
+
+1.43165581E9
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,183>
+
+1.43165581E9
+
+<net.sourceforge.pmd.rules.DoubleCheckedLocking: java.lang.Object visit(net.sourceforge.pmd.ast.ASTMethodDeclaration,java.lang.Object)> <internal,103>
+
+1.43165581E9
+
+<com.ibm.oti.shared.SharedClassURLClasspathHelperImpl: byte[] findSharedClass(java.lang.String,java.lang.String,com.ibm.oti.shared.SharedClassURLClasspathHelper$IndexHolder)> <internal,123>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ForInit()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.NumberExpr createNumberExpr(double)> <internal,0>
+
+1.0
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,19>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,8>
+
+2.14748365E9
+
+<org.dacapo.parser.SimpleCharStream: void ExpandBuff(boolean)> <internal,30>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createOrExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr)> <internal,0>
+
+1.0
+
+<org.dacapo.harness.CommandLineArgs: org.apache.commons.cli.Option makeOption(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> <internal,18>
+
+0.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.XPathExpr createXPath(org.jaxen.expr.Expr)> <internal,0>
+
+2.0
+
+<net.sourceforge.pmd.sourcetypehandlers.Java13Handler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Predicate createPredicate(org.jaxen.expr.Expr)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void TypeParameter()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.util.ResourceLoader: java.io.InputStream loadResourceAsStream(java.lang.String,java.lang.ClassLoader)> <internal,16>
+
+2.0
+
+<net.sourceforge.pmd.jaxen.MatchesFunction: void registerSelfInSimpleContext()> <internal,9>
+
+0.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token star()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void StatementExpressionList()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void PrimaryPrefix()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultExpr: java.util.List convertToList(java.lang.Object)> <internal,12>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createAndExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ConditionalExpression()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.symboltable.ScopeAndDeclarationFinder: java.lang.Object visit(net.sourceforge.pmd.ast.ASTVariableDeclaratorId,java.lang.Object)> <internal,0>
+
+1.90887437E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getAttributeAxisIterator(java.lang.Object)> <internal,0>
+
+1.28849024E9
+
+<net.sourceforge.pmd.ast.JavaCharStream: void ExpandBuff(boolean)> <internal,19>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaCharStream: void ExpandBuff(boolean)> <internal,8>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaCharStream: void ExpandBuff(boolean)> <internal,30>
+
+2.14748365E9
+
+<net.sourceforge.pmd.rules.basic.BrokenNullCheck: boolean primaryExpressionsAreEqual(net.sourceforge.pmd.ast.ASTPrimaryExpression,net.sourceforge.pmd.ast.ASTPrimaryExpression)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.rules.basic.BrokenNullCheck: boolean primaryExpressionsAreEqual(net.sourceforge.pmd.ast.ASTPrimaryExpression,net.sourceforge.pmd.ast.ASTPrimaryExpression)> <internal,14>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ThrowStatement()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.LiteralExpr createLiteralExpr(java.lang.String)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.LocalScope: net.sourceforge.pmd.symboltable.NameDeclaration findVariableHere(net.sourceforge.pmd.symboltable.NameOccurrence)> <internal,16>
+
+1.84070029E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token rightParen()> <internal,0>
+
+1.0
+
+<org.dacapo.harness.CommandLineArgs: java.util.List extractBenchmarkSet()> <internal,0>
+
+1.0
+
+<org.jaxen.BaseXPath: org.jaxen.VariableContext createVariableContext()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.symboltable.ClassScope: net.sourceforge.pmd.symboltable.NameDeclaration findVariableHere(net.sourceforge.pmd.symboltable.NameOccurrence)> <internal,248>
+
+1.84070029E9
+
+<net.sourceforge.pmd.dfa.report.ReportTree: void addRuleViolation(net.sourceforge.pmd.IRuleViolation)> <internal,190>
+
+1.5
+
+<net.sourceforge.pmd.dfa.report.ReportTree: void addRuleViolation(net.sourceforge.pmd.IRuleViolation)> <internal,141>
+
+1.5
+
+<net.sourceforge.pmd.dfa.report.ReportTree: void addRuleViolation(net.sourceforge.pmd.IRuleViolation)> <internal,216>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void AdditiveExpression()> <internal,0>
+
+2.14748365E9
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,65>
+
+1.0
+
+<org.apache.commons.cli.Parser: org.apache.commons.cli.CommandLine parse(org.apache.commons.cli.Options,java.lang.String[],java.util.Properties,boolean)> <internal,47>
+
+2.05411482E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token at()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void FormalParameters()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void TryStatement()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.VariableReferenceExpr createVariableReferenceExpr(java.lang.String,java.lang.String)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.RuleSets: java.util.Set getAllRules()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.rules.UselessOverridingMethod: java.util.List findFirstDegreeChildrenOfType(net.sourceforge.pmd.ast.SimpleNode,java.lang.Class)> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleSetReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Element,java.lang.String)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleSetReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Element,java.lang.String)> <internal,118>
+
+2.14748365E9
+
+<net.sourceforge.pmd.RuleSetFactory: void parseRuleSetReferenceNode(net.sourceforge.pmd.RuleSet,org.w3c.dom.Element,java.lang.String)> <internal,206>
+
+0.0
+
+<org.jaxen.DefaultNavigator: java.util.Iterator getAncestorOrSelfAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<net.sourceforge.pmd.sourcetypehandlers.Java17Handler: net.sourceforge.pmd.parsers.Parser getParser()> <internal,0>
+
+1.0
+
+<com.ibm.oti.vm.AbstractClassLoader: java.io.InputStream openFile(java.lang.String)> <internal,16>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token dollar()> <internal,0>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,56>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,12>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,32>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,76>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,136>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,156>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,180>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,200>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,116>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,228>
+
+1.0
+
+<net.sourceforge.pmd.CommandLineOptions: net.sourceforge.pmd.renderers.Renderer createRenderer()> <internal,96>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ReturnStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.Report: java.util.Map getCountSummary()> <internal,0>
+
+1.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,32>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,144>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,256>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,368>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,186>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,298>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,18>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,242>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,326>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,60>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,102>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,284>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,88>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,200>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,312>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,158>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,270>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,4>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,46>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,116>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,228>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,340>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,74>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,130>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,214>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,354>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerXPathFunctions()> <internal,172>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void BooleanLiteral()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD: java.lang.ClassLoader createClasspathClassLoader(java.lang.String)> <internal,10>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaParser: void Literal()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.typeresolution.PMDASMClassLoader: java.util.Map getImportedClasses(java.lang.String)> <internal,137>
+
+0.0
+
+<net.sourceforge.pmd.typeresolution.PMDASMClassLoader: java.util.Map getImportedClasses(java.lang.String)> <internal,60>
+
+1.43165581E9
+
+<net.sourceforge.pmd.typeresolution.PMDASMClassLoader: java.util.Map getImportedClasses(java.lang.String)> <internal,22>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerExtensionFunctions()> <internal,18>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerExtensionFunctions()> <internal,32>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerExtensionFunctions()> <internal,4>
+
+0.0
+
+<org.jaxen.XPathFunctionContext: void registerExtensionFunctions()> <internal,46>
+
+0.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.Step createAllNodeStep(int)> <internal,6>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token mod()> <internal,32>
+
+2.14748365E9
+
+<org.jaxen.SimpleVariableContext: java.lang.Object getVariableValue(java.lang.String,java.lang.String,java.lang.String)> <internal,0>
+
+0.0
+
+<net.sourceforge.pmd.symboltable.MethodScope: net.sourceforge.pmd.symboltable.NameDeclaration findVariableHere(net.sourceforge.pmd.symboltable.NameOccurrence)> <internal,16>
+
+1.84070029E9
+
+<com.ibm.oti.util.Util: java.lang.String convertFromUTF8(byte[],int,int)> <internal,2>
+
+0.0
+
+<net.sourceforge.pmd.RuleSetFactory: net.sourceforge.pmd.RuleSet parseRuleSetNode(java.lang.String,java.io.InputStream,java.lang.ClassLoader)> <internal,25>
+
+2.0
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getFollowingAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token slashes()> <internal,59>
+
+1.0
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token slashes()> <internal,24>
+
+1.0
+
+<net.sourceforge.pmd.ast.JavaRuleChainVisitor: void indexNodes(java.util.List,net.sourceforge.pmd.RuleContext)> <internal,0>
+
+1.07374182E9
+
+<net.sourceforge.pmd.ast.JavaParser: void AllocationExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createRelationalExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,32>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createRelationalExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,52>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createRelationalExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,42>
+
+1.0
+
+<org.jaxen.expr.DefaultXPathFactory: org.jaxen.expr.BinaryExpr createRelationalExpr(org.jaxen.expr.Expr,org.jaxen.expr.Expr,int)> <internal,62>
+
+1.0
+
+<org.jaxen.function.CountFunction: java.lang.Double evaluate(java.lang.Object)> <internal,7>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void StatementExpression()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token notEquals()> <internal,0>
+
+1.0
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,1117>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,875>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,746>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,807>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,1057>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,1180>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,415>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,339>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,997>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,936>
+
+2.14748365E9
+
+<org.objectweb.asm.ClassReader: int a(int,char[],java.lang.String,org.objectweb.asm.AnnotationVisitor)> <internal,451>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void EnumBody()> <internal,0>
+
+2.14748365E9
+
+<org.jaxen.saxpath.base.XPathLexer: org.jaxen.saxpath.base.Token literal()> <internal,37>
+
+1.0
+
+<net.sourceforge.pmd.ast.SimpleNode: java.util.List findChildrenOfType(java.lang.Class)> <internal,0>
+
+1.0
+
+<org.jaxen.DefaultNavigator: java.util.Iterator getAncestorAxisIterator(java.lang.Object)> <internal,0>
+
+1.71798694E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getParentAxisIterator(java.lang.Object)> <internal,37>
+
+1.71798694E9
+
+<net.sourceforge.pmd.jaxen.DocumentNavigator: java.util.Iterator getParentAxisIterator(java.lang.Object)> <internal,8>
+
+1.71798694E9
+
+<org.objectweb.asm.Attribute: org.objectweb.asm.Attribute read(org.objectweb.asm.ClassReader,int,int,char[],int,org.objectweb.asm.Label[])> <internal,16>
+
+2.0
+
+<org.objectweb.asm.Attribute: org.objectweb.asm.Attribute read(org.objectweb.asm.ClassReader,int,int,char[],int,org.objectweb.asm.Label[])> <internal,0>
+
+2.0
+
+<net.sourceforge.pmd.ast.JavaParser: void ClassOrInterfaceBody()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.ast.JavaParser: void CatchStatement()> <internal,0>
+
+2.14748365E9
+
+<net.sourceforge.pmd.PMD: java.util.List collect(java.lang.String,net.sourceforge.pmd.SourceFileSelector)> <internal,51>
+
+2.0
+
+<net.sourceforge.pmd.PMD: java.util.List collect(java.lang.String,net.sourceforge.pmd.SourceFileSelector)> <internal,216>
+
+0.0
+
+<net.sourceforge.pmd.PMD: java.util.List collect(java.lang.String,net.sourceforge.pmd.SourceFileSelector)> <internal,231>
+
+0.0
+
+<net.sourceforge.pmd.ast.JavaParser: void UnaryExpression()> <internal,0>
+
+2.14748365E9
+
+339: 2
+388: 1
+420: 4
+476: 27
+764: 1
+845: 1
+887: 1
+935: 4
+980: 1
+1109: 3
+1203: 1
+1211: 1
+1230: 1
+1823: 1
+1865: 5
+1868: 1
+1933: 2
+2043: 40
+2092: 2
+2093: 9
+2256: 4
+2368: 5
+2446: 6
+2487: 1
+2552: 3
+2553: 1
+2556: 1
+2631: 45
+2708: 5
+2876: 1
+2883: 43
+3141: 2
+3153: 2
+3202: 1
+3203: 5
+3393: 1
+3395: 1
+3408: 47
+3510: 1
+3518: 2
+3519: 2
+3533: 40
+3718: 40
+3957: 1
+3962: 1
+3967: 1
+3972: 2
+3977: 4
+3981: 2
+3986: 3
+3991: 1
+3995: 1
+4000: 1
+4006: 1
+4011: 1
+4019: 1
+4020: 14
+4024: 1
+4025: 14
+4027: 1
+4028: 14
+4030: 1
+4031: 14
+4033: 1
+4034: 14
+4037: 1
+4050: 1
+4052: 1
+4053: 1
+4056: 1
+4057: 1
+4061: 1
+4071: 1
+4079: 31
+4150: 1
+4198: 1
+4199: 1
+4200: 1
+4202: 1
+4203: 1
+4204: 1
+4224: 1
+4225: 1
+4226: 1
+4227: 1
+4228: 1
+4229: 1
+4236: 1
+4237: 1
+4238: 1
+4239: 1
+4240: 1
+4244: 1
+4248: 1
+4252: 1
+4263: 2
+4276: 2
+4293: 29
+4296: 1
+4299: 1
+4303: 1
+4304: 1
+4306: 1
+4314: 1
+4317: 1
+4323: 2
+4331: 2
+4332: 1
+4356: 3
+4358: 1
+4361: 1
+4363: 6
+4369: 2
+4370: 2
+4378: 2
+4385: 1
+4388: 2
+4406: 1
+4407: 1
+4411: 2
+4416: 1
+4418: 129
+4449: 1
+4450: 43
+4456: 2
+4457: 44
+4462: 4
+4479: 1
+4480: 1
+4485: 4
+4502: 1
+4515: 1
+4518: 1
+4524: 1
+4532: 1
+4572: 1
+4573: 4
+4582: 1
+4587: 1
+4802: 8
+4888: 54
+4893: 12
+4902: 2
+4904: 7
+4908: 7
+4909: 7
+4910: 7
+4928: 2
+4935: 4
+4939: 18
+5009: 1
+5020: 1
+5028: 2
+5068: 14
+5097: 1
+5185: 2
+5227: 7
+5234: 7
+5235: 7
+5238: 7
+5269: 2
+5270: 2
+5271: 1
+5291: 1
+5295: 2
+5315: 25
+5318: 1
+5319: 28
+5363: 1
+5380: 1
+5390: 21
+5394: 2
+5395: 2
+5422: 14
+5572: 1
+5574: 1
+5575: 1
+5653: 14
+Total SCCs: 5696
+Core SCCs: 178
+Special Memory Region Object Count: 536
+Stack Object Count: 3280
+Heap Object Count: 26
+Total Object Count: 3842
+Resolution is done
+Time Taken in phase 1:94.666
+Time Taken in phase 2:29616.44
