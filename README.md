@@ -19,6 +19,10 @@ Sample scripts are provided in the [scripts](https://github.com/adityaanand7/sta
 * Application Code: This is code written by user that has to be compiled.
 More instructions [here](https://github.com/adityaanand7/stava-contextual/blob/master/scripts/README.md).
 
+## Running Ownership Resolver
+* Benchmark Code: To run the Ownership Resolver on bechmarks, run the script `run_all.sh` within scripts.
+* Application Code: Add the Application code to the `tests` folder. Run the script `run.sh` along with the testcase number.
+
 ## Built With
 * [Soot](https://github.com/soot-oss/soot)- a Java optimization framework which enables this project to look into class files and much more. 
 
